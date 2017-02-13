@@ -15,18 +15,55 @@ create_account = User.create([name:'test', email: 'test@gmail.com', password:'11
 puts "Test account created."
 
 
-products =[{title:"Asymmetrical Ruffle Shift Dress",
-	        description: "Cascading ruffles at just one side embolden the sleek, comfortable silhouette of this sophisticated dress.",
-	        image_path: "#{Rails.root}/app/assets/images/dress2.jpg"},
 
-	        {title:"Off the Shoulder Dress",
-	        description: "A trendy off-the-shoulder neckline and voluminous bell sleeves give this crisp crepe dress its dramatic impact.",
-	        image_path: "#{Rails.root}/app/assets/images/dress1.jpg"}
+products =[
+
+					{title:"Tiered Slipdress)",
+          description: "Tiered asymmetrical ruffles add flounce to a midi-length dress perfect for twirling on the dance floor.",
+          image_path: "#{Rails.root}/app/assets/images/dress5.jpg"},
+
+          {title:"Ruffle A-Line Dress",
+          description: "Shoulder cutouts up the edginess of this pretty floral frock that flatters with a ruffled peplum waist.",
+          image_path: "#{Rails.root}/app/assets/images/dress6.jpg"},
+
+          {title:"Drop Waist Dress ",
+          description: "A mod cocktail look with a polished collar, cutout back and swingy high/low skirt.",
+          image_path: "#{Rails.root}/app/assets/images/dress9.jpg"},
+
+
+          {title:"Drop Waist Dress ",
+          description: "A mod cocktail look with a polished collar, cutout back and swingy high/low skirt.",
+          image_path: "#{Rails.root}/app/assets/images/dress11.jpg"},
+
+
+          {title:"Drop Waist Dress ",
+          description: "A mod cocktail look with a polished collar, cutout back and swingy high/low skirt.",
+          image_path: "#{Rails.root}/app/assets/images/dress13.jpg"},
+
+          {title:"Drop Waist Dress ",
+          description: "A mod cocktail look with a polished collar, cutout back and swingy high/low skirt.",
+          image_path: "#{Rails.root}/app/assets/images/dress14.jpg"},
+
+          {title:"Drop Waist Dress ",
+          description: "A mod cocktail look with a polished collar, cutout back and swingy high/low skirt.",
+          image_path: "#{Rails.root}/app/assets/images/dress15.jpg"},
+
+          {title:"Drop Waist Dress ",
+          description: "A mod cocktail look with a polished collar, cutout back and swingy high/low skirt.",
+          image_path: "#{Rails.root}/app/assets/images/dress16.jpg"},
+
 ]
+
+
 
 
 p1 = Product.create([title:products[0][:title],description:products[0][:description],quantity:200,price:300,image:open(products[0][:image_path])])
 p2 = Product.create([title:products[1][:title],description:products[1][:description],quantity:200,price:300,image:open(products[1][:image_path])])
-
+p3 = Product.create([title:products[2][:title],description:products[2][:description],quantity:200,price:300,image:open(products[2][:image_path])])
+p4 = Product.create([title:products[3][:title],description:products[3][:description],quantity:200,price:300,image:open(products[3][:image_path])])
+p5 = Product.create([title:products[4][:title],description:products[4][:description],quantity:200,price:300,image:open(products[4][:image_path])])
+p6 = Product.create([title:products[5][:title],description:products[5][:description],quantity:200,price:300,image:open(products[5][:image_path])])
+p7 = Product.create([title:products[6][:title],description:products[6][:description],quantity:200,price:300,image:open(products[6][:image_path])])
+p8 = Product.create([title:products[7][:title],description:products[7][:description],quantity:200,price:300,image:open(products[7][:image_path])])
 
 puts "Successfully create products info."

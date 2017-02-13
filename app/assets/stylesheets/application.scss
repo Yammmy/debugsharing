@@ -36,8 +36,8 @@
 
  //--------  navbar   ---------
  .navbar-default {
-   background-color: #424242;
-   border-color: #424242;
+   background-color: #ffffff;
+   border-color: #ffffff;
    margin-bottom: 0;
    color: white;
  }
@@ -56,13 +56,7 @@
   	padding: .3em 1em;
    margin-top: .6em;
   	border-radius: 1.5em;
-  	&:hover {
-  		border: 1px solid #33acb7;
-  		color: #33acb7;
-  		a {
-  			color: #33acb7 !important;
-  		}
-  	}
+
   }
 
 
@@ -79,13 +73,13 @@
 
  h1.title {
  	font-size: 50px;
- 	font-family: 'Passion One', cursive;
- 	font-weight: 400;
+ 	font-family: Brandon Text;
+ 	font-weight: 100;
  }
 
  hr{
  	width: 10%;
- 	color: #fff;
+ 	color: #000000;
  }
 
  .form-group{
@@ -132,7 +126,7 @@
 
  html, body{
    height: 100%;
-  font-family: 'Lora', serif;
+  font-family: Brandon Text;
  }
 
  footer{

@@ -1,24 +1,11 @@
-# README
+README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repo is a production work for the JD-store competition.
 
-Things you may want to cover:
+We're all ROR newbies but we're making progress everyday.
 
-* Ruby version
+We're proud to make it avilable to move.
 
-* System dependencies
+Welcome to vote for us.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Thanks a lot.

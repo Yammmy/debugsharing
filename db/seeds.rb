@@ -18,7 +18,7 @@ puts "Test account created."
 
 products =[
 
-					{title:"Tiered Slipdress)",
+					{title:"Tiered Slip dress)",
           description: "Tiered asymmetrical ruffles add flounce to a midi-length dress perfect for twirling on the dance floor.",
           image_path: "#{Rails.root}/app/assets/images/dress5.jpg"},
 
@@ -31,24 +31,24 @@ products =[
           image_path: "#{Rails.root}/app/assets/images/dress9.jpg"},
 
 
-          {title:"Drop Waist Dress ",
+          {title:"Slpended Dress ",
           description: "A mod cocktail look with a polished collar, cutout back and swingy high/low skirt.",
           image_path: "#{Rails.root}/app/assets/images/dress11.jpg"},
 
 
-          {title:"Drop Waist Dress ",
+          {title:"Awesome Dress ",
           description: "A mod cocktail look with a polished collar, cutout back and swingy high/low skirt.",
           image_path: "#{Rails.root}/app/assets/images/dress13.jpg"},
 
-          {title:"Drop Waist Dress ",
+          {title:"Wonderful Dress ",
           description: "A mod cocktail look with a polished collar, cutout back and swingy high/low skirt.",
           image_path: "#{Rails.root}/app/assets/images/dress14.jpg"},
 
-          {title:"Drop Waist Dress ",
+          {title:"Red curtain Dress ",
           description: "A mod cocktail look with a polished collar, cutout back and swingy high/low skirt.",
           image_path: "#{Rails.root}/app/assets/images/dress15.jpg"},
 
-          {title:"Drop Waist Dress ",
+          {title:"Blue tango Dress ",
           description: "A mod cocktail look with a polished collar, cutout back and swingy high/low skirt.",
           image_path: "#{Rails.root}/app/assets/images/dress16.jpg"},
 

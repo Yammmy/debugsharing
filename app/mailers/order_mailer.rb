@@ -14,4 +14,20 @@ class OrderMailer < ApplicationMailer
 
     mail(to: "admin@gmail.com", subject: "[Beautys] User#{order.user.name} pulled a request to cancell order#{order.token}")
   end
+
+  def notify_ship(order)
+    @order = Order
+    @user = order.user
+    @product_lists = @order.product_lists
+
+    mail(to: @user.email, subject: "[Beautys] Your order#{order.token} is shipping!")
+  end
+
+  def notify_cancell(order)
+    @order = Order
+    @user = order.user
+    @product_lists = @order.product_lists
+
+    mail(to: @user.email, subject: "[Beautys] Your order#{order.token} is cancelled!")
+  end
 end

@@ -1,13 +1,18 @@
 <div class="row">
   <div class="col-md-12">
-
-    <h2> Order List </h2>
-
+    <h2>
+      Order List <br>
+      <small>
+        <%= link_to("Order Link", order_url(@order.token)) %>
+      </small>
+    </h2>
     <table class="table table-bordered">
       <thead>
         <tr>
-          <th width="80%">Product List</th>
+          <th width="70%">Product List</th>
           <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
         </tr>
       </thead>
       <tbody>
@@ -20,17 +25,23 @@
             <td>
               <%= product_list.product_price %>
             </td>
+            <td>
+              <%= product_list.quantity %>
+            </td>
+            <td>
+              <%= product_list.quantity * product_list.product_price %>
+            </td>
           </tr>
         <% end %>
 
       </tbody>
     </table>
 
-    <div class="total clearfix">
-      <span class="pull-right">
+    <div class="total group clearfix">
+      <h4 class="pull-right">
         Total: ¥ <%= @order.total %>
-      </span>
-    </div>
+      </h4>
+     </div>
 
      <hr>
 
@@ -39,9 +50,7 @@
      <table class="table table-striped table-bordered">
       <tbody>
         <tr>
-          <td>
-            The one who order
-          </td>
+          <td> The one who order </td>
         </tr>
         <tr>
           <td>
@@ -49,9 +58,7 @@
           </td>
         </tr>
         <tr>
-          <td>
-            The one who receive
-          </td>
+          <td> The one who receive </td>
         </tr>
         <tr>
           <td>
@@ -60,21 +67,5 @@
         </tr>
       </tbody>
     </table>
-
-    <div class="pull-left">
-      <% if @order.order_placed? || @order.paid? %>
-        <%= link_to("Pull request cancelled!", apply_to_cancell_order_path(@order), method: :post, class: "btn btn-info")%>
-      <% end %>
-    </div>
-    <% if !@order.is_paid? %>
-    <div class="group pull-right">
-      <%= link_to("Pay with Alipay", pay_with_alipay_order_path(@order.token), method: :post, class: "btn btn-danger")%>
-      <%= link_to("Pay with Wechat", pay_with_wechat_order_path(@order.token), method: :post, class: "btn btn-danger")%>
-    </div>
-    <% else %>
-        <div class="text-center">
-          The pay is completed!
-        </div>
-    <% end %>
   </div>
 </div>

@@ -16,7 +16,7 @@ class OrderMailer < ApplicationMailer
   end
 
   def notify_ship(order)
-    @order = Order
+    @order = order
     @user = order.user
     @product_lists = @order.product_lists
 
@@ -24,7 +24,7 @@ class OrderMailer < ApplicationMailer
   end
 
   def notify_cancell(order)
-    @order = Order
+    @order = order
     @user = order.user
     @product_lists = @order.product_lists
 

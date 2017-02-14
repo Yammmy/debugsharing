@@ -1,6 +1,6 @@
 CarrierWave.configure do |config|
   if Rails.env.production?
-    # config.storage :fog
+    config.fog_provider = 'fog/aws'
     config.fog_credentials = {
       provider:              'AWS',
       aws_access_key_id:     ENV["AKIAIHV4LQKNPRUTVC4Q"],
@@ -14,7 +14,9 @@ CarrierWave.configure do |config|
 
     }
     config.fog_directory  = ENV["fullstacktry"]
-    config.storage :fog
+    config.fog_public     = false                                            # optional, defaults to true
+    config.fog_attributes = { 'Cache-Control' => "max-age=#{365.day.to_i}" } # optional, defaults to {}
+
 
 
 

@@ -22,3 +22,6 @@
 
 # Ignore image uploaded by admin.
 public/uploads
+
+# Ignore application configuration
+/config/application.yml

@@ -1,6 +1,6 @@
 CarrierWave.configure do |config|
   if Rails.env.production?
-    config.storage :fog
+    # config.storage :fog
     config.fog_credentials = {
       provider:              'AWS',
       aws_access_key_id:     ENV["AKIAIHV4LQKNPRUTVC4Q"],
@@ -13,7 +13,8 @@ CarrierWave.configure do |config|
 
 
     }
-    config.fog_directory  = ENV["fullstacktry"] 
+    config.fog_directory  = ENV["fullstacktry"]
+    config.storage :fog
 
 
 

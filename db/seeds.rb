@@ -6,12 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-puts "这个seeds文件可以自动建立一个admin账号和一个test账号"
+puts "这个seeds文件可以自动建立一个真实的admin账号和test账号"
 
-create_account = User.create([name:'admin', email: 'admin@gmail.com', password:'111111', password_confirmation: '111111', is_admin: 'true'])
+create_account = User.create([name:'yammy', email: 'yammy7chris@gmail.com', password:'111111', password_confirmation: '111111', is_admin: 'true'])
 puts "Admin account created."
 
-create_account = User.create([name:'test', email: 'test@gmail.com', password:'111111', password_confirmation: '111111', is_admin: 'false'])
+create_account = User.create([name:'test', email: 'gdouxym@163.com', password:'111111', password_confirmation: '111111', is_admin: 'false'])
 puts "Test account created."
 
 
@@ -20,23 +20,39 @@ products =[
 
 					{title:"Tiered Slip dress)",
           description: "Tiered asymmetrical ruffles add flounce to a midi-length dress perfect for twirling on the dance floor.",
-          image_path: "#{Rails.root}/app/assets/images/dress5.jpg"},
+          image_path: "#{Rails.root}/app/assets/images/dress1.jpg"},
 
           {title:"Ruffle A-Line Dress",
           description: "Shoulder cutouts up the edginess of this pretty floral frock that flatters with a ruffled peplum waist.",
-          image_path: "#{Rails.root}/app/assets/images/dress6.jpg"},
+          image_path: "#{Rails.root}/app/assets/images/dress2.jpg"},
 
           {title:"Drop Waist Dress ",
           description: "A mod cocktail look with a polished collar, cutout back and swingy high/low skirt.",
-          image_path: "#{Rails.root}/app/assets/images/dress9.jpg"},
+          image_path: "#{Rails.root}/app/assets/images/dress3.jpg"},
 
 
           {title:"Slpended Dress ",
           description: "A mod cocktail look with a polished collar, cutout back and swingy high/low skirt.",
-          image_path: "#{Rails.root}/app/assets/images/dress11.jpg"},
+          image_path: "#{Rails.root}/app/assets/images/dress4.jpg"},
 
 
           {title:"Awesome Dress ",
+          description: "A mod cocktail look with a polished collar, cutout back and swingy high/low skirt.",
+          image_path: "#{Rails.root}/app/assets/images/dress5.jpg"},
+
+          {title:"Wonderful Dress ",
+          description: "A mod cocktail look with a polished collar, cutout back and swingy high/low skirt.",
+          image_path: "#{Rails.root}/app/assets/images/dress6.jpg"},
+
+          {title:"Red curtain Dress ",
+          description: "A mod cocktail look with a polished collar, cutout back and swingy high/low skirt.",
+          image_path: "#{Rails.root}/app/assets/images/dress7.jpg"},
+
+          {title:"Blue tango Dress ",
+          description: "A mod cocktail look with a polished collar, cutout back and swingy high/low skirt.",
+          image_path: "#{Rails.root}/app/assets/images/dress8.jpg"},
+
+					{title:"Awesome Dress ",
           description: "A mod cocktail look with a polished collar, cutout back and swingy high/low skirt.",
           image_path: "#{Rails.root}/app/assets/images/dress13.jpg"},
 
@@ -65,5 +81,9 @@ p5 = Product.create([title:products[4][:title],description:products[4][:descript
 p6 = Product.create([title:products[5][:title],description:products[5][:description],quantity:200,price:300,image:open(products[5][:image_path])])
 p7 = Product.create([title:products[6][:title],description:products[6][:description],quantity:200,price:300,image:open(products[6][:image_path])])
 p8 = Product.create([title:products[7][:title],description:products[7][:description],quantity:200,price:300,image:open(products[7][:image_path])])
+p9 = Product.create([title:products[8][:title],description:products[8][:description],quantity:200,price:300,image:open(products[8][:image_path])])
+p10 = Product.create([title:products[9][:title],description:products[9][:description],quantity:200,price:300,image:open(products[9][:image_path])])
+p11 = Product.create([title:products[10][:title],description:products[10][:description],quantity:200,price:300,image:open(products[10][:image_path])])
+p12 = Product.create([title:products[11][:title],description:products[11][:description],quantity:200,price:300,image:open(products[11][:image_path])])
 
-puts "Successfully create products info."
+puts "Successfully create 12 products info."

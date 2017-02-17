@@ -1,6 +1,6 @@
 class CommentsController < ApplicationController
-  before_action :set_comment, only: [:destroy]
-  before_action :authenticate_user!, only: [:create]
+
+  before_action :authenticate_user!, only: [:create, :destroy]
 
 
 
@@ -11,14 +11,10 @@ class CommentsController < ApplicationController
     @comment = @product.comments.new(comment_params)
     @comment.user = current_user
 
-    respond_to do |format|
-      if @comment.save
-        format.html { redirect_to @product, notice: 'Comment was successfully created.' }
-        format.json { render json: @comment, status: :created, location: @comment }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @comment.errors, status: :unprocessable_entity }
-      end
+    if @comment.save
+      redirect_to product_path(@product), notice: 'Review was successfully created!'
+    else
+      redirect_to product_path(@product), alert: "Comment can't be blank!"
     end
   end
 
@@ -26,18 +22,14 @@ class CommentsController < ApplicationController
   # DELETE /comments/1
   # DELETE /comments/1.json
   def destroy
+    @product = Product.find(params[:product_id])
+    @comment = Comment.find(params[:id])
     @comment.destroy
-    respond_to do |format|
-      format.html { redirect_to comments_url, notice: 'Comment was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    redirect_to product_path(@product), alert: "You have deleted the comment successfully"
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_comment
-      @comment = Comment.find(params[:id])
-    end
+
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def comment_params

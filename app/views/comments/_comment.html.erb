@@ -5,9 +5,9 @@
       <hr>
 		</div>
 
-		<div class="btn btn-group pull-right">
+		<div class="btn btn-group btn-default pull-right">
 			<% if comment.user == current_user %>
-				<%= link_to 'Delete', comment, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-sm btn-default" %>
+				<%= link_to 'Delete', product_comment_path(@product, comment), method: :delete, data: { confirm: 'Are you sure?' } %>
 			<% end %>
 		</div>
 	</div>

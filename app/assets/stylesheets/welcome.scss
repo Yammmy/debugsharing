@@ -2,6 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+
+
 //-----------logo-------
 #logo {
  	font-size: 26px;
@@ -15,8 +18,8 @@
  }
 
 //-----------welcome pic-------
-.container-fluid .main {
-  margin: 150px -15px 20px;
+.container-fluid .header {
+  margin: 30px -15px 20px;
 }
 
 .caption {
@@ -255,6 +258,34 @@ hr{
 }
 
 
+/subscribe/
+
+.subscribe{
+	background-image: url(../images/11.jpg);
+}
+.subscribe .vira-btn{
+	margin-bottom: 0;
+	color: #424242;
+	font-weight: 700;
+	border-color: #fff;
+	background-color: #fff;
+}
+.subscribe .vira-btn:hover{
+	background-color: transparent;
+	color: #fff;
+}
+.subscribe p{
+	color: #fff;
+	font-size: 32px;
+	margin-bottom: 35px;
+}
+.subscribe .form-control{
+    width: 320px;
+    margin-bottom: 0;
+    border-color: #fff;
+    color: #fff;
+}
+
 
 /*Element page*/
 .element .navigation-bar{
@@ -284,10 +315,10 @@ hr{
 .social-icons ul a li{
  display: inline-block;
  list-style-type: none;
-    border: 2px solid #51c2b9;
+    border: 2px solid #ffffff;
     margin-right: 10px;
-    background-color: #51c2b9;
-    color: #fff;
+    background-color: #ffffff;
+    color: #51c2b9;
  font-size: 18px;
     line-height: 32px;
     width: 36px;
@@ -296,14 +327,16 @@ hr{
  margin-right: 0;
 }
 .social-icons ul a:hover li{
- color: #51c2b9;
- background-color: #fff;
+ color: #ffffff;
+ background-color: #51c2b9;
 }
 
 
 
 
-
+.pic-list {
+   margin-top:100px;
+ }
 
 
 
@@ -371,7 +404,7 @@ hr{
 
 /*Home page*/
 .header{
- background-image: url(http://n.nordstrommedia.com/id/4e0dc1c7-2550-4a8b-bbe8-2db8cd0fa40d.jpeg?w=2560&h=745);
+ background-image: url(../images/landing.jpg);
  height: 100vh;
  position: center;
  min-height: 659px;
@@ -482,6 +515,10 @@ hr{
  color: #424242;
 }
 
+
+.container-fluid .subscribe {
+  margin: 50px -15px 20px;
+}
 .subscribe{
  background-image: url(../images/11.jpg);
 }
@@ -548,4 +585,36 @@ hr{
 }
 .owl-theme .owl-dots .owl-dot span{
  background-color: #51c2b9;
+}
+
+.bg-img{
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.bg-img div{
+	z-index: 1;
+	position: relative;
+}
+.bg-img:after{
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	left: 0;
+	top: 0;
+}
+
+//hotproducts/
+.welcome-content-title {
+    font-family: Tahoma, verdana, "Proxima Nova Light",Arial,sans-serif;
+    width: 100%;
+    font-size: 23px;
+    font-weight: 500;
+    color: #384245;
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
 }

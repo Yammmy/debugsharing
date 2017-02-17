@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :comments
+  
   devise_for :users
   root 'welcome#index'
   get '/about' => 'welcome#about'
@@ -22,6 +22,11 @@ Rails.application.routes.draw do
     end
     collection do
       match 'search' => 'products#search', via: [:get, :post], as: :search
+      get :dresses
+      get :jeans
+      get :skirts
+      get :shorts
+      get :suits
     end
     resources :comments
   end

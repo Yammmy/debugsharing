@@ -13,3 +13,5 @@ module Supermall
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+
+Fog.credentials = { path_style: true }

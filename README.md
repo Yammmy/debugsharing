@@ -1,6 +1,7 @@
 README
 
-This repo is a production work for the JD-store competition.
+This repo is a production work of sharing debug experiences.
+And we do this for the JD-store competition.
 
 We're all ROR newbies but we're making progress everyday.
 

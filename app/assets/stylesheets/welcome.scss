@@ -15,7 +15,23 @@
     }
 }
 //-----------landing big pic-------
-.container-fluid .lp-section-1 .lp-section-2 .lp-section-3 .lp-section-4 .lp-section-bottom {
+.container-fluid .lp-section-1 {
+    margin: 0 -15px 0px;
+    min-height: 100%;
+}
+.container-fluid .lp-section-2  {
+    margin: 0 -15px 0px;
+    min-height: 100%;
+}
+.container-fluid .lp-section-3  {
+    margin: 0 -15px 0px;
+    min-height: 100%;
+}
+.container-fluid .lp-section-4  {
+    margin: 0 -15px 0px;
+    min-height: 100%;
+}
+.container-fluid .lp-section-bottom {
     margin: 0 -15px 0px;
     min-height: 100%;
 }
@@ -199,16 +215,15 @@ body {
             }
 
             .feature-block {
-                width: 290px;
-                margin: 0 auto;
-                float: none;
-                display: block;
-                border-style: none;
-                border-radius: 0;
-                width: 290px;
-                position: relative;
-                margin: 30px 30px 0;
-                float: left;
+              display: block;
+              border-style: none;
+              border-radius: 0;
+              width: 430px;
+              position: relative;
+              margin: 20px 15px 0;
+              float: left;
+
+
 
                 h3 {
                     font-size: 1.2em;
@@ -251,7 +266,7 @@ body {
                 background: #3468A5;
                 border-style: none;
                 border-radius: 0;
-                margin: 20px auto;
+                margin: 10px auto;
                 z-index: 53;
                 width: 50px;
                 height: 3px;
@@ -269,7 +284,7 @@ body {
             .teacher-block-right {
                 padding-left: 0;
                 float: none;
-                width: 360px;
+                width: 400px;
                 margin: 0 auto;
 
                 .top {
@@ -308,6 +323,77 @@ body {
                     clear: both;
                     width: 100%;
                     line-height: 24px;
+                }
+            }
+        }
+    }
+    //lp-section-5
+    .lp-section-5 {
+        min-width: 100%;
+        height: 550px;
+        display: block;
+        width: 100%;
+        height: 550px;
+        min-width: 960px;
+        background: #fff;
+        background-position: center top;
+        background-size: cover;
+        text-align: center;
+
+        .content-5 {
+            width: 100%;
+            height: auto;
+            padding-top: 30px;
+            text-align: center;
+
+            .skill-title {
+                margin-bottom: 50px;
+                letter-spacing: 3px;
+                text-align: center;
+
+                .short-line {
+                    display: block;
+                    background: #3468A5;
+                    border-style: none;
+                    border-radius: 0;
+                    margin: 20px auto;
+                    z-index: 53;
+                    width: 50px;
+                    height: 3px;
+                    position: relative;
+                }
+
+                h2 {
+                    font-size: 2em;
+                }
+            }
+
+            .skill-block {
+              display: block;
+              border-style: none;
+              border-radius: 0;
+              width: 300px;
+              position: relative;
+              margin: 20px 15px 0;
+              float: left;
+
+
+
+                h3 {
+                    font-size: 1.2em;
+                    line-height: 28px;
+                    margin-top: 20px;
+                    color: #333;
+                }
+
+                p {
+                    line-height: 24px;
+                    width: 260px;
+                    margin-top: 30px;
+                    margin-left: 20px;
+                    font-size: 1em;
+                    color: #666;
+                    text-align: center;
                 }
             }
         }

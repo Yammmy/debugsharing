@@ -27,24 +27,20 @@ class ProductsController < ApplicationController
     end
   end
 
-  def dresses
-    @products = Product.where(:category => "dresses").paginate(:page => params[:page], :per_page => 5)
+  def rails
+    @products = Product.where(:category => "rails").paginate(:page => params[:page], :per_page => 5)
   end
 
-  def jeans
-    @products = Product.where(:category => "jeans").paginate(:page => params[:page], :per_page => 5)
+  def laravel
+    @products = Product.where(:category => "laravel").paginate(:page => params[:page], :per_page => 5)
   end
 
-  def skirts
-    @products = Product.where(:category => "skirts").paginate(:page => params[:page], :per_page => 5)
+  def ruby
+    @products = Product.where(:category => "ruby").paginate(:page => params[:page], :per_page => 5)
   end
 
-  def shorts
-    @products = Product.where(:category => "shorts").paginate(:page => params[:page], :per_page => 5)
-  end
-
-  def suits
-    @products = Product.where(:category => "suits").paginate(:page => params[:page], :per_page => 5)
+  def python
+    @products = Product.where(:category => "python").paginate(:page => params[:page], :per_page => 5)
   end
 
   protected

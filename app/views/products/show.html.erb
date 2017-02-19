@@ -19,7 +19,7 @@
       <div class="product-price"> Price: ￥ <%= @product.price %> </div>
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-6" >
       <% if @product.quantity.present? && @product.quantity > 0 %>
         <%= link_to("Add to cart", add_to_cart_product_path(@product),method: :post, :class => "btn btn-primary btn-lg btn-danger") %>
       <% else %>

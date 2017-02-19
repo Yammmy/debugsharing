@@ -13,6 +13,7 @@
             <div class="pull-right">
                 Submitted <%=time_ago_in_words(product.created_at) %> Ago
             </div>
+
           	<%= link_to(render_highlight_content(product,@query_string),product_path(product)) %>
           	<hr>
       		<% end %>

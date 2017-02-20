@@ -64,6 +64,7 @@
     <div class="pull-left">
       <% if @order.order_placed? || @order.paid? %>
         <%= link_to("Pull a request to cancell!", apply_to_cancell_order_path(@order), method: :post, class: "btn btn-info")%>
+        
       <% end %>
     </div>
     <% if !@order.is_paid? %>
@@ -72,7 +73,7 @@
       <%= link_to("Pay with Wechat", pay_with_wechat_order_path(@order.token), method: :post, class: "btn btn-danger")%>
     </div>
     <% else %>
-        <div class="text-center">
+        <div class="btn btn-primary text-right">
           The pay is completed!
         </div>
     <% end %>

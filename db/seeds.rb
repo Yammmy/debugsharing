@@ -19,22 +19,26 @@ puts "Test account created."
 products =[
 
 					{title:"7步给你的商品添加分类",
-          description: "Hi, http://yammy-blog.logdown.com/posts/1425716",
+          description: "Hi, this is a cource.",
+					body: "Hi, please refer to <a href='http://yammy-blog.logdown.com/posts/1425716'>this</a> ",
 					category: "rails",
           image_path: "#{Rails.root}/app/assets/images/dress1.jpg"},
 
 					{title:"10步学会laravel",
-          description: "Hi, http://yammy-blog.logdown.com/posts/1425716",
+          description: "Hi, this is a cource.",
+					body: "Hi, please refer to <a href='http://yammy-blog.logdown.com/posts/1425716'>this</a> ",
 					category: "laravel",
           image_path: "#{Rails.root}/app/assets/images/dress2.jpg"},
 
 					{title:"10步学会ruby",
-          description: "Hi, http://yammy-blog.logdown.com/posts/1425716",
+          description: "Hi, this is a cource.",
+					body: "Hi, please refer to <a href='http://yammy-blog.logdown.com/posts/1425716'>this</a> ",
 					category: "ruby",
           image_path: "#{Rails.root}/app/assets/images/dress3.jpg"},
 
 					{title:"10步学会python",
-          description: "Hi, http://yammy-blog.logdown.com/posts/1425716",
+          description: "Hi, this is a cource.",
+					body: "Hi, please refer to <a href='http://yammy-blog.logdown.com/posts/1425716'>this</a> ",
 					category: "python",
           image_path: "#{Rails.root}/app/assets/images/dress4.jpg"},
 
@@ -43,10 +47,10 @@ products =[
 
 
 
-p1 = Product.create([title:products[0][:title],description:products[0][:description],category:products[0][:category],quantity:rand(3..9) * 100 ,price:rand(0..10),image:open(products[0][:image_path])])
-p2 = Product.create([title:products[1][:title],description:products[1][:description],category:products[1][:category],quantity:rand(3..9) * 100 ,price:rand(0..10),image:open(products[1][:image_path])])
-p3 = Product.create([title:products[2][:title],description:products[2][:description],category:products[2][:category],quantity:rand(3..9) * 100 ,price:rand(0..10),image:open(products[2][:image_path])])
-p4 = Product.create([title:products[3][:title],description:products[3][:description],category:products[3][:category],quantity:rand(3..9) * 100 ,price:rand(0..10),image:open(products[3][:image_path])])
+p1 = Product.create([title:products[0][:title],description:products[0][:description],body:products[0][:body],category:products[0][:category],quantity:rand(3..9) * 100 ,price:rand(0..10),image:open(products[0][:image_path])])
+p2 = Product.create([title:products[1][:title],description:products[1][:description],body:products[1][:body],category:products[1][:category],quantity:rand(3..9) * 100 ,price:rand(0..10),image:open(products[1][:image_path])])
+p3 = Product.create([title:products[2][:title],description:products[2][:description],body:products[2][:body],category:products[2][:category],quantity:rand(3..9) * 100 ,price:rand(0..10),image:open(products[2][:image_path])])
+p4 = Product.create([title:products[3][:title],description:products[3][:description],body:products[3][:body],category:products[3][:category],quantity:rand(3..9) * 100 ,price:rand(0..10),image:open(products[3][:image_path])])
 
 
 puts "Successfully create 4 skill info."

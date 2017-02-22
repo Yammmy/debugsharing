@@ -50,7 +50,6 @@ gem 'will_paginate-bootstrap'
 gem 'letter_opener', group: :development
 gem 'aasm'
 gem 'figaro'
-gem 'fog-aws'
 gem 'fog'
 
 group :development, :test do

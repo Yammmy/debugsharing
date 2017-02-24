@@ -53,6 +53,7 @@ gem 'figaro'
 gem 'fog'
 gem 'rucaptcha'
 gem 'dalli'
+gem 'memcachier'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

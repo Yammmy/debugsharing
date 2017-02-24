@@ -1,16 +1,43 @@
-<h2>Forgot your password?</h2>
 
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
+<div class="container">
+			<div class="row main">
+				<div class="panel-heading">
+           <div class="panel-title text-center">
+           		<h1>Forgot your password?</h1>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+           	</div>
+        </div>
+        <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+				<div class="main-login main-center">
+					<form class="form-horizontal" method="post" action="#">
 
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
-  </div>
-<% end %>
+						<div class="form-group">
+							<div class="cols-sm-10">
+								<div class="input-group">
+                  <%= f.input :email, required: true, autofocus: true  %>
+								</div>
+							</div>
+						</div>
 
-<%= render "devise/shared/links" %>
+						<div class="form-group">
+							<div class="cols-sm-10">
+								<div class="input-group">
+    							<%= rucaptcha_image_tag(alt: 'Captcha') %>
+									<%= rucaptcha_input_tag(class: 'form-control', placeholder: 'Please input Captcha') %>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-actions" style="margin-top: 20px;">
+							<%= f.button :submit, "Send me reset password" ,class: "btn btn-primary btn-block login-button" %>
+						</div>
+						<div class="login-register" style="margin-top: 10px;">
+  	            <small><%= render "devise/shared/links" %></small>
+  	         </div>
+					</form>
+				</div>
+        <% end %>
+
+			</div>
+		</div>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>

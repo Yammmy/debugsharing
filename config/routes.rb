@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
+  mount RuCaptcha::Engine => "/rucaptcha"
 
-  devise_for :users
+  devise_for :users, controllers: {
+    registrations: 'users/registrations',
+    sessions: 'users/sessions',
+    passwords: 'users/passwords'
+  }
+
   root 'welcome#index'
   get '/about' => 'welcome#about'
 

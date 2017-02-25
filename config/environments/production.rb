@@ -110,10 +110,10 @@ Rails.application.configure do
                         :down_retry_delay => 60
                        }
 
-   if Rails.env.production?
-     config.cache_store = :dalli_store
-   else
-     self.cache_store = :mem_cache_store
-   end
+  #  if Rails.env.production?
+  #    config.cache_store = :dalli_store
+  #  else
+  #    self.cache_store = :mem_cache_store
+  #  end
 
 end

@@ -25,6 +25,8 @@ Rails.application.routes.draw do
   resources :products do
     member do
       post :add_to_cart
+      post :collect
+      post :discollect
     end
     collection do
       match 'search' => 'products#search', via: [:get, :post], as: :search
@@ -54,6 +56,7 @@ Rails.application.routes.draw do
 
   namespace :account do
     resources :orders
+    resources :collections
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -60,6 +60,9 @@
                         <li>
                            <%= link_to(content_tag(:i, "My Orders", class: "fa fa-chevron-circle-down"), account_orders_path )%>
                         </li>
+                        <li>
+                           <%= link_to(content_tag(:i, "My Collections", class: "fa fa-star"), account_collections_path )%>
+                        </li>
                        <li>
                           <%= link_to(content_tag(:i, "Logout", class: "fa fa-sign-out"), destroy_user_session_path, method: :delete)%>
                        </li>

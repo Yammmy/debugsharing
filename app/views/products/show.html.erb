@@ -1,29 +1,30 @@
-<div class="row" style="margin-top: 50px;">
-  <div class="pull-left" style="margin-left: 50px; margin-top: 150px;">
-    <% if @product.image.present? %>
-      <%= image_tag(@product.image.medium.url, class: "thumbnail") %>
+<div class="container">
+  <div class="pull-right" style="margin-top:20px;">
+    <% if current_user && current_user.has_collected?(@product) %>
+      <%= link_to("Discollect", discollect_product_path(@product), method: :post, class: "btn btn-info")  %>
     <% else %>
-      <%= image_tag("http://placehold.it/400x400&text=No Pic", class: "thumbnail") %>
+      <%= link_to("Collect", collect_product_path(@product), method: :post, class: "btn btn-info")  %>
     <% end %>
   </div>
-  <div class="pull-right" style="margin-right: 50px;">
+
+  <div class="text-center" >
     <h2> <%= @product.title %> </h2>
     <div style="height:100px;">
       <p>
         <%= @product.description %>
       </p>
     </div>
-    
 
 
-    <div class="col-md-6">
+
+
       <div> Quantity: <%= @product.quantity %> </div><br>
       <div class="product-price"> Price: ￥ <%= @product.price %> </div>
-    </div>
 
-    <div class="col-md-6" >
+
+    <div class="pull-right" >
       <% if @product.quantity.present? && @product.quantity > 0 %>
-        <%= link_to("Add to cart", add_to_cart_product_path(@product),method: :post, :class => "btn btn-primary btn-lg btn-danger") %>
+        <%= link_to("Add to cart", add_to_cart_product_path(@product),method: :post, :class => "btn btn-danger") %>
       <% else %>
         <div class="btn btn-log btn-danger">
           Sorry, the products are all sold out!

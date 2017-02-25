@@ -11,7 +11,15 @@ RuCaptcha.configure do
   # 但如果是 [:null_store, :memory_store, :file_store] 之类的，你可以通过下面的配置项单独给 RuCaptcha 配置 cache_store
 
   if Rails.env.production?
-    config.cache_store = :dalli_store
+    config.cache_store = :dalli_store,
+                        (ENV["MEMCACHIER_SERVERS"] || "").split(","),
+                        {:username => ENV["MEMCACHIER_USERNAME"],
+                         :password => ENV["MEMCACHIER_PASSWORD"],
+                         :failover => true,
+                         :socket_timeout => 1.5,
+                         :socket_failure_delay => 0.2,
+                         :down_retry_delay => 60
+                        }
   else
     self.cache_store = :mem_cache_store
   end

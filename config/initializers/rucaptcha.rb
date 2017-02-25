@@ -1,4 +1,4 @@
-RuCaptcha.configure do
+RuCaptcha.configure do |config|
   # Color style, default: :colorful, allows: [:colorful, :black_white]
   # self.style = :colorful
   # Custom captcha code expire time if you need, default: 2 minutes
@@ -21,6 +21,6 @@ RuCaptcha.configure do
                          :down_retry_delay => 60
                         }
   else
-    self.cache_store = :mem_cache_store
+    config.cache_store = :mem_cache_store
   end
 end

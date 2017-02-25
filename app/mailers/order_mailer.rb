@@ -4,7 +4,7 @@ class OrderMailer < ApplicationMailer
     @user = order.user
     @product_lists = @order.product_lists
 
-    mail(to: @user.email, subject: "[Beautys] thank you for complete this order, this is your product lists #{order.token} ")
+    mail(to: @user.email, subject: "[Debugsharing] thank you for complete this order, this is your product lists #{order.token} ")
   end
 
   def apply_cancell(order)
@@ -12,7 +12,7 @@ class OrderMailer < ApplicationMailer
     @user = order.user
     @product_lists = @order.product_lists
 
-    mail(to: "admin@gmail.com", subject: "[Beautys] User#{order.user.name} pulled a request to cancell order#{order.token}")
+    mail(to: "admin@gmail.com", subject: "[Debugsharing] User#{order.user.name} pulled a request to cancell order#{order.token}")
   end
 
   def notify_ship(order)
@@ -20,7 +20,7 @@ class OrderMailer < ApplicationMailer
     @user = order.user
     @product_lists = @order.product_lists
 
-    mail(to: @user.email, subject: "[Beautys] Your order#{order.token} is shipping!")
+    mail(to: @user.email, subject: "[Debugsharing] Your order#{order.token} is shipping!")
   end
 
   def notify_cancell(order)
@@ -28,6 +28,6 @@ class OrderMailer < ApplicationMailer
     @user = order.user
     @product_lists = @order.product_lists
 
-    mail(to: @user.email, subject: "[Beautys] Your order#{order.token} is cancelled!")
+    mail(to: @user.email, subject: "[Debugsharing] Your order#{order.token} is cancelled!")
   end
 end

@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'info@beautys.com'
+  default from: 'service@debugsharing.com'
   layout 'mailer'
 end

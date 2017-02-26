@@ -8,11 +8,19 @@
           <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
         <% end %>
       <% end %>
-      <%= product.title %>  <br> category: <%= product.category %><br> ￥ <%= product.price %>
+      <%= product.title %>  <br> category: <%= product.category %> ￥ <%= product.price %>
+      <%= link_to like_product_path(product), method: :put do %>
+        <div class="pic-thumbs-up">
+          <i class="fa fa-thumbs-up", style="color: #3468A5;"></i>
+          <%= product.get_upvotes.size %>
+        </div>
+      <% end %>
       <br>
       <br>
       <br>
       <br>
     </div>
+
   <% end %>
+
 </div>

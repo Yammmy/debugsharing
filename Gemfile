@@ -53,6 +53,7 @@ gem 'figaro'
 gem 'fog'
 gem 'rucaptcha'
 gem 'dalli'
+gem 'acts_as_votable'
 
 
 group :development, :test do

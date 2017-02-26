@@ -27,6 +27,7 @@ Rails.application.routes.draw do
       post :add_to_cart
       post :collect
       post :discollect
+      put 'like', to:'products#upvote'
     end
     collection do
       match 'search' => 'products#search', via: [:get, :post], as: :search

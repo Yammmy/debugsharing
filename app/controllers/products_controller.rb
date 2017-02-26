@@ -36,6 +36,12 @@ class ProductsController < ApplicationController
     redirect_to product_path(@product)
   end
 
+  def upvote
+    @product = Product.find(params[:id])
+    @product.upvote_by current_user
+    redirect_to :back
+  end
+
   def add_to_cart
     @product = Product.find(params[:id])
     if !current_cart.products.include?(@product)

@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   before_action :validate_search_key, only: [:search]
+  before_action :authenticate_user!, only: [:collect, :discollect]
 
   def index
     @products = Product.all
@@ -78,7 +79,7 @@ class ProductsController < ApplicationController
 
 
   def search_criteria(query_string)
-    { :title_or_description_cont => query_string }
+    { :title_or_description_or_body_cont => query_string }
   end
 
 end

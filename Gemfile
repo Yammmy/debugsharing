@@ -54,6 +54,7 @@ gem 'fog'
 gem 'rucaptcha'
 gem 'dalli'
 gem 'acts_as_votable'
+gem 'bullet', group: 'development'
 
 
 group :development, :test do
@@ -77,3 +78,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :production do
   gem 'pg'
 end
+
+gem 'rack-mini-profiler', require: false

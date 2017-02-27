@@ -3,37 +3,56 @@
 
   		<ul>
   			<li class="category">
-          <h3>经验分类</h3>
+          <h3>经验分类</h3> <br><br>
         </li>
   			<li><%= link_to "Rails", rails_products_path %></li>
-  			<li><%= link_to "Ruby", ruby_products_path %></li>
+  			<li><%= link_to "Heroku", heroku_products_path %></li>
+        <li><%= link_to "Frontend", frontend_products_path %></li>
+        <li><%= link_to "Backend", backend_products_path %></li>
   		</ul>
 
   </div>
 
   <div id="main_content">
-    <% @products.each do |product| %>
-      <div class="col-sm-4 col-xs-6">
-        <%= link_to product_path(product) do %>
-          <% if product.image.present? %>
-            <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
-          <% else %>
-            <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
+    <div id="pins" class="transitions-enabled">
+      <% @products.each do |product| %>
+        <div class="col-sm-4 col-xs-6 box">
+          <%= link_to product_path(product) do %>
+            <% if product.image.present? %>
+              <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
+            <% else %>
+              <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
+            <% end %>
           <% end %>
-        <% end %>
-        <%= product.title %>  <br> 类别: <%= product.category %> ￥ <%= product.price %>
-        <%= link_to like_product_path(product), method: :put do %>
-          <div class="pic-thumbs-up">
-            <i class="fa fa-thumbs-up", style="color: #3468A5;"></i>
-            <%= product.get_upvotes.size %>
-          </div>
-        <% end %>
-        <br>
-        <br>
-        <br>
-        <br>
-      </div>
+          <%= product.title %>  <br> 类别: <%= product.category %> ￥ <%= product.price %>
+          <%= link_to like_product_path(product), method: :put do %>
+            <div class="pic-thumbs-up">
+              <i class="fa fa-thumbs-up", style="color: #3468A5;"></i>
+              <%= product.get_upvotes.size %>
+            </div>
+          <% end %>
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
 
-    <% end %>
+      <% end %>
+    </div>
   </div>
 </div>
+
+<%= content_for :handwrite_javascript do%>
+  <script>
+    $(function(){
+        var $pins = $('#pins');
+        $pins.imagesLoaded(function(){
+          // $box.fadeIn();
+          $pins.masonry({
+            itemSelector : '.box',
+            isFitWidth: true,
+          });
+        });
+      });
+  </script>
+<% end %>

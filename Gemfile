@@ -55,6 +55,7 @@ gem 'rucaptcha'
 gem 'dalli'
 gem 'acts_as_votable'
 gem 'bullet', group: 'development'
+gem 'masonry-rails'
 
 
 group :development, :test do

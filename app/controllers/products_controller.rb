@@ -64,16 +64,16 @@ class ProductsController < ApplicationController
     @products = Product.where(:category => "rails").paginate(:page => params[:page], :per_page => 5)
   end
 
-  def laravel
-    @products = Product.where(:category => "laravel").paginate(:page => params[:page], :per_page => 5)
+  def heroku
+    @products = Product.where(:category => "heroku").paginate(:page => params[:page], :per_page => 5)
   end
 
-  def ruby
-    @products = Product.where(:category => "ruby").paginate(:page => params[:page], :per_page => 5)
+  def frontend
+    @products = Product.where(:category => "frontend").paginate(:page => params[:page], :per_page => 5)
   end
 
-  def python
-    @products = Product.where(:category => "python").paginate(:page => params[:page], :per_page => 5)
+  def backend
+    @products = Product.where(:category => "backend").paginate(:page => params[:page], :per_page => 5)
   end
 
   protected

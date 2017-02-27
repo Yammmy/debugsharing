@@ -8,7 +8,7 @@
   </div>
 
   <div class="text-center" >
-    <h2> <%= @product.title %> </h2>
+    <h2> <%= @product.title %> </h2> <hr>
     <div style="height:100px;">
       <p class="text-left">
         <%= @product.description %> <br>
@@ -16,8 +16,9 @@
       </p>
     </div>
 
-      <div class="product-price"> Price: ￥ <%= @product.price %> </div>
+    <hr>
 
+      <div class="product-price text-left"> Price: ￥ <%= @product.price %> </div>
 
     <div class="pull-right">
         <%= link_to("我要收入囊中", add_to_cart_product_path(@product),method: :post, :class => "btn btn-danger") %>

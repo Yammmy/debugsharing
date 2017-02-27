@@ -32,9 +32,9 @@ Rails.application.routes.draw do
     collection do
       match 'search' => 'products#search', via: [:get, :post], as: :search
       get :rails
-      get :laravel
-      get :ruby
-      get :python
+      get :heroku
+      get :frontend
+      get :backend
     end
     resources :comments
   end

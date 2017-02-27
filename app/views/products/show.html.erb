@@ -1,34 +1,37 @@
 <div class="container">
   <div class="pull-right" style="margin-top:20px;">
     <% if current_user && current_user.has_collected?(@product) %>
-      <%= link_to("取消收藏", discollect_product_path(@product), method: :post, class: "btn btn-info")  %>
+      <%= link_to("取消收藏", discollect_product_path(@product), method: :post, class: "btn btn-primary")  %>
     <% else %>
-      <%= link_to("收藏", collect_product_path(@product), method: :post, class: "btn btn-info")  %>
+      <%= link_to("收藏", collect_product_path(@product), method: :post, class: "btn btn-primary")  %>
     <% end %>
   </div>
 
   <div class="text-center" >
-    <h2> <%= @product.title %> </h2> <hr>
+    <h2> <%= @product.title %> </h2>
+    <div class="short-line"></div>
     <div style="height:100px;">
       <p class="text-left">
-        <%= @product.description %> <br>
+        <%= @product.description %> <br><br>
         <%= @product.body %>
       </p>
     </div>
 
     <hr>
 
-      <div class="product-price text-left" style="margin-top: 10px;"> Price: ￥ <%= @product.price %> </div>
-    <hr>
-      <div class="col-md-3 ">
+      <div class="product-price text-left"> 价格: ￥ <%= @product.price %> </div>
+      <div class="pull-right">
+          <%= link_to("我要收入囊中", add_to_cart_product_path(@product),method: :post, :class => "btn btn-danger") %>
+      </div>
+      <br>
+      <hr>
+      <div class="pull-left ">
           <p><i class="fa fa-share-alt" aria-hidden="true"></i> 分享 </p>
       </div>
       <div class="col-md-4" style="margin-left:-40px;">
         <%= social_share_button_tag(@product.title) %>
       </div>
-    <div class="pull-right">
-        <%= link_to("我要收入囊中", add_to_cart_product_path(@product),method: :post, :class => "btn btn-danger") %>
-    </div>
+
     <br>
     <br>
     <br>

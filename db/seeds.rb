@@ -18,7 +18,7 @@ puts "Test account created."
 
 products =[
 
-					{title:"将JDStore部署到Heroku，AWS图片不显示？",
+					{title:"部署到Heroku,图片不显示？",
           description: "此经验由@panxiubin助教提供。初次使用aws服务的同学，在将专案部署到heroku之后，常常会遇到图片无法正常显示的问题，此经验可以有效的解决这个问题，有图有真相，灰常容易理解。",
 					body: "具体请戳此logdown链接：<a href='http://yammy-blog.logdown.com/posts/1478529'>this</a> ",
 					category: "heroku",

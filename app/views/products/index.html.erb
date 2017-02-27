@@ -24,9 +24,9 @@
               <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
             <% end %>
           <% end %>
-          <%= product.title %>  <br> 类别: <%= product.category %> ￥ <%= product.price %>
+          <%= product.title %>  <hr> 类别: <%= product.category %> | ￥ <%= product.price %> |
           <%= link_to like_product_path(product), method: :put do %>
-            <div class="pic-thumbs-up">
+            <div class="pic-thumbs-up pull-right" style="margin-right: 10px;">
               <i class="fa fa-thumbs-up", style="color: #3468A5;"></i>
               <%= product.get_upvotes.size %>
             </div>

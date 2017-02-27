@@ -1,18 +1,18 @@
 <div class="row">
   <div class="col-md-12">
 
-    <h2> Shopping Cart </h2>
+    <h2 style="margin-left: 20px;"> 购物车 </h2>
     <div class="pull-right btn btn-lg btn-danger" style="margin-bottom: 20px;">
-      <%= link_to("Clear the cart", clear_cart_carts_path, method: :delete, data: { confirm: "Are you sure to delete the whole cart? "}) %>
+      <%= link_to("清空购物车", clear_cart_carts_path, method: :delete, data: { confirm: "你确定要清空整个购物车吗? "}) %>
     </div>
 
     <table class="table table-bordered">
       <thead>
         <tr>
-          <th colspan="2">Skill List</th>
-          <th>Price</th>
-          <th>Quantity</th>
-          <th>Options</th>
+          <th colspan="2">商品信息</th>
+          <th>单价</th>
+          <th>数量</th>
+          <th>操作选项</th>
         </tr>
       </thead>
       <tbody>
@@ -38,7 +38,7 @@
               <% cart_item = current_cart.cart_items.find_by(product_id: cart_item.product_id)%>
               <%= simple_form_for cart_item, url: cart_item_path(cart_item.product_id) do |f|%>
                 <%= f.select :quantity, 1..cart_item.product.quantity %>
-                <%= f.submit "Update"  %>
+                <%= f.submit "更新"  %>
               <% end %>
             </td>
             <td>
@@ -56,14 +56,14 @@
 
     <div class="total clearfix">
       <span class="pull-right">
-         <span> Total: ¥ <%= render_cart_total_price(current_cart) %> </span>
+         <span> 总计： ¥ <%= render_cart_total_price(current_cart) %> </span>
       </span>
     </div>
 
     <hr>
 
     <div class="checkout clearfix">
-      <%= link_to("Confirm the bill", checkout_carts_path, method: :post, class: "btn btn-lg btn-danger pull-right") %>
+      <%= link_to("确认结账", checkout_carts_path, method: :post, class: "btn btn-lg btn-danger pull-right") %>
     </div>
   </div>
 </div>

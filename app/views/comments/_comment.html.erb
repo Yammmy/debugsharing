@@ -7,7 +7,7 @@
 
 		<div class="btn btn-group btn-default pull-right">
 			<% if comment.user == current_user %>
-				<%= link_to 'Delete', product_comment_path(@product, comment), method: :delete, data: { confirm: 'Are you sure?' } %>
+				<%= link_to '删除评论', product_comment_path(@product, comment), method: :delete, data: { confirm: '你确定要删除你的评论吗？' } %>
 			<% end %>
 		</div>
 	</div>

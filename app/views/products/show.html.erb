@@ -1,35 +1,26 @@
 <div class="container">
   <div class="pull-right" style="margin-top:20px;">
     <% if current_user && current_user.has_collected?(@product) %>
-      <%= link_to("Discollect", discollect_product_path(@product), method: :post, class: "btn btn-info")  %>
+      <%= link_to("取消收藏", discollect_product_path(@product), method: :post, class: "btn btn-info")  %>
     <% else %>
-      <%= link_to("Collect", collect_product_path(@product), method: :post, class: "btn btn-info")  %>
+      <%= link_to("收藏", collect_product_path(@product), method: :post, class: "btn btn-info")  %>
     <% end %>
   </div>
 
   <div class="text-center" >
     <h2> <%= @product.title %> </h2>
     <div style="height:100px;">
-      <p>
-        <%= @product.description %>
+      <p class="text-left">
+        <%= @product.description %> <br>
+        <%= @product.body %>
       </p>
     </div>
 
-
-
-
-      <div> Quantity: <%= @product.quantity %> </div><br>
       <div class="product-price"> Price: ￥ <%= @product.price %> </div>
 
 
-    <div class="pull-right" >
-      <% if @product.quantity.present? && @product.quantity > 0 %>
-        <%= link_to("Add to cart", add_to_cart_product_path(@product),method: :post, :class => "btn btn-danger") %>
-      <% else %>
-        <div class="btn btn-log btn-danger">
-          Sorry, the products are all sold out!
-        </div>
-      <% end %>
+    <div class="pull-right">
+        <%= link_to("我要收入囊中", add_to_cart_product_path(@product),method: :post, :class => "btn btn-danger") %>
     </div>
     <br>
     <br>
@@ -38,9 +29,13 @@
     <br>
     <br>
 
-    <h3 class="comments_title">
-      <%= @product.comments.count %> Comments
-    </h3>
+    <div class="comments_title">
+      <% if @product.comments.blank? %>
+        <h3>这个经验还没有人评论，快来为它添加一个吧！</h3>
+      <% else %>
+        <h3>这个经验已经有<%= @product.comments.count %> 个评论了，快来添加你的评论吧！</h3>
+      <% end %>
+    </div>
     <hr>
     <div id="comments">
       <%= render @product.comments%>

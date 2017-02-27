@@ -12,11 +12,13 @@
  *
  *= require_tree .
  *= require_self
+ *= require social-share-button
  */
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
+ @import "social-share-button";
 
  #page_wrapper {
  		padding-top: 2em;
@@ -187,3 +189,15 @@
  .footer a{
  	color: black;
  }
+
+
+ //--------  social-share-button   ---------
+ $size: 24px;
+
+.social-share-button {
+  .ssb-icon {
+    background-size: $size $size;
+    height: $size;
+    width: $size;
+  }
+}

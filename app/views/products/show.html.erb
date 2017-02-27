@@ -18,8 +18,14 @@
 
     <hr>
 
-      <div class="product-price text-left"> Price: ￥ <%= @product.price %> </div>
-
+      <div class="product-price text-left" style="margin-top: 10px;"> Price: ￥ <%= @product.price %> </div>
+    <hr>
+      <div class="col-md-3 ">
+          <p><i class="fa fa-share-alt" aria-hidden="true"></i> 分享 </p>
+      </div>
+      <div class="col-md-4" style="margin-left:-40px;">
+        <%= social_share_button_tag(@product.title) %>
+      </div>
     <div class="pull-right">
         <%= link_to("我要收入囊中", add_to_cart_product_path(@product),method: :post, :class => "btn btn-danger") %>
     </div>

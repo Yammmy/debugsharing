@@ -21,6 +21,10 @@
 
 //= require bootstrap/carousel
 
+//= require social-share-button
+//= require social-share-button/wechat
+
+
 $(document).ready(function() {
   $('#myCarousel').carousel({interval: 2000});
 

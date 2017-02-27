@@ -18,12 +18,6 @@ puts "Test account created."
 
 products =[
 
-					{title:"两步合并rake db三兄弟命令",
-          description: "此经验由@yammy同学提供。作为我们常用的三兄弟数据命令，一般来说我们需要用三次命令来完成数据的重整，此经验可以把这三个命令合并，从此本地整理数据，只需要一个命令即可快速解决问题。",
-					body: "具体请戳此logdown链接：<a href='http://yammy-blog.logdown.com/posts/1478529'>this</a> ",
-					category: "rails",
-          image_path: "#{Rails.root}/app/assets/images/rails1.jpg"},
-
 					{title:"将JDStore部署到Heroku，AWS图片不显示？",
           description: "此经验由@panxiubin助教提供。初次使用aws服务的同学，在将专案部署到heroku之后，常常会遇到图片无法正常显示的问题，此经验可以有效的解决这个问题，有图有真相，灰常容易理解。",
 					body: "具体请戳此logdown链接：<a href='http://yammy-blog.logdown.com/posts/1478529'>this</a> ",
@@ -41,6 +35,12 @@ products =[
 					body: "具体请戳此全栈营论坛链接：<a href='http://forum.qzy.camp/t/topic/457?source_topic_id=433'>this</a> ",
 					category: "backend",
           image_path: "#{Rails.root}/app/assets/images/backend1.jpg"},
+
+					{title:"两步合并rake db三兄弟命令",
+          description: "此经验由@yammy同学提供。作为我们常用的三兄弟数据命令，一般来说我们需要用三次命令来完成数据的重整，此经验可以把这三个命令合并，从此本地整理数据，只需要一个命令即可快速解决问题。",
+					body: "具体请戳此logdown链接：<a href='http://yammy-blog.logdown.com/posts/1478529'>this</a> ",
+					category: "rails",
+          image_path: "#{Rails.root}/app/assets/images/rails1.jpg"},
 
 ]
 

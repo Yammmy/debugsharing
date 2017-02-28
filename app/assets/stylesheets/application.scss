@@ -359,14 +359,17 @@
 
 //--------  shortline ---------
  .short-line {
-     display: block;
+     
      background: #3468A5;
      border-style: none;
      border-radius: 0;
      margin: 10px auto 50px;
-     margin-left: 500px;
      z-index: 53;
      width: 50px;
      height: 3px;
      position: relative;
+ }
+
+ .product_showpage {
+     padding: 30px 300px 100px;
  }

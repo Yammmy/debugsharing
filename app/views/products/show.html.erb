@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container product_showpage">
   <div class="pull-right" style="margin-top:20px;">
     <% if current_user && current_user.has_collected?(@product) %>
       <%= link_to("取消收藏", discollect_product_path(@product), method: :post, class: "btn btn-primary")  %>
@@ -13,8 +13,21 @@
     <div style="height:100px;">
       <p class="text-left">
         <%= @product.description %> <br><br>
-        <%= @product.body %>
+        <%= @product.body %> <br>
       </p>
+    </div>
+    <br>
+    <div class="text-left">
+      <% if @photos.present? %>
+        <% @photos.each_with_index do |p, index| %>
+          <% if index == 0 %>
+            <%= image_tag p.avatar.thumb.url %>
+          <% end %>
+        <% end %>
+        </div>
+      <% else %>
+          <%= image_tag("http://placehold.it/400x400&text=No Pic", class: "thumbnail") %>
+      <% end %>
     </div>
 
     <hr>
@@ -28,7 +41,7 @@
       <div class="pull-left ">
           <p><i class="fa fa-share-alt" aria-hidden="true"></i> 分享 </p>
       </div>
-      <div class="col-md-4" style="margin-left:-40px;">
+      <div class="col-md-4" style="margin-left: 50px;">
         <%= social_share_button_tag(@product.title) %>
       </div>
 
@@ -38,6 +51,7 @@
     <br>
     <br>
     <br>
+    <hr>
 
     <div class="comments_title">
       <% if @product.comments.blank? %>
@@ -46,7 +60,7 @@
         <h3>这个经验已经有<%= @product.comments.count %> 个评论了，快来添加你的评论吧！</h3>
       <% end %>
     </div>
-    <hr>
+    <div class="short-line"></div>
     <div id="comments">
       <%= render @product.comments%>
 

@@ -1,3 +1,38 @@
-<h2> New Skill</h2>
+<h2> 新增经验 </h2>
 
-<%= render "form" %>
+<%= simple_form_for [:admin, @product] do |f| %>
+
+  <div class="group">
+    <%= f.input :title %>
+  </div>
+
+  <div class="group">
+    <%= f.input :description %>
+  </div>
+
+  <div class="group">
+    <%= f.input :body %>
+  </div>
+
+  <div class="group">
+    <%= f.input :category, :collection => ["rails","heroku", "frontend", "backend"], :selected => "rails" %>
+  </div>
+
+  <div class="group">
+    <%= f.input :quantity %>
+  </div>
+
+  <div class="group">
+    <%= f.input :price %>
+  </div>
+
+  <div class="group">
+    <%= f.label :avatar %> <br>
+    <%= f.file_field :avatar, :multiple => true, name: "photos[avatar][]" %>
+  </div>
+
+  <br>
+
+  <%= f.submit "Submit", data: { disable_with: "Submitting..." }, class: "btn btn-primary" %>
+
+<% end %>

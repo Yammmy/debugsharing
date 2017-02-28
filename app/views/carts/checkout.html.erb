@@ -1,14 +1,14 @@
 <div class="row">
    <div class="col-md-12">
 
-    <h2> Skill List </h2>
+    <h2> 购物明细 </h2>
 
     <table class="table table-bordered">
       <thead>
         <tr>
-          <th width="80%">Product Item</th>
-          <th>Price</th>
-          <th>Quantity</th>
+          <th width="80%">商品明细</th>
+          <th>单价</th>
+          <th>数量</th>
         </tr>
       </thead>
       <tbody>
@@ -34,13 +34,13 @@
 
     <div class="total clearfix">
       <span class="pull-right">
-        Total: ¥ <%= render_cart_total_price(current_cart) %>
+        总计: ¥ <%= render_cart_total_price(current_cart) %>
       </span>
     </div>
 
     <hr>
 
-    <h2> Order List </h2>
+    <h2> 订单资讯</h2>
 
     <div class="order-form">
 
@@ -48,7 +48,7 @@
 
 
 
-          <legend> The One who order</legend>
+          <legend> 订购人 </legend>
           <div class="form-group col-lg-6">
             <%= f.input :billing_name  %>
           </div>
@@ -56,7 +56,7 @@
             <%= f.input :billing_address  %>
           </div>
 
-          <legend> The One who receive </legend>
+          <legend> 收货人 </legend>
           <div class="form-group col-lg-6">
            <%= f.input :shipping_name  %>
           </div>
@@ -66,7 +66,7 @@
 
 
         <div class="checkout">
-          <%= f.submit "Create a order", class: "btn btn-lg btn-danger pull-right" %>
+          <%= f.submit "创建订单", class: "btn btn-lg btn-danger pull-right" %>
         </div>
       <% end %>
 

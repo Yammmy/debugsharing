@@ -5,4 +5,7 @@ class Product < ApplicationRecord
   has_many :members, through: :product_relationships, source: :user
 
   acts_as_votable
+
+  has_many :photos
+  accepts_nested_attributes_for :photos
 end

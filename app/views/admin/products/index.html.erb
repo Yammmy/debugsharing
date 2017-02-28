@@ -1,16 +1,16 @@
-<h2> Skill List </h2>
+<h2> 经验列表 </h2>
 <div class="pull-right" style="padding-bottom: 20px;">
-  <%= link_to("Add new skill", new_admin_product_path, class: "btn btn-primary btn-sm") %>
+  <%= link_to("新增经验", new_admin_product_path, class: "btn btn-primary btn-sm") %>
 </div>
 <table class="table table-bordered">
   <thead>
     <tr>
       <th>#</th>
-      <th width="220">Skill Pic</th>
-      <th>Name</th>
-      <th>Categoty</th>
-      <th>Price</th>
-      <th width="100"> Options</th>
+      <th width="220">商品封面</th>
+      <th>标题</th>
+      <th>分类</th>
+      <th>单价</th>
+      <th width="100"> 操作选项</th>
     </tr>
   </thead>
   <tbody>
@@ -21,15 +21,15 @@
         </td>
         <td>
           <%= link_to product_path(product) do %>
-            <% if product.image.present? %>
-              <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
+            <% if product.photos.present? %>
+              <%= image_tag(product.photos[1].avatar.thumb.url, class: "thumbnail") %>
             <% else %>
               <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
             <% end %>
           <% end %>
         </td>
         <td>
-          <%= product.title %>         
+          <%= product.title %>
         </td>
         <td>
           <%= product.category %>
@@ -38,8 +38,8 @@
           <%= product.price %>
         </td>
         <td>
-          <%= link_to("Edit", edit_admin_product_path(product)) %>
-          <%= link_to("Delete", admin_product_path(product), method: :delete) %>
+          <%= link_to("修改", edit_admin_product_path(product)) %>
+          <%= link_to("删除", admin_product_path(product), method: :delete) %>
         </td>
       </tr>
     <% end %>

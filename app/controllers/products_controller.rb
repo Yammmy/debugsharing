@@ -77,6 +77,10 @@ class ProductsController < ApplicationController
     @products = Product.where(:category => "backend").paginate(:page => params[:page], :per_page => 5)
   end
 
+  def others
+    @products = Product.where(:category => "others").paginate(:page => params[:page], :per_page => 5)
+  end
+
   protected
 
   def validate_search_key

@@ -35,6 +35,7 @@ Rails.application.routes.draw do
       get :heroku
       get :frontend
       get :backend
+      get :others
     end
     resources :comments
   end

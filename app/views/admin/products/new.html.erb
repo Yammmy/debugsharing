@@ -27,6 +27,10 @@
   </div>
 
   <div class="group">
+    <%= f.input :is_hidden %>
+  </div>
+
+  <div class="group">
     <%= f.label :avatar %> <br>
     <%= f.file_field :avatar, :multiple => true, name: "photos[avatar][]" %>
   </div>

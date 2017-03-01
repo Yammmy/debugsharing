@@ -1,4 +1,4 @@
-<h2> 经验列表 </h2>
+<h2 class="text-center"> 经验列表 </h2>
 <div class="pull-right" style="padding-bottom: 20px;">
   <%= link_to("新增经验", new_admin_product_path, class: "btn btn-primary btn-sm") %>
 </div>
@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th>#</th>
-      <th width="220">商品封面</th>
+      <th width="220">题图</th>
       <th>标题</th>
       <th>分类</th>
       <th>单价</th>
@@ -29,7 +29,8 @@
           <% end %>
         </td>
         <td>
-          <%= product.title %>
+          <%= render_product_status(product) %>
+          <%= link_to(product.title, product_path(product)) %>
         </td>
         <td>
           <%= product.category %>
@@ -38,8 +39,13 @@
           <%= product.price %>
         </td>
         <td>
-          <%= link_to("修改", edit_admin_product_path(product)) %>
-          <%= link_to("删除", admin_product_path(product), method: :delete) %>
+          <%= link_to edit_admin_product_path(product), class: "btn btn-xs btn-primary" do %> <i class="fa fa-pencil-square"></i> 修改<% end %> <hr>
+          <%= link_to admin_product_path(product), method: :delete, class: "btn btn-xs btn-primary" do %> <i class="fa fa-trash-o"></i> 删除<% end %> <hr>
+          <% if product.is_hidden %>
+            <%= link_to publish_admin_product_path(product), :method => :post, :class => "btn btn-xs btn-primary" do %> <i class="fa fa-eye"></i> 公开<% end %>
+          <% else %>
+            <%= link_to hide_admin_product_path(product),  :method => :post, :class => "btn btn-xs btn-primary" do %> <i class="fa fa-eye-slash"></i> 隐藏 <% end %>
+          <% end %>
         </td>
       </tr>
     <% end %>

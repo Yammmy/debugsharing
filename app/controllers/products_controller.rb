@@ -3,12 +3,16 @@ class ProductsController < ApplicationController
   before_action :authenticate_user!, only: [:collect, :discollect]
 
   def index
-    @products = Product.all
+    @products = Product.where(:is_hidden => false).order("created_at DESC")
   end
 
   def show
     @product = Product.find(params[:id])
     @photos = @product.photos.all
+    if @product.is_hidden
+      flash[:warning] = "This product has already been archieved"
+      redirect_to root_path
+    end
   end
 
   def collect

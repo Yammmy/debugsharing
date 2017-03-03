@@ -12,9 +12,9 @@ class CommentsController < ApplicationController
     @comment.user = current_user
 
     if @comment.save
-      redirect_to product_path(@product), notice: 'Review was successfully created!'
+      redirect_to product_path(@product), notice: '你已评论成功！'
     else
-      redirect_to product_path(@product), alert: "Comment can't be blank!"
+      redirect_to product_path(@product), alert: "评论不能为空！"
     end
   end
 
@@ -25,7 +25,7 @@ class CommentsController < ApplicationController
     @product = Product.find(params[:product_id])
     @comment = Comment.find(params[:id])
     @comment.destroy
-    redirect_to product_path(@product), alert: "You have deleted the comment successfully"
+    redirect_to product_path(@product), alert: "你已成功删除评论。"
   end
 
   private

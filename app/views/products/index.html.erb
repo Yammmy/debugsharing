@@ -3,13 +3,36 @@
 
   		<ul>
   			<li class="category">
-          <h3>经验分类</h3> <br><br>
+          <h3>热门分类</h3> <br><br>
+          <div class="short-line" style="margin-top: -30px; margin-left: 90px;"></div>
         </li>
-  			<li><%= link_to "Rails", rails_products_path %></li>
-  			<li><%= link_to "Heroku", heroku_products_path %></li>
-        <li><%= link_to "Frontend", frontend_products_path %></li>
-        <li><%= link_to "Backend", backend_products_path %></li>
-        <li><%= link_to "其他", others_products_path %></li>
+        <h4>
+          <a href="/products/rails">
+            <img src='http://blog.flatironschool.com/wp-content/uploads/2015/05/ruby-on-rails.jpg?w=640' width="30px" ; height="30px";>
+            Rails
+            <hr>
+          </a>
+          <a href="/products/heroku">
+            <img src='https://maxcdn.icons8.com/Color/PNG/512/Logos/heroku-512.png' width="30px" ; height="30px";>
+            Heroku
+            <hr>
+          </a>
+          <a href="/products/frontend">
+            <img src='https://image.freepik.com/free-icon/code-optimization_318-49778.jpg' width="30px" ; height="30px";>
+            rontend
+            <hr>
+          </a>
+          <a href="/products/backend">
+            <img src='http://www.bishalbudhapirthi.com/images/backendicon.png' width="30px" ; height="30px";>
+            Backend
+            <hr>
+          </a>
+          <a href="/products/others">
+            <img src='http://oserviso.com/wp-content/uploads/2016/10/OTHERS_ICON-1.jpg' width="110px" ; height="30px";>
+            其他
+            <hr>
+          </a>
+        </h4>
   		</ul>
 
   </div>
@@ -20,7 +43,7 @@
         <div class="col-sm-4 col-xs-6 box">
           <%= link_to product_path(product) do %>
             <% if product.photos.present? %>
-              <%= image_tag(product.photos[1].avatar.thumb.url, class: "thumbnail") %>
+              <%= image_tag(product.photos[0].avatar.thumb.url, class: "thumbnail") %>
             <% else %>
               <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
             <% end %>

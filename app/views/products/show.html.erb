@@ -10,61 +10,75 @@
   <div class="text-center" >
     <h2> <%= @product.title %> </h2>
     <div class="short-line"></div>
-    <div style="height:100px;">
-      <p class="text-left">
-        <%= @product.description %> <br><br>
-        <%= @product.body %> <br>
-      </p>
-    </div>
-    <br>
-    <div class="text-left">
+  </div>
+  <div>
+    <p class="text-left">
+      <%= @product.description %> <br><br>
       <% if @photos.present? %>
         <% @photos.each_with_index do |p, index| %>
-          <% if index == 0 %>
+          <% if index == 1 %>
             <%= image_tag p.avatar.thumb.url %>
           <% end %>
         <% end %>
-        </div>
       <% else %>
-          <%= image_tag("http://placehold.it/400x400&text=No Pic", class: "thumbnail") %>
+          <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
       <% end %>
-    </div>
-
-    <hr>
-
-      <div class="product-price text-left"> 价格: ￥ <%= @product.price %> </div>
-      <div class="pull-right">
-          <%= link_to("我要收入囊中", add_to_cart_product_path(@product),method: :post, :class => "btn btn-danger") %>
-      </div>
-      <br>
+      <!-- <div style="letter-spacing: -8px"> -->
       <hr>
-      <div class="pull-left ">
-          <p><i class="fa fa-share-alt" aria-hidden="true"></i> 分享 </p>
+
+      <%= @product.body %> <br><br>
+      <div class="text-left">
+        <% if @photos.present? %>
+          <% @photos.each_with_index do |p, index| %>
+            <% if index == 2 %>
+              <%= image_tag p.avatar.thumb.url %>
+            <% end %>
+          <% end %>
+        <% else %>
+            <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
+        <% end %>
       </div>
-      <div class="col-md-4" style="margin-left: 50px;">
-        <%= social_share_button_tag(@product.title) %>
-      </div>
+    </p>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <hr>
 
-    <div class="comments_title">
-      <% if @product.comments.blank? %>
-        <h3>这个经验还没有人评论，快来为它添加一个吧！</h3>
-      <% else %>
-        <h3>这个经验已经有<%= @product.comments.count %> 个评论了，快来添加你的评论吧！</h3>
-      <% end %>
-    </div>
-    <div class="short-line"></div>
-    <div id="comments">
-      <%= render @product.comments%>
+  </div>
+  <br>
 
-      <%= render "comments/form"%>
-    </div>
+
+  <hr>
+
+  <div class="product-price text-left"> 价格: ￥ <%= @product.price %> </div>
+  <div class="pull-right">
+      <%= link_to("我要收入囊中", add_to_cart_product_path(@product),method: :post, :class => "btn btn-danger") %>
+  </div>
+  <br>
+  <hr>
+  <div class="pull-left ">
+      <p><i class="fa fa-share-alt" aria-hidden="true"></i> 分享 </p>
+  </div>
+  <div class="col-md-4" style="margin-left: 50px;">
+    <%= social_share_button_tag(@product.title) %>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <hr>
+
+  <div class="comments_title">
+    <% if @product.comments.blank? %>
+      <h3>这个经验还没有人评论，快来为它添加一个吧！</h3>
+    <% else %>
+      <h3>这个经验已经有<%= @product.comments.count %> 个评论了，快来添加你的评论吧！</h3>
+    <% end %>
+  </div>
+  <div class="short-line"></div>
+  <div id="comments">
+    <%= render @product.comments%>
+
+    <%= render "comments/form"%>
   </div>
 </div>

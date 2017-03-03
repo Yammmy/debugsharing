@@ -31,6 +31,14 @@
     margin: 0 -15px 0px;
     min-height: 100%;
 }
+.container-fluid .lp-section-5  {
+    margin: 0 -15px 0px;
+    min-height: 100%;
+}
+.container-fluid .lp-section-6  {
+    margin: 0 -15px 0px;
+    min-height: 100%;
+}
 .container-fluid .lp-section-bottom {
     margin: 0 -15px 0px;
     min-height: 100%;
@@ -206,6 +214,7 @@ body {
 
                 h2 {
                     font-size: 2em;
+                    padding-bottom: 20px;
                 }
 
 
@@ -213,25 +222,25 @@ body {
               display: block;
               border-style: none;
               border-radius: 0;
-              width: 430px;
+              width: 300px;
               position: relative;
-              margin: 20px 0px 0;
+              margin: 20px 50px 20px;
               float: left;
-
-
+              margin-left:25px;
 
                 h3 {
                     font-size: 1.2em;
                     line-height: 28px;
                     margin-top: 20px;
+                    padding-bottom: 20px;
                     color: #333;
                 }
 
                 p {
                     line-height: 24px;
-                    width: 260px;
+                    width: 300px;
                     margin-top: 30px;
-                    margin-left: 20px;
+
                     font-size: 1em;
                     color: #666;
                     text-align: center;
@@ -261,23 +270,24 @@ body {
                 background: #3468A5;
                 border-style: none;
                 border-radius: 0;
-                margin: 10px auto 50px;
+                // margin: 10px auto 50px;
                 z-index: 53;
                 width: 50px;
                 height: 3px;
                 position: relative;
-                margin-bottom: 80px;
+
             }
 
             h2 {
                 font-size: 2em;
                 text-align: center;
-                padding-bottom: 40px;
+                padding-bottom: 20px;
                 letter-spacing: 3px;
             }
 
             .teacher-block-left,
             .teacher-block-right {
+                text-align: left;
                 padding-left: 0;
                 float: none;
                 width: 400px;
@@ -342,7 +352,7 @@ body {
             padding-top: 30px;
             text-align: center;
 
-            .skill-title {
+            .user-title {
                 margin-bottom: 50px;
                 letter-spacing: 3px;
                 text-align: center;
@@ -361,6 +371,53 @@ body {
 
                 h2 {
                     font-size: 2em;
+                    padding-bottom: 20px;
+                }
+                .user-say-left,
+                .user-say-right {
+                    text-align: left;
+                    padding-left: 0;
+                    float: none;
+                    width: 400px;
+                    margin: 0 auto;
+
+                    .top {
+                        margin: 0 auto;
+                        width: 100%;
+
+                        .img {
+                            float: left;
+                            width: 90px;
+                            text-align: center;
+                        }
+
+                        .name {
+                            float: left;
+                            width: auto;
+                            padding: 0 0 0 20px;
+
+                            span {
+                                font-size: 1.15em;
+                                line-height: 22px;
+                                font-weight: bold;
+                            }
+
+                            p {
+                                padding-top: 13px;
+                                font-size: 1em;
+                                line-height: 25px;
+                                color: #666;
+                            }
+                        }
+                    }
+
+                    .talk {
+                        padding-top: 5px;
+                        display: block;
+                        clear: both;
+                        width: 100%;
+                        line-height: 24px;
+                    }
                 }
             }
 
@@ -457,8 +514,67 @@ body {
             -moz-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),color 0.3s cubic-bezier(0, 0, 0, 0),width 0.3s cubic-bezier(0, 0, 0, 0),border-width 0.3s cubic-bezier(0, 0, 0, 0),border-color 0.3s cubic-bezier(0, 0, 0, 0);
             -o-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),color 0.3s cubic-bezier(0, 0, 0, 0),width 0.3s cubic-bezier(0, 0, 0, 0),border-width 0.3s cubic-bezier(0, 0, 0, 0),border-color 0.3s cubic-bezier(0, 0, 0, 0);
             transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),color 0.3s cubic-bezier(0, 0, 0, 0),width 0.3s cubic-bezier(0, 0, 0, 0),border-width 0.3s cubic-bezier(0, 0, 0, 0),border-color 0.3s cubic-bezier(0, 0, 0, 0);
-}
         }
+    }
+
+    //lp-section-6
+    .lp-section-6 {
+        min-width: 100%;
+        height: 550px;
+        display: block;
+        width: 100%;
+        height: 550px;
+        min-width: 960px;
+        background-color: #fff;
+        background-position: center top;
+        background-size: cover;
+        text-align: center;
+
+        .content-6 {
+            width: 100%;
+            height: auto;
+            padding-top: 30px;
+            text-align: center;
+
+            .faq-title {
+                margin-bottom: 50px;
+                letter-spacing: 3px;
+                text-align: center;
+
+                .short-line {
+                    display: block;
+                    background: #3468A5;
+                    border-style: none;
+                    border-radius: 0;
+                    margin: 20px auto 50px;
+                    z-index: 53;
+                    width: 50px;
+                    height: 3px;
+                    position: relative;
+                }
+
+            }
+            .faq-block {
+              padding: auto 50px;
+              margin: 0 50px;
+              height: 400px;
+              width: 1200px;
+              text-align: left;
+                h5 {
+                    text-decoration: underline;
+                    font-weight: bold;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    color: #3468A5;
+                }
+                p {
+                    font-size: 14px !important;
+                }
+            }
+
+        }
+    }
+
 
     //social icons
     .social-icons ul {
@@ -487,45 +603,7 @@ body {
         color: #ffffff;
         background-color: #51c2b9;
     }
-    //contactinfo
-    section {
-        text-align: center;
-        margin-top: 100px;
 
-        .short-line {
-            display: block;
-            background: #3468A5;
-            border-style: none;
-            border-radius: 0;
-            margin: 10px auto 50px;
-            z-index: 53;
-            width: 50px;
-            height: 3px;
-            position: relative;
-        }
-    }
-
-    .contact .vira-card {
-        background-color: #f8f8f8;
-        padding: 35px 0;
-        transition: all 0.3s ease-in-out;
-        margin-bottom: 45px;
-    }
-
-    .contact .vira-card:hover {
-        box-shadow: 0 4px 2px rgba(17, 17, 17, 0.3);
-    }
-
-    .contact .vira-card .vira-card-header {
-        margin-bottom: 15px;
-        font-size: 21px;
-        color: #3468A5;
-    }
-
-    .contact .vira-card .vira-card-content h3 {
-        letter-spacing: 2px;
-        margin-bottom: 45px;
-    }
 
     .contact .vira-card .vira-card-content h3:after {
         top: 40px;

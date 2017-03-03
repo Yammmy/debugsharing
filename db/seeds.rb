@@ -92,19 +92,19 @@ photos = [
 
 Photo.create!(product_id:1,avatar: open(photos[0]))
 Photo.create!(product_id:1,avatar: open(photos[1]))
-Photo.create!(product_id:1,avatar: open("#{Rails.root}/app/assets/images/pay.pic"))
+Photo.create!(product_id:1,avatar: open("http://placehold.it/200x200&text=No Pic"))
 
 Photo.create!(product_id:2,avatar: open(photos[2]))
 Photo.create!(product_id:2,avatar: open(photos[3]))
-Photo.create!(product_id:2,avatar: open("#{Rails.root}/app/assets/images/pay.pic"))
+Photo.create!(product_id:2,avatar: open("http://placehold.it/200x200&text=No Pic"))
 
 Photo.create!(product_id:3,avatar: open(photos[4]))
 Photo.create!(product_id:3,avatar: open(photos[5]))
-Photo.create!(product_id:3,avatar: open("#{Rails.root}/app/assets/images/pay.pic"))
+Photo.create!(product_id:3,avatar: open("http://placehold.it/200x200&text=No Pic"))
 
 Photo.create!(product_id:4,avatar: open(photos[6]))
 Photo.create!(product_id:4,avatar: open(photos[7]))
-Photo.create!(product_id:4,avatar: open("#{Rails.root}/app/assets/images/pay.pic"))
+Photo.create!(product_id:4,avatar: open("http://placehold.it/200x200&text=No Pic"))
 
 Photo.create!(product_id:5,avatar: open(photos[8]))
 Photo.create!(product_id:5,avatar: open(photos[9]))

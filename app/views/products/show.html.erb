@@ -13,11 +13,11 @@
   </div>
   <div>
     <p class="text-left">
-      <%= @product.description.html_safe %> <br><br>
+      简述：<%= raw(@product.description) %> <br><br>
 
       <hr>
 
-      <%= @product.body.html_safe %> <br><br>
+      <%= raw(@product.body) %> <br><br>
       <div class="text-left">
         <% if @photos.present? %>
           <% @photos.each_with_index do |p, index| %>

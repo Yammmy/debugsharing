@@ -1,6 +1,6 @@
 <div class="comments_wrapper clearfix">
 		<div class="pull-left">
-			<h4><%= comment.body.html_safe %></h4>
+			<h4><%= raw(comment.body) %></h4>
 			<p><small>Submitted <strong><%= time_ago_in_words(comment.created_at) %> ago</strong> by <%= comment.user.name %></small></p>
 
 		</div>

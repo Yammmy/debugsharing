@@ -57,6 +57,9 @@ gem 'acts_as_votable'
 gem 'bullet', group: 'development'
 gem 'masonry-rails'
 gem 'social-share-button'
+gem 'therubyracer'
+gem 'omniauth'
+gem 'omniauth-facebook'
 
 
 group :development, :test do

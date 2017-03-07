@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170306130915) do
+ActiveRecord::Schema.define(version: 20170306155100) do
 
   create_table "cart_items", force: :cascade do |t|
     t.integer  "cart_id"
@@ -105,6 +105,12 @@ ActiveRecord::Schema.define(version: 20170306130915) do
     t.boolean  "is_admin",               default: false
     t.string   "provider"
     t.string   "uid"
+    t.datetime "date_of_birth"
+    t.boolean  "is_female",              default: false
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
     t.index ["email", "provider", "uid"], name: "index_users_on_identity", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

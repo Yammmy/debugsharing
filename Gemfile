@@ -60,6 +60,7 @@ gem 'social-share-button'
 gem 'therubyracer'
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'paperclip', '~> 4.1'
 
 
 group :development, :test do

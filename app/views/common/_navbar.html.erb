@@ -41,12 +41,14 @@
                    <%= link_to('<span class="glyphicon glyphicon-user"></span> 注册'.html_safe, new_user_registration_path) %>
                  </button>
                <% else %>
+                 <li class="round-image-50"><%= image_tag(current_user.avatar.url(:thumb)) %></li>
                  <li class="dropdown" style="margin-right: 10px;">
                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                       <i class="fa fa-user"></i> <%= current_user.name %>
                        <b class="caret"></b>
                    </a>
                    <ul class="dropdown-menu">
+                       <li style="margin-left: 20px;"><i class="fa fa-user"></i> <%= current_user.name %></li>
+                       <li role="separator" class="divider"></li>
                        <% if current_user.admin? %>
                           <li>
                             <%= link_to(content_tag(:i, "管理员后台", class: "fa fa-user-circle-o"), admin_products_path ) %>
@@ -55,6 +57,9 @@
                             <%= link_to(content_tag(:i, "所有订单", class: "fa fa-user-circle-o"), admin_orders_path ) %>
                           </li>
                         <% end %>
+                        <li>
+                          <%= link_to(content_tag(:i, "修改资料", class: "fa fa-edit"), edit_user_registration_path ) %>
+                        </li>
                         <li>
                            <%= link_to(content_tag(:i, "我的订单", class: "fa fa-chevron-circle-down"), account_orders_path )%>
                         </li>

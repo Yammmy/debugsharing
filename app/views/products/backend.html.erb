@@ -1,18 +1,85 @@
 <div class="row" style="margin-top: 50px; margin-left: 60px; margin-bottom: 100px;">
-  <% @products.each do |product| %>
-    <div class="col-xs-6 col-md-3">
-      <%= link_to product_path(product) do %>
-        <% if product.image.present? %>
-          <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
-        <% else %>
-          <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
-        <% end %>
+  <div id="sidebar">
+
+  		<ul>
+  			<li class="category">
+          <h3>热门分类</h3> <br><br>
+          <div class="short-line" style="margin-top: -30px; margin-left: 90px;"></div>
+        </li>
+        <h4>
+          <a href="/products/rails">
+            <img src='http://blog.flatironschool.com/wp-content/uploads/2015/05/ruby-on-rails.jpg?w=640' width="30px" ; height="30px";>
+            Rails
+            <hr>
+          </a>
+          <a href="/products/heroku">
+            <img src='https://maxcdn.icons8.com/Color/PNG/512/Logos/heroku-512.png' width="30px" ; height="30px";>
+            Heroku
+            <hr>
+          </a>
+          <a href="/products/frontend">
+            <img src='https://image.freepik.com/free-icon/code-optimization_318-49778.jpg' width="30px" ; height="30px";>
+            Frontend
+            <hr>
+          </a>
+          <a href="/products/backend">
+            <img src='http://www.bishalbudhapirthi.com/images/backendicon.png' width="30px" ; height="30px";>
+            Backend
+            <hr>
+          </a>
+          <a href="/products/others">
+            <img src='http://okr0iw9h2.bkt.clouddn.com/2017-03-06-othersicon-1.jpg' width="119px" ; height="26px";>
+            其他
+            <hr>
+          </a>
+        </h4>
+  		</ul>
+
+  </div>
+
+  <div id="main_content">
+    <div id="pins" class="transitions-enabled">
+      <% @products.each do |product| %>
+        <div class="col-sm-4 col-xs-6 box">
+          <%= link_to product_path(product) do %>
+            <% if product.photos.present? %>
+              <%= image_tag(product.photos[0].avatar.thumb.url, class: "thumbnail") %>
+            <% else %>
+              <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
+            <% end %>
+          <% end %>
+          <%= product.title %>  <hr> 类别: <%= product.category %> | ￥ <%= product.price %> |
+          <%= link_to like_product_path(product), method: :put do %>
+            <div class="pic-thumbs-up pull-right" style="margin-right: 10px;">
+              <i class="fa fa-thumbs-up", style="color: #3468A5;"></i>
+              <%= product.get_upvotes.size %>
+            </div>
+          <% end %>
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
+
       <% end %>
-      <%= product.title %> <br> ￥ <%= product.price %>
-      <br>
-      <br>
-      <br>
-      <br>
     </div>
-  <% end %>
+    <div class="text-center">
+      <%= will_paginate @products, renderer: BootstrapPagination::Rails %>
+    </div>
+  </div>
 </div>
+
+<%= content_for :handwrite_javascript do%>
+  <script>
+    $(function(){
+        var $pins = $('#pins');
+        $pins.imagesLoaded(function(){
+          // $box.fadeIn();
+          $pins.masonry({
+            itemSelector : '.box',
+            isFitWidth: true,
+          });
+        });
+      });
+  </script>
+<% end %>

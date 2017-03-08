@@ -44,8 +44,6 @@ gem 'font-awesome-rails'
 gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
 gem 'mini_magick'
 gem 'airbrake'
-gem 'ransack'
-gem 'seo_helper'
 gem 'will_paginate-bootstrap'
 gem 'letter_opener', group: :development
 gem 'aasm'
@@ -61,7 +59,8 @@ gem 'therubyracer'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'paperclip', '~> 4.1'
-
+gem 'searchkick'
+gem 'jquery-ui-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

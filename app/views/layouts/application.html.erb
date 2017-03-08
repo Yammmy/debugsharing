@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title class="fa fa-bug">Debugsharing</title>
+    <title>Debugsharing</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= csrf_meta_tags %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
@@ -19,6 +20,7 @@
     </div>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="shortcut icon" href="/images/favicon.ico">
     <%= yield :handwrite_javascript %>
 
   </body>

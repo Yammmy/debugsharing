@@ -1,9 +1,9 @@
 class ProductsController < ApplicationController
-  before_action :validate_search_key, only: [:search]
+
   before_action :authenticate_user!, only: [:collect, :discollect]
 
   def index
-    @products = Product.where(:is_hidden => false).order("created_at DESC")
+    @products = Product.where(:is_hidden => false).order("created_at DESC").paginate(page: params[:page], per_page: 16)
   end
 
   def show
@@ -59,10 +59,15 @@ class ProductsController < ApplicationController
   end
 
   def search
-    if @query_string.present?
-      search_result = Product.ransack(@search_criteria).result(:distinct => true)
-      @products = search_result.paginate(:page => params[:page], :per_page => 20 )
+    if params[:search].present?
+      @products = Product.search(params[:search], fields:["title", "description"])
+    else
+      @products = Product.where(:is_hidden => false).order("created_at DESC").paginate(page: params[:page], per_page: 16)
     end
+  end
+
+  def autocomplete
+    render json: Product.search(params[:term], fields: [{title: :text_start}]).map(&:title)
   end
 
   def rails
@@ -85,16 +90,6 @@ class ProductsController < ApplicationController
     @products = Product.where(:category => "others").paginate(:page => params[:page], :per_page => 5)
   end
 
-  protected
 
-  def validate_search_key
-    @query_string = params[:q].gsub(/\\|\'|\/|\?/, "") if params[:q].present?
-    @search_criteria = search_criteria(@query_string)
-  end
-
-
-  def search_criteria(query_string)
-    { :title_or_description_or_body_cont => query_string }
-  end
 
 end

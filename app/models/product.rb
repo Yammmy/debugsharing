@@ -1,6 +1,8 @@
 class Product < ApplicationRecord
+  searchkick text_start: [:title]
+
   validates :title, presence: true
-  
+
   mount_uploader :image, ImageUploader
   has_many :comments, dependent: :destroy
   has_many :product_relationships
@@ -19,5 +21,12 @@ class Product < ApplicationRecord
   def hide!
     self.is_hidden = true
     self.save
+  end
+
+  def search_data
+    {
+        title: title,
+        description: description,
+    }
   end
 end

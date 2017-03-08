@@ -62,8 +62,10 @@
   <div class="comments_title">
     <% if @product.comments.blank? %>
       <h3>这个经验还没有人评论，快来为它添加一个吧！</h3>
+      <p>注：此评论支持html语法。</p>
     <% else %>
       <h3>这个经验已经有<%= @product.comments.count %> 个评论了，快来添加你的评论吧！</h3>
+      <p>注：此评论支持html语法。</p>
     <% end %>
   </div>
   <div class="short-line"></div>

@@ -33,7 +33,8 @@ Rails.application.routes.draw do
       put 'like', to:'products#upvote'
     end
     collection do
-      match 'search' => 'products#search', via: [:get, :post], as: :search
+      get :search
+      get :autocomplete
       get :rails
       get :heroku
       get :frontend

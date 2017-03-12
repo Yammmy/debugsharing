@@ -61,6 +61,7 @@ gem 'omniauth-facebook'
 gem 'paperclip', '~> 4.1'
 gem 'searchkick'
 gem 'jquery-ui-rails'
+gem "rails-erd"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

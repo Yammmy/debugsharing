@@ -3,7 +3,7 @@ class ProductsController < ApplicationController
   before_action :authenticate_user!, only: [:collect, :discollect]
 
   def index
-    @products = Product.where(:is_hidden => false).order("created_at DESC").paginate(page: params[:page], per_page: 16)
+    @products = Product.includes(:photos).where(:is_hidden => false).order("created_at DESC").paginate(page: params[:page], per_page: 16)
   end
 
   def show

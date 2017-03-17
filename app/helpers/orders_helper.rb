@@ -6,4 +6,7 @@ module OrdersHelper
       "Not paid yet"
     end
   end
+  def render_order_created_time(order)
+    order.created_at.to_s(:long)
+  end
 end

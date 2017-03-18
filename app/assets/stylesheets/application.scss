@@ -93,9 +93,8 @@
 
  //--------  navbar   ---------
  .navbar-default {
-   background-color: #ffffff;
-   border-color: #ffffff;
-   margin-bottom: 10px;
+   border-bottom-color: #d6dce0;
+   margin-bottom: 0;
  }
 
  .navbar-default .navbar-brand {
@@ -142,7 +141,7 @@
 
 
  .form-group{
- 	margin-bottom: 0px;
+ 	margin-bottom: 0;
   margin-top: 5px;
  }
 
@@ -159,9 +158,9 @@
    -moz-border-radius: 2px;
    -webkit-border-radius: 2px;
    border-radius: 2px;
-   -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+   -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+   -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 
  }
 
@@ -355,7 +354,7 @@
  	  width: 225px;
  	  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
  	  text-align: center;
-    padding: 0px;
+    padding: 0;
  	  img {
  	  	max-width: 100%;
  	  	height: auto;

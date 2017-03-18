@@ -1,1 +1,77 @@
-<%= render "form" %>
+<div class="container product_showpage">
+  <div class="pull-right" style="margin-top:20px;">
+    <% if current_user && current_user.has_collected?(@product) %>
+      <%= link_to("取消收藏", discollect_product_path(@product), method: :post, class: "btn btn-primary")  %>
+    <% else %>
+      <%= link_to("收藏", collect_product_path(@product), method: :post, class: "btn btn-primary")  %>
+    <% end %>
+  </div>
+
+  <div class="text-center" >
+    <h2> <%= @product.title %> </h2>
+    <div class="short-line"></div>
+  </div>
+  <div>
+    <p class="text-left">
+      简述：<%= raw(@product.description) %> <br><br>
+
+      <hr>
+
+      <%= raw(@product.body) %> <br><br>
+      <div class="text-left">
+        <% if @photos.present? %>
+          <% @photos.each_with_index do |p, index| %>
+            <% if index == 1 %>
+              <%= image_tag p.avatar.thumb.url %>
+            <% end %>
+          <% end %>
+        <% else %>
+            <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
+        <% end %>
+      </div>
+    </p>
+
+
+  </div>
+  <br>
+
+
+  <hr>
+
+  <div class="product-price text-left"> 价格: ￥ <%= @product.price %> </div>
+  <div class="pull-right">
+      <%= link_to("我要收入囊中", add_to_cart_product_path(@product),method: :post, :class => "btn btn-danger") %>
+  </div>
+  <br>
+  <hr>
+  <div class="pull-left ">
+      <p><i class="fa fa-share-alt" aria-hidden="true"></i> 分享 </p>
+  </div>
+  <div class="col-md-4" style="margin-left: 50px;">
+    <%= social_share_button_tag(@product.title) %>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <hr>
+
+  <div class="comments_title">
+    <% if @product.comments.blank? %>
+      <h3>这个经验还没有人评论，快来为它添加一个吧！</h3>
+      <p>注：此评论支持html语法。</p>
+    <% else %>
+      <h3>这个经验已经有<%= @product.comments.count %> 个评论了，快来添加你的评论吧！</h3>
+      <p>注：此评论支持html语法。</p>
+    <% end %>
+  </div>
+  <div class="short-line"></div>
+  <div id="comments">
+    <%= render @product.comments%>
+
+    <%= render "comments/form"%>
+  </div>
+</div>

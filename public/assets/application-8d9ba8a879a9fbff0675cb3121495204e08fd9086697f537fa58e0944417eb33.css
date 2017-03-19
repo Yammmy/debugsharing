@@ -35,6 +35,1759 @@
        -o-transition-property: none;
           transition-property: none;
 }
+.social-share-button .ssb-icon {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+.social-share-button .ssb-twitter {
+  background-image: url(/assets/social-share-button/twitter-7b64ce0117a85c5d52ed45c27707af61d9b0e0d590284baa287cfe87867b9ae1.svg);
+}
+
+.social-share-button .ssb-facebook {
+  background-image: url(/assets/social-share-button/facebook-03210e1663ee772e93ed5d344cdb36657b68342821aaebe982f2f984915990b3.svg);
+}
+
+.social-share-button .ssb-google_bookmark {
+  background-image: url(/assets/social-share-button/google_bookmark-bb4c960c0421cb7dce602d10e744692bcc1c54f323410f4965d508f96e2255ce.svg);
+}
+
+.social-share-button .ssb-google_plus {
+  background-image: url(/assets/social-share-button/google_plus-50c049fbb29cd3346f1bf9349017b644bcd00a53b56bd156728850f57bd85c0a.svg);
+}
+
+.social-share-button .ssb-weibo {
+  background-image: url(/assets/social-share-button/weibo-a345a6ca554e6f388da9eb35746bb0425cb018c16408ba82852c66d375245d6f.svg);
+}
+
+.social-share-button .ssb-qq {
+  background-image: url(/assets/social-share-button/qq-4dbae8223fc7823f6d73bc7fbe113eb894f4c174ec3ae93103ca382c78a2bf67.svg);
+}
+
+.social-share-button .ssb-delicious {
+  background-image: url(/assets/social-share-button/delicious-0c55f72f821aae5352691f13eb64bf3435573e2169d0720477ed367b2f1ed28e.svg);
+}
+
+.social-share-button .ssb-linkedin {
+  background-image: url(/assets/social-share-button/linkedin-b7fd42895b291003c444a9c2acf867ea813671e0b725a5d7c05dbb13f5c0fdd3.svg);
+}
+
+.social-share-button .ssb-tumblr {
+  background-image: url(/assets/social-share-button/tumblr-330a37f93cce7c27a750188d0bfdbed3a22f566b807e64d21131dcdc94e08ec3.svg);
+}
+
+.social-share-button .ssb-pinterest {
+  background-image: url(/assets/social-share-button/pinterest-86203d156197cce4087fee058b920d275c535df5fd59d8caa83da0ef41d1ec7f.svg);
+}
+
+.social-share-button .ssb-douban {
+  background-image: url(/assets/social-share-button/douban-46298c27e3bc6d59951c0bbc464339a5ba1b44e3b25b571874f1baacd7af2495.svg);
+}
+
+.social-share-button .ssb-wechat {
+  background-image: url(/assets/social-share-button/wechat-d8852cc3396a7a53eba39595d2e9f638c93a34ab1a0f41bae4ff391b63815f56.svg);
+}
+
+.social-share-button .ssb-vkontakte {
+  background-image: url(/assets/social-share-button/vkontakte-0c2b68277fade991d74efcbdb6f7b359a35e65156cbada9625a3fe8f73151c14.svg);
+}
+
+.social-share-button .ssb-xing {
+  background-image: url(/assets/social-share-button/xing-0ebccb4042c8c7220e471c4f569df2bf27da227db425525819b6848c86a1603e.svg);
+}
+
+.social-share-button .ssb-email {
+  background-image: url(/assets/social-share-button/email-7067143cbe69d9d8cf25e67fda1a315d133c2b79074a09088bd712cc5c81135d.svg);
+}
+
+.social-share-button .ssb-reddit {
+  background-image: url(/assets/social-share-button/reddit-f5fc462f44dbeff78983b3b64cb69b6c777a22906767bdb0b283014ac79b37de.svg);
+}
+
+.social-share-button .ssb-hacker_news {
+  background-image: url(/assets/social-share-button/hacker_news-d89b13fec49355a787389a776f2e03a0a38314abf93777b8865f8c5f146eaf8d.svg);
+}
+
+.ss-wechat-dialog {
+  width: 300px;
+  position: fixed;
+  background: #fff;
+  padding: 15px;
+  border-radius: 3px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  z-index: 11001;
+  font-size: 14px;
+  line-height: 1.2em;
+}
+
+.ss-wechat-dialog .wechat-popup-header {
+  font-weight: bold;
+}
+
+.ss-wechat-dialog .wechat-dialog-qr {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.ss-wechat-dialog .wechat-popup-close {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #999;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.ss-wechat-dialog .wechat-popup-footer {
+  text-align: left;
+  line-height: 22px;
+  color: #666;
+}
+/*!
+ * jQuery UI CSS Framework 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/category/theming/
+ *
+ * To view and modify this theme, visit http://jqueryui.com/themeroller/
+ */
+
+/*
+
+
+
+
+
+
+ */
+
+
+
+/* Component containers
+----------------------------------*/
+
+.ui-widget {
+	font-family: Arial,Helvetica,sans-serif/*{ffDefault}*/;
+	font-size: 1em/*{fsDefault}*/;
+}
+.ui-widget .ui-widget {
+	font-size: 1em;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+	font-family: Arial,Helvetica,sans-serif/*{ffDefault}*/;
+	font-size: 1em;
+}
+.ui-widget.ui-widget-content {
+	border: 1px solid #c5c5c5/*{borderColorDefault}*/;
+}
+.ui-widget-content {
+	border: 1px solid #dddddd/*{borderColorContent}*/;
+	background: #ffffff/*{bgColorContent}*/ /*{bgImgUrlContent}*/ /*{bgContentXPos}*/ /*{bgContentYPos}*/ /*{bgContentRepeat}*/;
+	color: #333333/*{fcContent}*/;
+}
+.ui-widget-content a {
+	color: #333333/*{fcContent}*/;
+}
+.ui-widget-header {
+	border: 1px solid #dddddd/*{borderColorHeader}*/;
+	background: #e9e9e9/*{bgColorHeader}*/ /*{bgImgUrlHeader}*/ /*{bgHeaderXPos}*/ /*{bgHeaderYPos}*/ /*{bgHeaderRepeat}*/;
+	color: #333333/*{fcHeader}*/;
+	font-weight: bold;
+}
+.ui-widget-header a {
+	color: #333333/*{fcHeader}*/;
+}
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+
+/* We use html here because we need a greater specificity to make sure disabled
+works properly when clicked or hovered */
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+	border: 1px solid #c5c5c5/*{borderColorDefault}*/;
+	background: #f6f6f6/*{bgColorDefault}*/ /*{bgImgUrlDefault}*/ /*{bgDefaultXPos}*/ /*{bgDefaultYPos}*/ /*{bgDefaultRepeat}*/;
+	font-weight: normal/*{fwDefault}*/;
+	color: #454545/*{fcDefault}*/;
+}
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited,
+a.ui-button,
+a:link.ui-button,
+a:visited.ui-button,
+.ui-button {
+	color: #454545/*{fcDefault}*/;
+	text-decoration: none;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
+	border: 1px solid #cccccc/*{borderColorHover}*/;
+	background: #ededed/*{bgColorHover}*/ /*{bgImgUrlHover}*/ /*{bgHoverXPos}*/ /*{bgHoverYPos}*/ /*{bgHoverRepeat}*/;
+	font-weight: normal/*{fwDefault}*/;
+	color: #2b2b2b/*{fcHover}*/;
+}
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited,
+.ui-state-focus a,
+.ui-state-focus a:hover,
+.ui-state-focus a:link,
+.ui-state-focus a:visited,
+a.ui-button:hover,
+a.ui-button:focus {
+	color: #2b2b2b/*{fcHover}*/;
+	text-decoration: none;
+}
+
+.ui-visual-focus {
+	box-shadow: 0 0 3px 1px rgb(94, 158, 214);
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+	border: 1px solid #003eff/*{borderColorActive}*/;
+	background: #007fff/*{bgColorActive}*/ /*{bgImgUrlActive}*/ /*{bgActiveXPos}*/ /*{bgActiveYPos}*/ /*{bgActiveRepeat}*/;
+	font-weight: normal/*{fwDefault}*/;
+	color: #ffffff/*{fcActive}*/;
+}
+.ui-icon-background,
+.ui-state-active .ui-icon-background {
+	border: #003eff/*{borderColorActive}*/;
+	background-color: #ffffff/*{fcActive}*/;
+}
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+	color: #ffffff/*{fcActive}*/;
+	text-decoration: none;
+}
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+	border: 1px solid #dad55e/*{borderColorHighlight}*/;
+	background: #fffa90/*{bgColorHighlight}*/ /*{bgImgUrlHighlight}*/ /*{bgHighlightXPos}*/ /*{bgHighlightYPos}*/ /*{bgHighlightRepeat}*/;
+	color: #777620/*{fcHighlight}*/;
+}
+.ui-state-checked {
+	border: 1px solid #dad55e/*{borderColorHighlight}*/;
+	background: #fffa90/*{bgColorHighlight}*/;
+}
+.ui-state-highlight a,
+.ui-widget-content .ui-state-highlight a,
+.ui-widget-header .ui-state-highlight a {
+	color: #777620/*{fcHighlight}*/;
+}
+.ui-state-error,
+.ui-widget-content .ui-state-error,
+.ui-widget-header .ui-state-error {
+	border: 1px solid #f1a899/*{borderColorError}*/;
+	background: #fddfdf/*{bgColorError}*/ /*{bgImgUrlError}*/ /*{bgErrorXPos}*/ /*{bgErrorYPos}*/ /*{bgErrorRepeat}*/;
+	color: #5f3f3f/*{fcError}*/;
+}
+.ui-state-error a,
+.ui-widget-content .ui-state-error a,
+.ui-widget-header .ui-state-error a {
+	color: #5f3f3f/*{fcError}*/;
+}
+.ui-state-error-text,
+.ui-widget-content .ui-state-error-text,
+.ui-widget-header .ui-state-error-text {
+	color: #5f3f3f/*{fcError}*/;
+}
+.ui-priority-primary,
+.ui-widget-content .ui-priority-primary,
+.ui-widget-header .ui-priority-primary {
+	font-weight: bold;
+}
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary {
+	opacity: .7;
+	filter:Alpha(Opacity=70); /* support: IE8 */
+	font-weight: normal;
+}
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+	opacity: .35;
+	filter:Alpha(Opacity=35); /* support: IE8 */
+	background-image: none;
+}
+.ui-state-disabled .ui-icon {
+	filter:Alpha(Opacity=35); /* support: IE8 - See #6059 */
+}
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+	width: 16px;
+	height: 16px;
+}
+.ui-icon,
+.ui-widget-content .ui-icon {
+	background-image: url(/assets/jquery-ui/ui-icons_444444_256x240-31d988765b4e6f56553c29588c500381dc3e6f0aa2980c8212202e5644aefd5d.png)/*{iconsContent}*/;
+}
+.ui-widget-header .ui-icon {
+	background-image: url(/assets/jquery-ui/ui-icons_444444_256x240-31d988765b4e6f56553c29588c500381dc3e6f0aa2980c8212202e5644aefd5d.png)/*{iconsHeader}*/;
+}
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon,
+.ui-button:hover .ui-icon,
+.ui-button:focus .ui-icon {
+	background-image: url(/assets/jquery-ui/ui-icons_555555_256x240-32175261daee76c82bb0edf0eea16a56421866fbc31e94f3c1d570aa114502f5.png)/*{iconsHover}*/;
+}
+.ui-state-active .ui-icon,
+.ui-button:active .ui-icon {
+	background-image: url(/assets/jquery-ui/ui-icons_ffffff_256x240-350df1b7131037de20e83c5c0f3a41a770d2ac48b5762ea772b3f4a8a7b9d47a.png)/*{iconsActive}*/;
+}
+.ui-state-highlight .ui-icon,
+.ui-button .ui-state-highlight.ui-icon {
+	background-image: url(/assets/jquery-ui/ui-icons_777620_256x240-0b020fc6e696d88d296e7bb1f61f1eb2ad827848e2c7382a4c3e0999e702dd9b.png)/*{iconsHighlight}*/;
+}
+.ui-state-error .ui-icon,
+.ui-state-error-text .ui-icon {
+	background-image: url(/assets/jquery-ui/ui-icons_cc0000_256x240-40985a64b4d5dd213fba27fcd862a1bd1b337a97674f6ff0b9ec20abcee4bc69.png)/*{iconsError}*/;
+}
+.ui-button .ui-icon {
+	background-image: url(/assets/jquery-ui/ui-icons_777777_256x240-faf32007ae120c302213557626e660dd10e711c5dd4f1113d35f26dc05b78d2f.png)/*{iconsDefault}*/;
+}
+
+/* positioning */
+.ui-icon-blank { background-position: 16px 16px; }
+.ui-icon-caret-1-n { background-position: 0 0; }
+.ui-icon-caret-1-ne { background-position: -16px 0; }
+.ui-icon-caret-1-e { background-position: -32px 0; }
+.ui-icon-caret-1-se { background-position: -48px 0; }
+.ui-icon-caret-1-s { background-position: -65px 0; }
+.ui-icon-caret-1-sw { background-position: -80px 0; }
+.ui-icon-caret-1-w { background-position: -96px 0; }
+.ui-icon-caret-1-nw { background-position: -112px 0; }
+.ui-icon-caret-2-n-s { background-position: -128px 0; }
+.ui-icon-caret-2-e-w { background-position: -144px 0; }
+.ui-icon-triangle-1-n { background-position: 0 -16px; }
+.ui-icon-triangle-1-ne { background-position: -16px -16px; }
+.ui-icon-triangle-1-e { background-position: -32px -16px; }
+.ui-icon-triangle-1-se { background-position: -48px -16px; }
+.ui-icon-triangle-1-s { background-position: -65px -16px; }
+.ui-icon-triangle-1-sw { background-position: -80px -16px; }
+.ui-icon-triangle-1-w { background-position: -96px -16px; }
+.ui-icon-triangle-1-nw { background-position: -112px -16px; }
+.ui-icon-triangle-2-n-s { background-position: -128px -16px; }
+.ui-icon-triangle-2-e-w { background-position: -144px -16px; }
+.ui-icon-arrow-1-n { background-position: 0 -32px; }
+.ui-icon-arrow-1-ne { background-position: -16px -32px; }
+.ui-icon-arrow-1-e { background-position: -32px -32px; }
+.ui-icon-arrow-1-se { background-position: -48px -32px; }
+.ui-icon-arrow-1-s { background-position: -65px -32px; }
+.ui-icon-arrow-1-sw { background-position: -80px -32px; }
+.ui-icon-arrow-1-w { background-position: -96px -32px; }
+.ui-icon-arrow-1-nw { background-position: -112px -32px; }
+.ui-icon-arrow-2-n-s { background-position: -128px -32px; }
+.ui-icon-arrow-2-ne-sw { background-position: -144px -32px; }
+.ui-icon-arrow-2-e-w { background-position: -160px -32px; }
+.ui-icon-arrow-2-se-nw { background-position: -176px -32px; }
+.ui-icon-arrowstop-1-n { background-position: -192px -32px; }
+.ui-icon-arrowstop-1-e { background-position: -208px -32px; }
+.ui-icon-arrowstop-1-s { background-position: -224px -32px; }
+.ui-icon-arrowstop-1-w { background-position: -240px -32px; }
+.ui-icon-arrowthick-1-n { background-position: 1px -48px; }
+.ui-icon-arrowthick-1-ne { background-position: -16px -48px; }
+.ui-icon-arrowthick-1-e { background-position: -32px -48px; }
+.ui-icon-arrowthick-1-se { background-position: -48px -48px; }
+.ui-icon-arrowthick-1-s { background-position: -64px -48px; }
+.ui-icon-arrowthick-1-sw { background-position: -80px -48px; }
+.ui-icon-arrowthick-1-w { background-position: -96px -48px; }
+.ui-icon-arrowthick-1-nw { background-position: -112px -48px; }
+.ui-icon-arrowthick-2-n-s { background-position: -128px -48px; }
+.ui-icon-arrowthick-2-ne-sw { background-position: -144px -48px; }
+.ui-icon-arrowthick-2-e-w { background-position: -160px -48px; }
+.ui-icon-arrowthick-2-se-nw { background-position: -176px -48px; }
+.ui-icon-arrowthickstop-1-n { background-position: -192px -48px; }
+.ui-icon-arrowthickstop-1-e { background-position: -208px -48px; }
+.ui-icon-arrowthickstop-1-s { background-position: -224px -48px; }
+.ui-icon-arrowthickstop-1-w { background-position: -240px -48px; }
+.ui-icon-arrowreturnthick-1-w { background-position: 0 -64px; }
+.ui-icon-arrowreturnthick-1-n { background-position: -16px -64px; }
+.ui-icon-arrowreturnthick-1-e { background-position: -32px -64px; }
+.ui-icon-arrowreturnthick-1-s { background-position: -48px -64px; }
+.ui-icon-arrowreturn-1-w { background-position: -64px -64px; }
+.ui-icon-arrowreturn-1-n { background-position: -80px -64px; }
+.ui-icon-arrowreturn-1-e { background-position: -96px -64px; }
+.ui-icon-arrowreturn-1-s { background-position: -112px -64px; }
+.ui-icon-arrowrefresh-1-w { background-position: -128px -64px; }
+.ui-icon-arrowrefresh-1-n { background-position: -144px -64px; }
+.ui-icon-arrowrefresh-1-e { background-position: -160px -64px; }
+.ui-icon-arrowrefresh-1-s { background-position: -176px -64px; }
+.ui-icon-arrow-4 { background-position: 0 -80px; }
+.ui-icon-arrow-4-diag { background-position: -16px -80px; }
+.ui-icon-extlink { background-position: -32px -80px; }
+.ui-icon-newwin { background-position: -48px -80px; }
+.ui-icon-refresh { background-position: -64px -80px; }
+.ui-icon-shuffle { background-position: -80px -80px; }
+.ui-icon-transfer-e-w { background-position: -96px -80px; }
+.ui-icon-transferthick-e-w { background-position: -112px -80px; }
+.ui-icon-folder-collapsed { background-position: 0 -96px; }
+.ui-icon-folder-open { background-position: -16px -96px; }
+.ui-icon-document { background-position: -32px -96px; }
+.ui-icon-document-b { background-position: -48px -96px; }
+.ui-icon-note { background-position: -64px -96px; }
+.ui-icon-mail-closed { background-position: -80px -96px; }
+.ui-icon-mail-open { background-position: -96px -96px; }
+.ui-icon-suitcase { background-position: -112px -96px; }
+.ui-icon-comment { background-position: -128px -96px; }
+.ui-icon-person { background-position: -144px -96px; }
+.ui-icon-print { background-position: -160px -96px; }
+.ui-icon-trash { background-position: -176px -96px; }
+.ui-icon-locked { background-position: -192px -96px; }
+.ui-icon-unlocked { background-position: -208px -96px; }
+.ui-icon-bookmark { background-position: -224px -96px; }
+.ui-icon-tag { background-position: -240px -96px; }
+.ui-icon-home { background-position: 0 -112px; }
+.ui-icon-flag { background-position: -16px -112px; }
+.ui-icon-calendar { background-position: -32px -112px; }
+.ui-icon-cart { background-position: -48px -112px; }
+.ui-icon-pencil { background-position: -64px -112px; }
+.ui-icon-clock { background-position: -80px -112px; }
+.ui-icon-disk { background-position: -96px -112px; }
+.ui-icon-calculator { background-position: -112px -112px; }
+.ui-icon-zoomin { background-position: -128px -112px; }
+.ui-icon-zoomout { background-position: -144px -112px; }
+.ui-icon-search { background-position: -160px -112px; }
+.ui-icon-wrench { background-position: -176px -112px; }
+.ui-icon-gear { background-position: -192px -112px; }
+.ui-icon-heart { background-position: -208px -112px; }
+.ui-icon-star { background-position: -224px -112px; }
+.ui-icon-link { background-position: -240px -112px; }
+.ui-icon-cancel { background-position: 0 -128px; }
+.ui-icon-plus { background-position: -16px -128px; }
+.ui-icon-plusthick { background-position: -32px -128px; }
+.ui-icon-minus { background-position: -48px -128px; }
+.ui-icon-minusthick { background-position: -64px -128px; }
+.ui-icon-close { background-position: -80px -128px; }
+.ui-icon-closethick { background-position: -96px -128px; }
+.ui-icon-key { background-position: -112px -128px; }
+.ui-icon-lightbulb { background-position: -128px -128px; }
+.ui-icon-scissors { background-position: -144px -128px; }
+.ui-icon-clipboard { background-position: -160px -128px; }
+.ui-icon-copy { background-position: -176px -128px; }
+.ui-icon-contact { background-position: -192px -128px; }
+.ui-icon-image { background-position: -208px -128px; }
+.ui-icon-video { background-position: -224px -128px; }
+.ui-icon-script { background-position: -240px -128px; }
+.ui-icon-alert { background-position: 0 -144px; }
+.ui-icon-info { background-position: -16px -144px; }
+.ui-icon-notice { background-position: -32px -144px; }
+.ui-icon-help { background-position: -48px -144px; }
+.ui-icon-check { background-position: -64px -144px; }
+.ui-icon-bullet { background-position: -80px -144px; }
+.ui-icon-radio-on { background-position: -96px -144px; }
+.ui-icon-radio-off { background-position: -112px -144px; }
+.ui-icon-pin-w { background-position: -128px -144px; }
+.ui-icon-pin-s { background-position: -144px -144px; }
+.ui-icon-play { background-position: 0 -160px; }
+.ui-icon-pause { background-position: -16px -160px; }
+.ui-icon-seek-next { background-position: -32px -160px; }
+.ui-icon-seek-prev { background-position: -48px -160px; }
+.ui-icon-seek-end { background-position: -64px -160px; }
+.ui-icon-seek-start { background-position: -80px -160px; }
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+.ui-icon-seek-first { background-position: -80px -160px; }
+.ui-icon-stop { background-position: -96px -160px; }
+.ui-icon-eject { background-position: -112px -160px; }
+.ui-icon-volume-off { background-position: -128px -160px; }
+.ui-icon-volume-on { background-position: -144px -160px; }
+.ui-icon-power { background-position: 0 -176px; }
+.ui-icon-signal-diag { background-position: -16px -176px; }
+.ui-icon-signal { background-position: -32px -176px; }
+.ui-icon-battery-0 { background-position: -48px -176px; }
+.ui-icon-battery-1 { background-position: -64px -176px; }
+.ui-icon-battery-2 { background-position: -80px -176px; }
+.ui-icon-battery-3 { background-position: -96px -176px; }
+.ui-icon-circle-plus { background-position: 0 -192px; }
+.ui-icon-circle-minus { background-position: -16px -192px; }
+.ui-icon-circle-close { background-position: -32px -192px; }
+.ui-icon-circle-triangle-e { background-position: -48px -192px; }
+.ui-icon-circle-triangle-s { background-position: -64px -192px; }
+.ui-icon-circle-triangle-w { background-position: -80px -192px; }
+.ui-icon-circle-triangle-n { background-position: -96px -192px; }
+.ui-icon-circle-arrow-e { background-position: -112px -192px; }
+.ui-icon-circle-arrow-s { background-position: -128px -192px; }
+.ui-icon-circle-arrow-w { background-position: -144px -192px; }
+.ui-icon-circle-arrow-n { background-position: -160px -192px; }
+.ui-icon-circle-zoomin { background-position: -176px -192px; }
+.ui-icon-circle-zoomout { background-position: -192px -192px; }
+.ui-icon-circle-check { background-position: -208px -192px; }
+.ui-icon-circlesmall-plus { background-position: 0 -208px; }
+.ui-icon-circlesmall-minus { background-position: -16px -208px; }
+.ui-icon-circlesmall-close { background-position: -32px -208px; }
+.ui-icon-squaresmall-plus { background-position: -48px -208px; }
+.ui-icon-squaresmall-minus { background-position: -64px -208px; }
+.ui-icon-squaresmall-close { background-position: -80px -208px; }
+.ui-icon-grip-dotted-vertical { background-position: 0 -224px; }
+.ui-icon-grip-dotted-horizontal { background-position: -16px -224px; }
+.ui-icon-grip-solid-vertical { background-position: -32px -224px; }
+.ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
+.ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+.ui-icon-grip-diagonal-se { background-position: -80px -224px; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+	border-top-left-radius: 3px/*{cornerRadius}*/;
+}
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+	border-top-right-radius: 3px/*{cornerRadius}*/;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+	border-bottom-left-radius: 3px/*{cornerRadius}*/;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+	border-bottom-right-radius: 3px/*{cornerRadius}*/;
+}
+
+/* Overlays */
+.ui-widget-overlay {
+	background: #aaaaaa/*{bgColorOverlay}*/ /*{bgImgUrlOverlay}*/ /*{bgOverlayXPos}*/ /*{bgOverlayYPos}*/ /*{bgOverlayRepeat}*/;
+	opacity: .3/*{opacityOverlay}*/;
+	filter: Alpha(Opacity=30)/*{opacityFilterOverlay}*/; /* support: IE8 */
+}
+.ui-widget-shadow {
+	-webkit-box-shadow: 0/*{offsetLeftShadow}*/ 0/*{offsetTopShadow}*/ 5px/*{thicknessShadow}*/ #666666/*{bgColorShadow}*/;
+	box-shadow: 0/*{offsetLeftShadow}*/ 0/*{offsetTopShadow}*/ 5px/*{thicknessShadow}*/ #666666/*{bgColorShadow}*/;
+}
+/*!
+ * jQuery UI CSS Framework 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/category/theming/
+ */
+/*
+
+ */
+
+/* Layout helpers
+----------------------------------*/
+
+.ui-helper-hidden {
+	display: none;
+}
+.ui-helper-hidden-accessible {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.ui-helper-reset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	line-height: 1.3;
+	text-decoration: none;
+	font-size: 100%;
+	list-style: none;
+}
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+.ui-helper-clearfix:after {
+	clear: both;
+}
+.ui-helper-zfix {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	filter:Alpha(Opacity=0); /* support: IE8 */
+}
+
+.ui-front {
+	z-index: 100;
+}
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled {
+	cursor: default !important;
+	pointer-events: none;
+}
+
+
+/* Icons
+----------------------------------*/
+.ui-icon {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -.25em;
+	position: relative;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+.ui-widget-icon-block {
+	left: 50%;
+	margin-left: -8px;
+	display: block;
+}
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/*!
+ * jQuery UI Accordion 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/accordion/#theming
+ */
+/*
+
+ */
+
+.ui-accordion .ui-accordion-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin: 2px 0 0 0;
+	padding: .5em .5em .5em .7em;
+	font-size: 100%;
+}
+.ui-accordion .ui-accordion-content {
+	padding: 1em 2.2em;
+	border-top: 0;
+	overflow: auto;
+}
+/*!
+ * jQuery UI Autocomplete 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/autocomplete/#theming
+ */
+/*
+
+ */
+
+.ui-autocomplete {
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: default;
+}
+/*!
+ * jQuery UI Button 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/button/#theming
+ */
+/*
+
+ */
+
+.ui-button {
+	padding: .4em 1em;
+	display: inline-block;
+	position: relative;
+	line-height: normal;
+	margin-right: .1em;
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	/* Support: IE <= 11 */
+	overflow: visible;
+}
+
+.ui-button,
+.ui-button:link,
+.ui-button:visited,
+.ui-button:hover,
+.ui-button:active {
+	text-decoration: none;
+}
+
+/* to make room for the icon, a width needs to be set here */
+.ui-button-icon-only {
+	width: 2em;
+	box-sizing: border-box;
+	text-indent: -9999px;
+	white-space: nowrap;
+}
+
+/* no icon support for input elements */
+input.ui-button.ui-button-icon-only {
+	text-indent: 0;
+}
+
+/* button icon element(s) */
+.ui-button-icon-only .ui-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -8px;
+	margin-left: -8px;
+}
+
+.ui-button.ui-icon-notext .ui-icon {
+	padding: 0;
+	width: 2.1em;
+	height: 2.1em;
+	text-indent: -9999px;
+	white-space: nowrap;
+
+}
+
+input.ui-button.ui-icon-notext .ui-icon {
+	width: auto;
+	height: auto;
+	text-indent: 0;
+	white-space: normal;
+	padding: .4em 1em;
+}
+
+/* workarounds */
+/* Support: Firefox 5 - 40 */
+input.ui-button::-moz-focus-inner,
+button.ui-button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+/*!
+ * jQuery UI Checkboxradio 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/checkboxradio/#theming
+ */
+/*
+
+ */
+
+
+.ui-checkboxradio-label .ui-icon-background {
+	box-shadow: inset 1px 1px 1px #ccc;
+	border-radius: .12em;
+	border: none;
+}
+.ui-checkboxradio-radio-label .ui-icon-background {
+	width: 16px;
+	height: 16px;
+	border-radius: 1em;
+	overflow: visible;
+	border: none;
+}
+.ui-checkboxradio-radio-label.ui-checkboxradio-checked .ui-icon,
+.ui-checkboxradio-radio-label.ui-checkboxradio-checked:hover .ui-icon {
+	background-image: none;
+	width: 8px;
+	height: 8px;
+	border-width: 4px;
+	border-style: solid;
+}
+.ui-checkboxradio-disabled {
+	pointer-events: none;
+}
+/*!
+ * jQuery UI Controlgroup 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/controlgroup/#theming
+ */
+/*
+
+ */
+
+
+.ui-controlgroup {
+	vertical-align: middle;
+	display: inline-block;
+}
+.ui-controlgroup > .ui-controlgroup-item {
+	float: left;
+	margin-left: 0;
+	margin-right: 0;
+}
+.ui-controlgroup > .ui-controlgroup-item:focus,
+.ui-controlgroup > .ui-controlgroup-item.ui-visual-focus {
+	z-index: 9999;
+}
+.ui-controlgroup-vertical > .ui-controlgroup-item {
+	display: block;
+	float: none;
+	width: 100%;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: left;
+}
+.ui-controlgroup-vertical .ui-controlgroup-item {
+	box-sizing: border-box;
+}
+.ui-controlgroup .ui-controlgroup-label {
+	padding: .4em 1em;
+}
+.ui-controlgroup .ui-controlgroup-label span {
+	font-size: 80%;
+}
+.ui-controlgroup-horizontal .ui-controlgroup-label + .ui-controlgroup-item {
+	border-left: none;
+}
+.ui-controlgroup-vertical .ui-controlgroup-label + .ui-controlgroup-item {
+	border-top: none;
+}
+.ui-controlgroup-horizontal .ui-controlgroup-label.ui-widget-content {
+	border-right: none;
+}
+.ui-controlgroup-vertical .ui-controlgroup-label.ui-widget-content {
+	border-bottom: none;
+}
+
+/* Spinner specific style fixes */
+.ui-controlgroup-vertical .ui-spinner-input {
+
+	/* Support: IE8 only, Android < 4.4 only */
+	width: 75%;
+	width: calc( 100% - 2.4em );
+}
+.ui-controlgroup-vertical .ui-spinner .ui-spinner-up {
+	border-top-style: solid;
+}
+
+/*!
+ * jQuery UI Datepicker 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/datepicker/#theming
+ */
+/*
+
+ */
+
+.ui-datepicker {
+	width: 17em;
+	padding: .2em .2em 0;
+	display: none;
+}
+.ui-datepicker .ui-datepicker-header {
+	position: relative;
+	padding: .2em 0;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	position: absolute;
+	top: 2px;
+	width: 1.8em;
+	height: 1.8em;
+}
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+	top: 1px;
+}
+.ui-datepicker .ui-datepicker-prev {
+	left: 2px;
+}
+.ui-datepicker .ui-datepicker-next {
+	right: 2px;
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+	left: 1px;
+}
+.ui-datepicker .ui-datepicker-next-hover {
+	right: 1px;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -8px;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-datepicker .ui-datepicker-title {
+	margin: 0 2.3em;
+	line-height: 1.8em;
+	text-align: center;
+}
+.ui-datepicker .ui-datepicker-title select {
+	font-size: 1em;
+	margin: 1px 0;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+	width: 45%;
+}
+.ui-datepicker table {
+	width: 100%;
+	font-size: .9em;
+	border-collapse: collapse;
+	margin: 0 0 .4em;
+}
+.ui-datepicker th {
+	padding: .7em .3em;
+	text-align: center;
+	font-weight: bold;
+	border: 0;
+}
+.ui-datepicker td {
+	border: 0;
+	padding: 1px;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding: .2em;
+	text-align: right;
+	text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-buttonpane {
+	background-image: none;
+	margin: .7em 0 0 0;
+	padding: 0 .2em;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+	float: right;
+	margin: .5em .2em .4em;
+	cursor: pointer;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+	overflow: visible;
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	float: left;
+}
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi {
+	width: auto;
+}
+.ui-datepicker-multi .ui-datepicker-group {
+	float: left;
+}
+.ui-datepicker-multi .ui-datepicker-group table {
+	width: 95%;
+	margin: 0 auto .4em;
+}
+.ui-datepicker-multi-2 .ui-datepicker-group {
+	width: 50%;
+}
+.ui-datepicker-multi-3 .ui-datepicker-group {
+	width: 33.3%;
+}
+.ui-datepicker-multi-4 .ui-datepicker-group {
+	width: 25%;
+}
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+	border-left-width: 0;
+}
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+	clear: left;
+}
+.ui-datepicker-row-break {
+	clear: both;
+	width: 100%;
+	font-size: 0;
+}
+
+/* RTL support */
+.ui-datepicker-rtl {
+	direction: rtl;
+}
+.ui-datepicker-rtl .ui-datepicker-prev {
+	right: 2px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next {
+	left: 2px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+	right: 1px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+	left: 1px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+	clear: right;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+	float: left;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-rtl .ui-datepicker-group {
+	float: right;
+}
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+	border-right-width: 0;
+	border-left-width: 1px;
+}
+
+/* Icons */
+.ui-datepicker .ui-icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	left: .5em;
+	top: .3em;
+}
+/*!
+ * jQuery UI Dialog 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/dialog/#theming
+ */
+/*
+
+ */
+
+.ui-dialog {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: .2em;
+	outline: 0;
+}
+.ui-dialog .ui-dialog-titlebar {
+	padding: .4em 1em;
+	position: relative;
+}
+.ui-dialog .ui-dialog-title {
+	float: left;
+	margin: .1em 0;
+	white-space: nowrap;
+	width: 90%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+	position: absolute;
+	right: .3em;
+	top: 50%;
+	width: 20px;
+	margin: -10px 0 0 0;
+	padding: 1px;
+	height: 20px;
+}
+.ui-dialog .ui-dialog-content {
+	position: relative;
+	border: 0;
+	padding: .5em 1em;
+	background: none;
+	overflow: auto;
+}
+.ui-dialog .ui-dialog-buttonpane {
+	text-align: left;
+	border-width: 1px 0 0 0;
+	background-image: none;
+	margin-top: .5em;
+	padding: .3em 1em .5em .4em;
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+	float: right;
+}
+.ui-dialog .ui-dialog-buttonpane button {
+	margin: .5em .4em .5em 0;
+	cursor: pointer;
+}
+.ui-dialog .ui-resizable-n {
+	height: 2px;
+	top: 0;
+}
+.ui-dialog .ui-resizable-e {
+	width: 2px;
+	right: 0;
+}
+.ui-dialog .ui-resizable-s {
+	height: 2px;
+	bottom: 0;
+}
+.ui-dialog .ui-resizable-w {
+	width: 2px;
+	left: 0;
+}
+.ui-dialog .ui-resizable-se,
+.ui-dialog .ui-resizable-sw,
+.ui-dialog .ui-resizable-ne,
+.ui-dialog .ui-resizable-nw {
+	width: 7px;
+	height: 7px;
+}
+.ui-dialog .ui-resizable-se {
+	right: 0;
+	bottom: 0;
+}
+.ui-dialog .ui-resizable-sw {
+	left: 0;
+	bottom: 0;
+}
+.ui-dialog .ui-resizable-ne {
+	right: 0;
+	top: 0;
+}
+.ui-dialog .ui-resizable-nw {
+	left: 0;
+	top: 0;
+}
+.ui-draggable .ui-dialog-titlebar {
+	cursor: move;
+}
+/*!
+ * jQuery UI Draggable 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+/*
+
+ */
+
+.ui-draggable-handle {
+	-ms-touch-action: none;
+	touch-action: none;
+}
+/*!
+ * jQuery UI Menu 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/menu/#theming
+ */
+/*
+
+ */
+
+.ui-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: block;
+	outline: 0;
+}
+.ui-menu .ui-menu {
+	position: absolute;
+}
+.ui-menu .ui-menu-item {
+	margin: 0;
+	cursor: pointer;
+	/* support: IE10, see #8844 */
+	list-style-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+}
+.ui-menu .ui-menu-item-wrapper {
+	position: relative;
+	padding: 3px 1em 3px .4em;
+}
+.ui-menu .ui-menu-divider {
+	margin: 5px 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	border-width: 1px 0 0 0;
+}
+.ui-menu .ui-state-focus,
+.ui-menu .ui-state-active {
+	margin: -1px;
+}
+
+/* icon support */
+.ui-menu-icons {
+	position: relative;
+}
+.ui-menu-icons .ui-menu-item-wrapper {
+	padding-left: 2em;
+}
+
+/* left-aligned */
+.ui-menu .ui-icon {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: .2em;
+	margin: auto 0;
+}
+
+/* right-aligned */
+.ui-menu .ui-menu-icon {
+	left: auto;
+	right: 0;
+}
+/*!
+ * jQuery UI Progressbar 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/progressbar/#theming
+ */
+/*
+
+ */
+
+.ui-progressbar {
+	height: 2em;
+	text-align: left;
+	overflow: hidden;
+}
+.ui-progressbar .ui-progressbar-value {
+	margin: -1px;
+	height: 100%;
+}
+.ui-progressbar .ui-progressbar-overlay {
+	background: url("data:image/gif;base64,R0lGODlhKAAoAIABAAAAAP///yH/C05FVFNDQVBFMi4wAwEAAAAh+QQJAQABACwAAAAAKAAoAAACkYwNqXrdC52DS06a7MFZI+4FHBCKoDeWKXqymPqGqxvJrXZbMx7Ttc+w9XgU2FB3lOyQRWET2IFGiU9m1frDVpxZZc6bfHwv4c1YXP6k1Vdy292Fb6UkuvFtXpvWSzA+HycXJHUXiGYIiMg2R6W459gnWGfHNdjIqDWVqemH2ekpObkpOlppWUqZiqr6edqqWQAAIfkECQEAAQAsAAAAACgAKAAAApSMgZnGfaqcg1E2uuzDmmHUBR8Qil95hiPKqWn3aqtLsS18y7G1SzNeowWBENtQd+T1JktP05nzPTdJZlR6vUxNWWjV+vUWhWNkWFwxl9VpZRedYcflIOLafaa28XdsH/ynlcc1uPVDZxQIR0K25+cICCmoqCe5mGhZOfeYSUh5yJcJyrkZWWpaR8doJ2o4NYq62lAAACH5BAkBAAEALAAAAAAoACgAAAKVDI4Yy22ZnINRNqosw0Bv7i1gyHUkFj7oSaWlu3ovC8GxNso5fluz3qLVhBVeT/Lz7ZTHyxL5dDalQWPVOsQWtRnuwXaFTj9jVVh8pma9JjZ4zYSj5ZOyma7uuolffh+IR5aW97cHuBUXKGKXlKjn+DiHWMcYJah4N0lYCMlJOXipGRr5qdgoSTrqWSq6WFl2ypoaUAAAIfkECQEAAQAsAAAAACgAKAAAApaEb6HLgd/iO7FNWtcFWe+ufODGjRfoiJ2akShbueb0wtI50zm02pbvwfWEMWBQ1zKGlLIhskiEPm9R6vRXxV4ZzWT2yHOGpWMyorblKlNp8HmHEb/lCXjcW7bmtXP8Xt229OVWR1fod2eWqNfHuMjXCPkIGNileOiImVmCOEmoSfn3yXlJWmoHGhqp6ilYuWYpmTqKUgAAIfkECQEAAQAsAAAAACgAKAAAApiEH6kb58biQ3FNWtMFWW3eNVcojuFGfqnZqSebuS06w5V80/X02pKe8zFwP6EFWOT1lDFk8rGERh1TTNOocQ61Hm4Xm2VexUHpzjymViHrFbiELsefVrn6XKfnt2Q9G/+Xdie499XHd2g4h7ioOGhXGJboGAnXSBnoBwKYyfioubZJ2Hn0RuRZaflZOil56Zp6iioKSXpUAAAh+QQJAQABACwAAAAAKAAoAAACkoQRqRvnxuI7kU1a1UU5bd5tnSeOZXhmn5lWK3qNTWvRdQxP8qvaC+/yaYQzXO7BMvaUEmJRd3TsiMAgswmNYrSgZdYrTX6tSHGZO73ezuAw2uxuQ+BbeZfMxsexY35+/Qe4J1inV0g4x3WHuMhIl2jXOKT2Q+VU5fgoSUI52VfZyfkJGkha6jmY+aaYdirq+lQAACH5BAkBAAEALAAAAAAoACgAAAKWBIKpYe0L3YNKToqswUlvznigd4wiR4KhZrKt9Upqip61i9E3vMvxRdHlbEFiEXfk9YARYxOZZD6VQ2pUunBmtRXo1Lf8hMVVcNl8JafV38aM2/Fu5V16Bn63r6xt97j09+MXSFi4BniGFae3hzbH9+hYBzkpuUh5aZmHuanZOZgIuvbGiNeomCnaxxap2upaCZsq+1kAACH5BAkBAAEALAAAAAAoACgAAAKXjI8By5zf4kOxTVrXNVlv1X0d8IGZGKLnNpYtm8Lr9cqVeuOSvfOW79D9aDHizNhDJidFZhNydEahOaDH6nomtJjp1tutKoNWkvA6JqfRVLHU/QUfau9l2x7G54d1fl995xcIGAdXqMfBNadoYrhH+Mg2KBlpVpbluCiXmMnZ2Sh4GBqJ+ckIOqqJ6LmKSllZmsoq6wpQAAAh+QQJAQABACwAAAAAKAAoAAAClYx/oLvoxuJDkU1a1YUZbJ59nSd2ZXhWqbRa2/gF8Gu2DY3iqs7yrq+xBYEkYvFSM8aSSObE+ZgRl1BHFZNr7pRCavZ5BW2142hY3AN/zWtsmf12p9XxxFl2lpLn1rseztfXZjdIWIf2s5dItwjYKBgo9yg5pHgzJXTEeGlZuenpyPmpGQoKOWkYmSpaSnqKileI2FAAACH5BAkBAAEALAAAAAAoACgAAAKVjB+gu+jG4kORTVrVhRlsnn2dJ3ZleFaptFrb+CXmO9OozeL5VfP99HvAWhpiUdcwkpBH3825AwYdU8xTqlLGhtCosArKMpvfa1mMRae9VvWZfeB2XfPkeLmm18lUcBj+p5dnN8jXZ3YIGEhYuOUn45aoCDkp16hl5IjYJvjWKcnoGQpqyPlpOhr3aElaqrq56Bq7VAAAOw==");
+	height: 100%;
+	filter: alpha(opacity=25); /* support: IE8 */
+	opacity: 0.25;
+}
+.ui-progressbar-indeterminate .ui-progressbar-value {
+	background-image: none;
+}
+/*!
+ * jQuery UI Resizable 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+/*
+
+ */
+
+.ui-resizable {
+	position: relative;
+}
+.ui-resizable-handle {
+	position: absolute;
+	font-size: 0.1px;
+	display: block;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+.ui-resizable-disabled .ui-resizable-handle,
+.ui-resizable-autohide .ui-resizable-handle {
+	display: none;
+}
+.ui-resizable-n {
+	cursor: n-resize;
+	height: 7px;
+	width: 100%;
+	top: -5px;
+	left: 0;
+}
+.ui-resizable-s {
+	cursor: s-resize;
+	height: 7px;
+	width: 100%;
+	bottom: -5px;
+	left: 0;
+}
+.ui-resizable-e {
+	cursor: e-resize;
+	width: 7px;
+	right: -5px;
+	top: 0;
+	height: 100%;
+}
+.ui-resizable-w {
+	cursor: w-resize;
+	width: 7px;
+	left: -5px;
+	top: 0;
+	height: 100%;
+}
+.ui-resizable-se {
+	cursor: se-resize;
+	width: 12px;
+	height: 12px;
+	right: 1px;
+	bottom: 1px;
+}
+.ui-resizable-sw {
+	cursor: sw-resize;
+	width: 9px;
+	height: 9px;
+	left: -5px;
+	bottom: -5px;
+}
+.ui-resizable-nw {
+	cursor: nw-resize;
+	width: 9px;
+	height: 9px;
+	left: -5px;
+	top: -5px;
+}
+.ui-resizable-ne {
+	cursor: ne-resize;
+	width: 9px;
+	height: 9px;
+	right: -5px;
+	top: -5px;
+}
+/*!
+ * jQuery UI Selectable 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+/*
+
+ */
+
+.ui-selectable {
+	-ms-touch-action: none;
+	touch-action: none;
+}
+.ui-selectable-helper {
+	position: absolute;
+	z-index: 100;
+	border: 1px dotted black;
+}
+/*!
+ * jQuery UI Selectmenu 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/selectmenu/#theming
+ */
+/*
+
+ */
+
+.ui-selectmenu-menu {
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.ui-selectmenu-menu .ui-menu {
+	overflow: auto;
+	overflow-x: hidden;
+	padding-bottom: 1px;
+}
+.ui-selectmenu-menu .ui-menu .ui-selectmenu-optgroup {
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 1.5;
+	padding: 2px 0.4em;
+	margin: 0.5em 0 0 0;
+	height: auto;
+	border: 0;
+}
+.ui-selectmenu-open {
+	display: block;
+}
+.ui-selectmenu-text {
+	display: block;
+	margin-right: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.ui-selectmenu-button.ui-button {
+	text-align: left;
+	white-space: nowrap;
+	width: 14em;
+}
+.ui-selectmenu-icon.ui-icon {
+	float: right;
+	margin-top: 0;
+}
+/*!
+ * jQuery UI Sortable 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+/*
+
+ */
+
+.ui-sortable-handle {
+	-ms-touch-action: none;
+	touch-action: none;
+}
+/*!
+ * jQuery UI Slider 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/slider/#theming
+ */
+/*
+
+ */
+
+.ui-slider {
+	position: relative;
+	text-align: left;
+}
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 1.2em;
+	height: 1.2em;
+	cursor: default;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	background-position: 0 0;
+}
+
+/* support: IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+	filter: inherit;
+}
+
+.ui-slider-horizontal {
+	height: .8em;
+}
+.ui-slider-horizontal .ui-slider-handle {
+	top: -.3em;
+	margin-left: -.6em;
+}
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+	left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+
+.ui-slider-vertical {
+	width: .8em;
+	height: 100px;
+}
+.ui-slider-vertical .ui-slider-handle {
+	left: -.3em;
+	margin-left: 0;
+	margin-bottom: -.6em;
+}
+.ui-slider-vertical .ui-slider-range {
+	left: 0;
+	width: 100%;
+}
+.ui-slider-vertical .ui-slider-range-min {
+	bottom: 0;
+}
+.ui-slider-vertical .ui-slider-range-max {
+	top: 0;
+}
+/*!
+ * jQuery UI Spinner 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/spinner/#theming
+ */
+/*
+
+ */
+
+.ui-spinner {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	padding: 0;
+	vertical-align: middle;
+}
+.ui-spinner-input {
+	border: none;
+	background: none;
+	color: inherit;
+	padding: .222em 0;
+	margin: .2em 0;
+	vertical-align: middle;
+	margin-left: .4em;
+	margin-right: 2em;
+}
+.ui-spinner-button {
+	width: 1.6em;
+	height: 50%;
+	font-size: .5em;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	position: absolute;
+	cursor: default;
+	display: block;
+	overflow: hidden;
+	right: 0;
+}
+/* more specificity required here to override default borders */
+.ui-spinner a.ui-spinner-button {
+	border-top-style: none;
+	border-bottom-style: none;
+	border-right-style: none;
+}
+.ui-spinner-up {
+	top: 0;
+}
+.ui-spinner-down {
+	bottom: 0;
+}
+/*!
+ * jQuery UI Tabs 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/tabs/#theming
+ */
+/*
+
+ */
+
+.ui-tabs {
+	position: relative;/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+	padding: .2em;
+}
+.ui-tabs .ui-tabs-nav {
+	margin: 0;
+	padding: .2em .2em 0;
+}
+.ui-tabs .ui-tabs-nav li {
+	list-style: none;
+	float: left;
+	position: relative;
+	top: 0;
+	margin: 1px .2em 0 0;
+	border-bottom-width: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+	float: left;
+	padding: .5em 1em;
+	text-decoration: none;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+	margin-bottom: -1px;
+	padding-bottom: 1px;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+.ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
+.ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+	cursor: text;
+}
+.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+	cursor: pointer;
+}
+.ui-tabs .ui-tabs-panel {
+	display: block;
+	border-width: 0;
+	padding: 1em 1.4em;
+	background: none;
+}
+/*!
+ * jQuery UI Tooltip 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/tooltip/#theming
+ */
+/*
+
+ */
+
+.ui-tooltip {
+	padding: 8px;
+	position: absolute;
+	z-index: 9999;
+	max-width: 300px;
+}
+body .ui-tooltip {
+	border-width: 2px;
+}
+/*!
+ * jQuery UI CSS Framework 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/category/theming/
+ */
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+
+/*!
+ * jQuery UI CSS Framework 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/category/theming/
+ */
+/*
+
+
+ */
+
 /* line 6, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 #logo {
   font-size: 26px;
@@ -49,40 +1802,52 @@
 
 /* line 18, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .container-fluid .lp-section-1 {
-  margin: 0 -15px 0px;
+  margin: 0 -15px 0;
   min-height: 100%;
 }
 
 /* line 22, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .container-fluid .lp-section-2 {
-  margin: 0 -15px 0px;
+  margin: 0 -15px 0;
   min-height: 100%;
 }
 
 /* line 26, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .container-fluid .lp-section-3 {
-  margin: 0 -15px 0px;
+  margin: 0 -15px 0;
   min-height: 100%;
 }
 
 /* line 30, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .container-fluid .lp-section-4 {
-  margin: 0 -15px 0px;
+  margin: 0 -15px 0;
   min-height: 100%;
 }
 
 /* line 34, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
-.container-fluid .lp-section-bottom {
-  margin: 0 -15px 0px;
+.container-fluid .lp-section-5 {
+  margin: 0 -15px 0;
   min-height: 100%;
 }
 
 /* line 38, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
-.container-fluid {
+.container-fluid .lp-section-6 {
+  margin: 0 -15px 0;
+  min-height: 100%;
+}
+
+/* line 42, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+.container-fluid .lp-section-bottom {
+  margin: 0 -15px 0;
   min-height: 100%;
 }
 
 /* line 46, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+.container-fluid {
+  min-height: 100%;
+}
+
+/* line 54, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 body {
   font-family: Verdana,"Helvetica Neue",Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
   background-color: #ffffff;
@@ -92,21 +1857,21 @@ body {
   height: 100%;
 }
 
-/* line 55, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 63, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 #ds-wrapper {
   background-color: #ffffff;
   padding-bottom: 70px;
 }
 
-/* line 60, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 68, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 #ds-content {
   background-color: #ffffff;
   padding-bottom: 100px;
 }
 
-/* line 65, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 73, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-1 {
-  background: linear-gradient(rgba(12, 12, 9, 0.4), rgba(12, 12, 9, 0.4)), url(../images/programmer.jpg);
+  background: linear-gradient(rgba(12, 12, 9, 0.4), rgba(12, 12, 9, 0.4)), url(programmer.jpg);
   background-size: cover;
   position: relative;
   display: block;
@@ -116,7 +1881,7 @@ body {
   margin-top: 0;
   height: 700px;
 }
-/* line 76, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 84, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-1 .content-1 {
   display: block;
   margin-left: auto;
@@ -128,14 +1893,14 @@ body {
   text-align: right;
   padding-top: 180px;
 }
-/* line 87, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 95, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-1 .content-1 h2 {
   font-size: 42px;
   color: black;
   margin-bottom: 15px;
   letter-spacing: 0.1em;
 }
-/* line 94, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 102, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-1 .content-1 p {
   font-size: 16px;
   line-height: 1.6em;
@@ -144,7 +1909,7 @@ body {
   letter-spacing: 0.15em;
 }
 
-/* line 104, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 112, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 a:active,
 a:hover,
 a:link,
@@ -152,7 +1917,7 @@ a:visited {
   text-decoration: none;
 }
 
-/* line 111, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 119, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .action-btn {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -180,12 +1945,12 @@ a:visited {
   transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
 }
 
-/* line 139, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 147, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-2 {
   background-color: #f2f2f2;
   min-height: 400px;
 }
-/* line 143, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 151, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-2 .content-2 {
   padding-top: 50px;
   margin: 0 auto;
@@ -193,7 +1958,7 @@ a:visited {
   width: 690px;
   text-align: center;
 }
-/* line 150, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 158, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-2 .content-2 .short-line {
   display: block;
   background: #3468A5;
@@ -205,13 +1970,13 @@ a:visited {
   height: 3px;
   position: relative;
 }
-/* line 162, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 170, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-2 .content-2 h2 {
   font-size: 2em;
   padding-bottom: 20px;
   letter-spacing: 3px;
 }
-/* line 168, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 176, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-2 .content-2 p {
   line-height: 34px;
   color: #666;
@@ -219,7 +1984,7 @@ a:visited {
   text-align: center;
 }
 
-/* line 177, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 185, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-3 {
   min-width: 100%;
   height: 550px;
@@ -232,14 +1997,14 @@ a:visited {
   background-size: cover;
   text-align: center;
 }
-/* line 189, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 197, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-3 .content-3 {
   padding-top: 50px;
   margin: 0 auto;
   max-width: 100%;
   text-align: center;
 }
-/* line 195, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 203, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-3 .content-3 .short-line {
   display: block;
   background: #3468A5;
@@ -251,45 +2016,47 @@ a:visited {
   height: 3px;
   position: relative;
 }
-/* line 207, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 215, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-3 .content-3 h2 {
   font-size: 2em;
+  padding-bottom: 20px;
 }
-/* line 212, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 221, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-3 .content-3 .feature-block {
   display: block;
   border-style: none;
   border-radius: 0;
-  width: 430px;
+  width: 300px;
   position: relative;
-  margin: 20px 0px 0;
+  margin: 20px 50px 20px;
   float: left;
+  margin-left: 25px;
 }
-/* line 223, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 231, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-3 .content-3 .feature-block h3 {
   font-size: 1.2em;
   line-height: 28px;
   margin-top: 20px;
+  padding-bottom: 20px;
   color: #333;
 }
-/* line 230, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 239, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-3 .content-3 .feature-block p {
   line-height: 24px;
-  width: 260px;
+  width: 300px;
   margin-top: 30px;
-  margin-left: 20px;
   font-size: 1em;
   color: #666;
   text-align: center;
 }
 
-/* line 243, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 252, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-4 {
   background-color: #f2f2f2;
   height: 550px;
   min-width: 100%;
 }
-/* line 249, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 258, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-4 .content-4 {
   display: block;
   margin-left: auto;
@@ -300,62 +2067,61 @@ a:visited {
   position: relative;
   text-align: center;
 }
-/* line 259, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 268, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-4 .content-4 .short-line {
   display: block;
   background: #3468A5;
   border-style: none;
   border-radius: 0;
-  margin: 10px auto 50px;
   z-index: 53;
   width: 50px;
   height: 3px;
   position: relative;
-  margin-bottom: 80px;
 }
-/* line 272, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 281, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-4 .content-4 h2 {
   font-size: 2em;
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   letter-spacing: 3px;
 }
-/* line 279, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 288, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-4 .content-4 .teacher-block-left,
 .lp-section-4 .content-4 .teacher-block-right {
+  text-align: left;
   padding-left: 0;
   float: none;
   width: 400px;
   margin: 0 auto;
 }
-/* line 286, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 296, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-4 .content-4 .teacher-block-left .top,
 .lp-section-4 .content-4 .teacher-block-right .top {
   margin: 0 auto;
   width: 100%;
 }
-/* line 290, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 300, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-4 .content-4 .teacher-block-left .top .img,
 .lp-section-4 .content-4 .teacher-block-right .top .img {
   float: left;
   width: 90px;
   text-align: center;
 }
-/* line 296, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 306, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-4 .content-4 .teacher-block-left .top .name,
 .lp-section-4 .content-4 .teacher-block-right .top .name {
   float: left;
   width: auto;
   padding: 0 0 0 20px;
 }
-/* line 301, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 311, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-4 .content-4 .teacher-block-left .top .name span,
 .lp-section-4 .content-4 .teacher-block-right .top .name span {
   font-size: 1.15em;
   line-height: 22px;
   font-weight: bold;
 }
-/* line 307, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 317, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-4 .content-4 .teacher-block-left .top .name p,
 .lp-section-4 .content-4 .teacher-block-right .top .name p {
   padding-top: 13px;
@@ -363,7 +2129,7 @@ a:visited {
   line-height: 25px;
   color: #666;
 }
-/* line 316, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 326, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-4 .content-4 .teacher-block-left .talk,
 .lp-section-4 .content-4 .teacher-block-right .talk {
   padding-top: 5px;
@@ -373,7 +2139,7 @@ a:visited {
   line-height: 24px;
 }
 
-/* line 327, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 337, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-5 {
   min-width: 100%;
   height: 550px;
@@ -386,21 +2152,21 @@ a:visited {
   background-size: cover;
   text-align: center;
 }
-/* line 339, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 349, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-5 .content-5 {
   width: 100%;
   height: auto;
   padding-top: 30px;
   text-align: center;
 }
-/* line 345, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
-.lp-section-5 .content-5 .skill-title {
+/* line 355, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+.lp-section-5 .content-5 .user-title {
   margin-bottom: 50px;
   letter-spacing: 3px;
   text-align: center;
 }
-/* line 350, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
-.lp-section-5 .content-5 .skill-title .short-line {
+/* line 360, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+.lp-section-5 .content-5 .user-title .short-line {
   display: block;
   background: #3468A5;
   border-style: none;
@@ -411,11 +2177,65 @@ a:visited {
   height: 3px;
   position: relative;
 }
-/* line 362, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
-.lp-section-5 .content-5 .skill-title h2 {
+/* line 372, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+.lp-section-5 .content-5 .user-title h2 {
   font-size: 2em;
+  padding-bottom: 20px;
 }
-/* line 367, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 376, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+.lp-section-5 .content-5 .user-title .user-say-left,
+.lp-section-5 .content-5 .user-title .user-say-right {
+  text-align: left;
+  padding-left: 0;
+  float: none;
+  width: 400px;
+  margin: 0 auto;
+}
+/* line 384, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+.lp-section-5 .content-5 .user-title .user-say-left .top,
+.lp-section-5 .content-5 .user-title .user-say-right .top {
+  margin: 0 auto;
+  width: 100%;
+}
+/* line 388, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+.lp-section-5 .content-5 .user-title .user-say-left .top .img,
+.lp-section-5 .content-5 .user-title .user-say-right .top .img {
+  float: left;
+  width: 90px;
+  text-align: center;
+}
+/* line 394, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+.lp-section-5 .content-5 .user-title .user-say-left .top .name,
+.lp-section-5 .content-5 .user-title .user-say-right .top .name {
+  float: left;
+  width: auto;
+  padding: 0 0 0 20px;
+}
+/* line 399, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+.lp-section-5 .content-5 .user-title .user-say-left .top .name span,
+.lp-section-5 .content-5 .user-title .user-say-right .top .name span {
+  font-size: 1.15em;
+  line-height: 22px;
+  font-weight: bold;
+}
+/* line 405, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+.lp-section-5 .content-5 .user-title .user-say-left .top .name p,
+.lp-section-5 .content-5 .user-title .user-say-right .top .name p {
+  padding-top: 13px;
+  font-size: 1em;
+  line-height: 25px;
+  color: #666;
+}
+/* line 414, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+.lp-section-5 .content-5 .user-title .user-say-left .talk,
+.lp-section-5 .content-5 .user-title .user-say-right .talk {
+  padding-top: 5px;
+  display: block;
+  clear: both;
+  width: 100%;
+  line-height: 24px;
+}
+/* line 424, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-5 .content-5 .skill-block {
   display: block;
   border-style: none;
@@ -424,14 +2244,14 @@ a:visited {
   position: relative;
   float: left;
 }
-/* line 378, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 435, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-5 .content-5 .skill-block h3 {
   font-size: 1.2em;
   line-height: 28px;
   margin-top: 20px;
   color: #333;
 }
-/* line 385, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 442, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-5 .content-5 .skill-block p {
   line-height: 24px;
   width: 260px;
@@ -442,10 +2262,10 @@ a:visited {
   text-align: center;
 }
 
-/* line 398, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 455, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-bottom {
   display: block;
-  background: linear-gradient(rgba(12, 12, 9, 0.4), rgba(12, 12, 9, 0.4)), url(/assets/lp-bg-ee2662ec003744ab101741975f50086c5fcdfffe81d423bd8b2c2516561ab4ff.jpg);
+  background: linear-gradient(rgba(12, 12, 9, 0.4), rgba(12, 12, 9, 0.4)), url(boat.jpg);
   background-position: center 80%;
   background-size: cover;
   margin-left: auto;
@@ -455,7 +2275,7 @@ a:visited {
   height: 200px;
   position: relative;
 }
-/* line 411, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 468, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-bottom .bottom-content {
   max-width: 100%;
   height: auto;
@@ -473,14 +2293,14 @@ a:visited {
   padding-top: 40px;
   margin-top: 40px;
 }
-/* line 429, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 486, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-bottom a:active,
 .lp-section-bottom a:hover,
 .lp-section-bottom a:link,
 .lp-section-bottom a:visited {
   text-decoration: none;
 }
-/* line 436, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 493, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .lp-section-bottom .action-btn {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -507,14 +2327,73 @@ a:visited {
   transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
 }
 
-/* line 464, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 521, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+.lp-section-6 {
+  min-width: 100%;
+  height: 550px;
+  display: block;
+  width: 100%;
+  height: 550px;
+  min-width: 960px;
+  background-color: #fff;
+  background-position: center top;
+  background-size: cover;
+  text-align: center;
+}
+/* line 533, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+.lp-section-6 .content-6 {
+  width: 100%;
+  height: auto;
+  padding-top: 30px;
+  text-align: center;
+}
+/* line 539, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+.lp-section-6 .content-6 .faq-title {
+  margin-bottom: 50px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+/* line 544, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+.lp-section-6 .content-6 .faq-title .short-line {
+  display: block;
+  background: #3468A5;
+  border-style: none;
+  border-radius: 0;
+  margin: 20px auto 50px;
+  z-index: 53;
+  width: 50px;
+  height: 3px;
+  position: relative;
+}
+/* line 557, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+.lp-section-6 .content-6 .faq-block {
+  padding: auto 50px;
+  margin: 0 50px;
+  height: 400px;
+  width: 1200px;
+  text-align: left;
+}
+/* line 563, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+.lp-section-6 .content-6 .faq-block h5 {
+  text-decoration: underline;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #3468A5;
+}
+/* line 570, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+.lp-section-6 .content-6 .faq-block p {
+  font-size: 14px !important;
+}
+
+/* line 580, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .social-icons ul {
   text-align: center;
   padding-left: 0;
   display: inline-block;
 }
 
-/* line 470, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 586, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .social-icons ul a li {
   display: inline-block;
   list-style-type: none;
@@ -527,67 +2406,23 @@ a:visited {
   width: 36px;
 }
 
-/* line 482, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 598, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .social-icons ul a li:last-child {
   margin-right: 0;
 }
 
-/* line 486, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 602, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .social-icons ul a:hover li {
   color: #ffffff;
   background-color: #51c2b9;
 }
 
-/* line 491, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
-section {
-  text-align: center;
-  margin-top: 100px;
-}
-/* line 495, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
-section .short-line {
-  display: block;
-  background: #3468A5;
-  border-style: none;
-  border-radius: 0;
-  margin: 10px auto 50px;
-  z-index: 53;
-  width: 50px;
-  height: 3px;
-  position: relative;
-}
-
-/* line 508, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
-.contact .vira-card {
-  background-color: #f8f8f8;
-  padding: 35px 0;
-  transition: all 0.3s ease-in-out;
-  margin-bottom: 45px;
-}
-
-/* line 515, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
-.contact .vira-card:hover {
-  box-shadow: 0 4px 2px rgba(17, 17, 17, 0.3);
-}
-
-/* line 519, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
-.contact .vira-card .vira-card-header {
-  margin-bottom: 15px;
-  font-size: 21px;
-  color: #3468A5;
-}
-
-/* line 525, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
-.contact .vira-card .vira-card-content h3 {
-  letter-spacing: 2px;
-  margin-bottom: 45px;
-}
-
-/* line 530, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 608, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .contact .vira-card .vira-card-content h3:after {
   top: 40px;
 }
 
-/* line 534, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
+/* line 612, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/welcome.scss */
 .contact .vira-card .vira-card-content p {
   font-size: 18px;
 }
@@ -604,6 +2439,9 @@ section .short-line {
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+
+
+
 
 
 
@@ -13154,77 +14992,227 @@ button.close {
   clip: auto;
 }
 
-/* line 24, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 1, /Users/Yammy/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.8/app/assets/stylesheets/social-share-button.css.erb */
+.social-share-button .ssb-icon {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+
+/* line 10, /Users/Yammy/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.8/app/assets/stylesheets/social-share-button.css.erb */
+.social-share-button .ssb-twitter {
+  background-image: url(/assets/social-share-button/twitter-7b64ce0117a85c5d52ed45c27707af61d9b0e0d590284baa287cfe87867b9ae1.svg);
+}
+
+/* line 14, /Users/Yammy/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.8/app/assets/stylesheets/social-share-button.css.erb */
+.social-share-button .ssb-facebook {
+  background-image: url(/assets/social-share-button/facebook-03210e1663ee772e93ed5d344cdb36657b68342821aaebe982f2f984915990b3.svg);
+}
+
+/* line 18, /Users/Yammy/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.8/app/assets/stylesheets/social-share-button.css.erb */
+.social-share-button .ssb-google_bookmark {
+  background-image: url(/assets/social-share-button/google_bookmark-bb4c960c0421cb7dce602d10e744692bcc1c54f323410f4965d508f96e2255ce.svg);
+}
+
+/* line 22, /Users/Yammy/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.8/app/assets/stylesheets/social-share-button.css.erb */
+.social-share-button .ssb-google_plus {
+  background-image: url(/assets/social-share-button/google_plus-50c049fbb29cd3346f1bf9349017b644bcd00a53b56bd156728850f57bd85c0a.svg);
+}
+
+/* line 26, /Users/Yammy/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.8/app/assets/stylesheets/social-share-button.css.erb */
+.social-share-button .ssb-weibo {
+  background-image: url(/assets/social-share-button/weibo-a345a6ca554e6f388da9eb35746bb0425cb018c16408ba82852c66d375245d6f.svg);
+}
+
+/* line 30, /Users/Yammy/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.8/app/assets/stylesheets/social-share-button.css.erb */
+.social-share-button .ssb-qq {
+  background-image: url(/assets/social-share-button/qq-4dbae8223fc7823f6d73bc7fbe113eb894f4c174ec3ae93103ca382c78a2bf67.svg);
+}
+
+/* line 34, /Users/Yammy/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.8/app/assets/stylesheets/social-share-button.css.erb */
+.social-share-button .ssb-delicious {
+  background-image: url(/assets/social-share-button/delicious-0c55f72f821aae5352691f13eb64bf3435573e2169d0720477ed367b2f1ed28e.svg);
+}
+
+/* line 38, /Users/Yammy/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.8/app/assets/stylesheets/social-share-button.css.erb */
+.social-share-button .ssb-linkedin {
+  background-image: url(/assets/social-share-button/linkedin-b7fd42895b291003c444a9c2acf867ea813671e0b725a5d7c05dbb13f5c0fdd3.svg);
+}
+
+/* line 42, /Users/Yammy/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.8/app/assets/stylesheets/social-share-button.css.erb */
+.social-share-button .ssb-tumblr {
+  background-image: url(/assets/social-share-button/tumblr-330a37f93cce7c27a750188d0bfdbed3a22f566b807e64d21131dcdc94e08ec3.svg);
+}
+
+/* line 46, /Users/Yammy/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.8/app/assets/stylesheets/social-share-button.css.erb */
+.social-share-button .ssb-pinterest {
+  background-image: url(/assets/social-share-button/pinterest-86203d156197cce4087fee058b920d275c535df5fd59d8caa83da0ef41d1ec7f.svg);
+}
+
+/* line 50, /Users/Yammy/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.8/app/assets/stylesheets/social-share-button.css.erb */
+.social-share-button .ssb-douban {
+  background-image: url(/assets/social-share-button/douban-46298c27e3bc6d59951c0bbc464339a5ba1b44e3b25b571874f1baacd7af2495.svg);
+}
+
+/* line 54, /Users/Yammy/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.8/app/assets/stylesheets/social-share-button.css.erb */
+.social-share-button .ssb-wechat {
+  background-image: url(/assets/social-share-button/wechat-d8852cc3396a7a53eba39595d2e9f638c93a34ab1a0f41bae4ff391b63815f56.svg);
+}
+
+/* line 58, /Users/Yammy/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.8/app/assets/stylesheets/social-share-button.css.erb */
+.social-share-button .ssb-vkontakte {
+  background-image: url(/assets/social-share-button/vkontakte-0c2b68277fade991d74efcbdb6f7b359a35e65156cbada9625a3fe8f73151c14.svg);
+}
+
+/* line 62, /Users/Yammy/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.8/app/assets/stylesheets/social-share-button.css.erb */
+.social-share-button .ssb-xing {
+  background-image: url(/assets/social-share-button/xing-0ebccb4042c8c7220e471c4f569df2bf27da227db425525819b6848c86a1603e.svg);
+}
+
+/* line 66, /Users/Yammy/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.8/app/assets/stylesheets/social-share-button.css.erb */
+.social-share-button .ssb-email {
+  background-image: url(/assets/social-share-button/email-7067143cbe69d9d8cf25e67fda1a315d133c2b79074a09088bd712cc5c81135d.svg);
+}
+
+/* line 70, /Users/Yammy/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.8/app/assets/stylesheets/social-share-button.css.erb */
+.social-share-button .ssb-reddit {
+  background-image: url(/assets/social-share-button/reddit-f5fc462f44dbeff78983b3b64cb69b6c777a22906767bdb0b283014ac79b37de.svg);
+}
+
+/* line 74, /Users/Yammy/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.8/app/assets/stylesheets/social-share-button.css.erb */
+.social-share-button .ssb-hacker_news {
+  background-image: url(/assets/social-share-button/hacker_news-d89b13fec49355a787389a776f2e03a0a38314abf93777b8865f8c5f146eaf8d.svg);
+}
+
+/* line 78, /Users/Yammy/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.8/app/assets/stylesheets/social-share-button.css.erb */
+.ss-wechat-dialog {
+  width: 300px;
+  position: fixed;
+  background: #fff;
+  padding: 15px;
+  border-radius: 3px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  z-index: 11001;
+  font-size: 14px;
+  line-height: 1.2em;
+}
+
+/* line 90, /Users/Yammy/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.8/app/assets/stylesheets/social-share-button.css.erb */
+.ss-wechat-dialog .wechat-popup-header {
+  font-weight: bold;
+}
+
+/* line 94, /Users/Yammy/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.8/app/assets/stylesheets/social-share-button.css.erb */
+.ss-wechat-dialog .wechat-dialog-qr {
+  text-align: center;
+  margin: 25px 0;
+}
+
+/* line 99, /Users/Yammy/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.8/app/assets/stylesheets/social-share-button.css.erb */
+.ss-wechat-dialog .wechat-popup-close {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #999;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* line 110, /Users/Yammy/.rvm/gems/ruby-2.3.1/gems/social-share-button-0.8.8/app/assets/stylesheets/social-share-button.css.erb */
+.ss-wechat-dialog .wechat-popup-footer {
+  text-align: left;
+  line-height: 22px;
+  color: #666;
+}
+
+/* line 32, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+.social-share-button .ssb-icon {
+  background-size: 24px 24px;
+  height: 24px;
+  width: 24px;
+}
+
+/* line 40, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #page_wrapper {
   padding-top: 2em;
   margin-top: 10em;
 }
-/* line 27, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 43, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #page_wrapper #profile_image {
   width: 300px;
   float: left;
   margin-left: 10em;
   margin-right: 10em;
 }
-/* line 32, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 48, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #page_wrapper #profile_image img {
   width: 100%;
   border-radius: 0.35em;
 }
-/* line 38, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 54, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #page_wrapper #content h1 {
   font-weight: 500;
 }
-/* line 41, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 57, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #page_wrapper #content p {
   font-size: 1.1em;
   line-height: 1.75;
 }
-/* line 45, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 61, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #page_wrapper #content a {
   color: #33acb7;
   font-weight: 700;
   text-decoration: none;
 }
 
-/* line 55, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 71, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #comments .comment {
   padding: 1em 0;
   border-top: 1px solid #E9E9E9;
 }
-/* line 58, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 74, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #comments .comment .lead {
   margin-bottom: 0;
 }
 
-/* line 65, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 81, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #search-id {
-  width: 400px;
+  width: 350px;
   padding-top: 7px;
   padding-right: 100px;
 }
 
-/* line 73, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 88, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 .btn-danger:hover {
   background-color: #009688;
   border-color: #009688;
 }
 
-/* line 81, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 96, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 .navbar-default {
-  background-color: #ffffff;
-  border-color: #ffffff;
+  border-bottom-color: #d6dce0;
   margin-bottom: 0;
-  color: white;
+}
+
+/* line 101, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+.navbar-default .navbar-brand {
+  color: #3468A5;
+  padding: 20px 15px;
+  line-height: 30px;
 }
 
 @media (min-width: 768px) {
-  /* line 89, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+  /* line 109, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
   .navbar {
     border-radius: 0;
   }
 }
-/* line 95, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 115, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 .button {
   outline: none;
   background: transparent;
@@ -13234,44 +15222,44 @@ button.close {
   border-radius: 1.5em;
 }
 
-/* line 112, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 132, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 .main input:focus {
   border-color: red;
 }
 
-/* line 117, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 137, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 h1.title {
   font-size: 50px;
   font-family: Brandon Text;
   font-weight: 100;
 }
 
-/* line 124, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 144, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 .form-group {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   margin-top: 5px;
 }
 
-/* line 130, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 150, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 input,
 input::-webkit-input-placeholder {
   font-size: 11px;
   padding-top: 3px;
 }
 
-/* line 136, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 156, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 .main-login {
   background-color: #282c34;
   /* shadows and rounded borders */
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* line 148, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 168, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 .main-center {
   color: #fff;
   margin-top: 30px;
@@ -13280,24 +15268,24 @@ input::-webkit-input-placeholder {
   padding: 40px 40px;
 }
 
-/* line 157, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 177, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 .login-button {
   margin-top: 5px;
 }
 
-/* line 161, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 181, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 .login-register {
   font-size: 11px;
   text-align: center;
 }
 
-/* line 168, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 188, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 html, body {
   height: 100%;
   font-family: Brandon Text;
 }
 
-/* line 173, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 193, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 .footer {
   background-color: #f2f2f2;
   text-align: center;
@@ -13306,42 +15294,41 @@ html, body {
   padding-top: 20px;
 }
 
-/* line 180, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 200, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 .footer span {
   color: #3468A5;
 }
 
-/* line 184, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 204, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 .footer p {
   color: black;
   font-size: 21px;
   margin-bottom: 0;
 }
 
-/* line 190, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 210, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 .footer a {
   color: black;
 }
 
-/* line 195, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 215, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #sidebar {
   width: 250px;
   position: fixed;
   left: 50px;
-  top: 100px;
-  bottom: 200px;
-  height: 70%;
+  top: 110px;
+  bottom: 100px;
   background: #f5f7f9;
-  padding: 7em 0 0 0;
+  padding: 5em 0 0 0;
   border-right: 1px solid #d6dce0;
 }
-/* line 206, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 225, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #sidebar ul {
   list-style: none;
   text-align: right;
   padding-right: 3em;
 }
-/* line 210, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 229, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #sidebar ul .category {
   font-weight: 700;
   font-size: 0.7em;
@@ -13349,40 +15336,40 @@ html, body {
   color: #3468A5;
 }
 
-/* line 219, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 238, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content {
   margin-left: 250px;
 }
-/* line 221, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 240, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content .post_wrapper {
   padding: 3em;
   border-bottom: 1px solid #d6dce0;
 }
-/* line 224, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 243, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content .post_wrapper .title {
   margin: 0;
 }
-/* line 226, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 245, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content .post_wrapper .title a {
   font-weight: 500;
   text-decoration: none;
   color: #2a2f35;
   font-size: 1.5em;
 }
-/* line 231, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 250, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content .post_wrapper .title a:hover {
   color: #33acb7;
 }
-/* line 236, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 255, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content .post_wrapper .date_and_author {
   color: #9eafba;
   margin: .5em 0 0 0;
 }
-/* line 241, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 260, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content #post_content {
   padding: 1em 3em;
 }
-/* line 243, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 262, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content #post_content .title {
   font-weight: 500;
   text-decoration: none;
@@ -13390,113 +15377,260 @@ html, body {
   font-size: 2.5em;
   margin-bottom: 0;
 }
-/* line 250, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 269, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content #post_content .body {
   font-size: 1.1em;
   line-height: 1.75;
 }
-/* line 254, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 273, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content #post_content .date_and_author {
   color: #9eafba;
   margin: .5em 0 2em 0;
 }
-/* line 259, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 278, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content #post_content #comments h2 {
   margin: 3em 0 1em 0;
   border-bottom: 1px solid #d6dce0;
   padding-bottom: 0.5em;
 }
-/* line 264, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 283, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content #post_content #comments h3 {
   margin-top: 2em;
 }
-/* line 267, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 286, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content #post_content #comments .comment {
   border-bottom: 1px solid #d6dce0;
   padding: 1.5em 2em;
 }
-/* line 270, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 289, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content #post_content #comments .comment .clear_both {
   clear: both;
 }
-/* line 273, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 292, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content #post_content #comments .comment:after {
   clear: both;
 }
-/* line 276, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 295, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content #post_content #comments .comment .comment_content {
   float: left;
 }
-/* line 278, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 297, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content #post_content #comments .comment .comment_content .comment_name {
   margin: 1em 0 0 0;
   font-size: 0.7em;
   text-transform: uppercase;
 }
-/* line 283, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 302, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content #post_content #comments .comment .comment_content .comment_body {
   font-size: 1.2em;
   margin: 0.2em 0 0 0;
 }
-/* line 287, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 306, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content #post_content #comments .comment .comment_content .comment_time {
   margin-top: 1.2em;
   font-size: .8em;
 }
-/* line 292, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 311, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content #post_content #comments .comment .button {
   float: right;
 }
-/* line 296, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 315, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content #post_content #comments input[type="text"], #main_content #post_content #comments textarea {
   width: 50%;
 }
-/* line 301, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 320, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content #page_wrapper {
   padding: 3em;
 }
-/* line 303, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 322, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content #page_wrapper #profile_image {
   width: 300px;
   float: left;
   margin-right: 2em;
 }
-/* line 307, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 326, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content #page_wrapper #profile_image img {
   width: 100%;
   border-radius: 0.35em;
 }
-/* line 313, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 332, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content #page_wrapper #content h1 {
   font-weight: 500;
 }
-/* line 316, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 335, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content #page_wrapper #content p {
   font-size: 1.1em;
   line-height: 1.75;
 }
-/* line 320, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 339, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #main_content #page_wrapper #content a {
   color: #33acb7;
   font-weight: 700;
   text-decoration: none;
 }
 
-/* line 331, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 350, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #pins {
   margin: 0 auto;
   width: 100%;
 }
-/* line 334, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 353, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #pins .box {
   margin: 10px;
   width: 225px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
   text-align: center;
-  padding: 0px;
+  padding: 0;
 }
-/* line 340, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+/* line 359, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
 #pins .box img {
   max-width: 100%;
   height: auto;
+}
+
+/* line 367, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+.short-line {
+  background: #3468A5;
+  border-style: none;
+  border-radius: 0;
+  margin: 10px auto 50px;
+  z-index: 53;
+  width: 50px;
+  height: 3px;
+  position: relative;
+}
+
+/* line 379, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+.product_showpage {
+  padding: 30px 180px 50px;
+  display: block;
+  margin: 20px auto 100px;
+  background-color: #fff;
+  color: #333;
+  width: 960px;
+  min-height: 400px;
+  box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 1px;
+}
+
+/* line 392, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+.round-image-50 {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  text-align: center;
+}
+/* line 402, /Users/Yammy/RoRproject/store-repo/debug-share/app/assets/stylesheets/application.scss */
+.round-image-50 img {
+  width: 100%;
+}
+.toast-title {
+	font-weight: bold;
+}
+.toast-message {
+    word-wrap: break-word;
+}
+
+.toast-message a,
+.toast-message label{
+	color: #FFF;
+}
+.toast-message a:hover {
+	color: #CCC;
+	text-decoration: none;
+}
+
+.toast-top-left {
+	top: 12px;
+	left: 12px;
+}
+
+.toast-bottom-right {
+	right: 12px;
+	bottom: 12px;
+}
+
+.toast-bottom-left {
+	left: 12px;
+	bottom: 12px;
+}
+
+#toast-container  {
+	position: fixed;
+	z-index: 9999;
+}
+
+#toast-container > div {
+	background-position: 15px center;
+	background-repeat: no-repeat;
+	-moz-border-radius: 3px 3px 3px 3px; 
+	-webkit-border-radius: 3px 3px 3px 3px; 
+	border-radius: 3px 3px 3px 3px;
+	-moz-box-shadow: 0 0 12px #999999; 
+	-webkit-box-shadow: 0 0 12px #999999; 
+	-o-box-shadow: 0 0 12px #999999; 
+	box-shadow: 0 0 12px #999999;
+	color: #FFFFFF;
+	margin: 0 0 6px;
+	filter: alpha(opacity=80);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	opacity: 0.8;
+	padding: 15px 15px 15px 50px;
+	width: 300px;
+}
+
+.toast {
+	background-color: #030303;
+}
+
+.toast-success{
+	background-color: #51A351;
+}
+
+.toast-error{
+	background-color: #BD362F;
+}
+
+.toast-info{
+	background-color: #2F96B4;
+}
+
+.toast-warning{
+	background-color: #F89406;
+}
+.toast-top-right {
+	top: 12px;
+	right: 12px;
+}
+
+#toast-container > :hover {
+	-moz-box-shadow: 0 0 12px #000000; 
+	-webkit-box-shadow: 0 0 12px #000000; 
+	-o-box-shadow: 0 0 12px #000000; 
+	box-shadow: 0 0 12px #000000;
+	filter: alpha(opacity=100);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	opacity: 1;
+	cursor: pointer;
+}
+
+#toast-container > .toast-info {
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGwSURBVEhLtZa9SgNBEMc9sUxxRcoUKSzSWIhXpFMhhYWFhaBg4yPYiWCXZxBLERsLRS3EQkEfwCKdjWJAwSKCgoKCcudv4O5YLrt7EzgXhiU3/4+b2ckmwVjJSpKkQ6wAi4gwhT+z3wRBcEz0yjSseUTrcRyfsHsXmD0AmbHOC9Ii8VImnuXBPglHpQ5wwSVM7sNnTG7Za4JwDdCjxyAiH3nyA2mtaTJufiDZ5dCaqlItILh1NHatfN5skvjx9Z38m69CgzuXmZgVrPIGE763Jx9qKsRozWYw6xOHdER+nn2KkO+Bb+UV5CBN6WC6QtBgbRVozrahAbmm6HtUsgtPC19tFdxXZYBOfkbmFJ1VaHA1VAHjd0pp70oTZzvR+EVrx2Ygfdsq6eu55BHYR8hlcki+n+kERUFG8BrA0BwjeAv2M8WLQBtcy+SD6fNsmnB3AlBLrgTtVW1c2QN4bVWLATaIS60J2Du5y1TiJgjSBvFVZgTmwCU+dAZFoPxGEEs8nyHC9Bwe2GvEJv2WXZb0vjdyFT4Cxk3e/kIqlOGoVLwwPevpYHT+00T+hWwXDf4AJAOUqWcDhbwAAAAASUVORK5CYII=") !important;
+}
+
+#toast-container > .toast-error {
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHOSURBVEhLrZa/SgNBEMZzh0WKCClSCKaIYOED+AAKeQQLG8HWztLCImBrYadgIdY+gIKNYkBFSwu7CAoqCgkkoGBI/E28PdbLZmeDLgzZzcx83/zZ2SSXC1j9fr+I1Hq93g2yxH4iwM1vkoBWAdxCmpzTxfkN2RcyZNaHFIkSo10+8kgxkXIURV5HGxTmFuc75B2RfQkpxHG8aAgaAFa0tAHqYFfQ7Iwe2yhODk8+J4C7yAoRTWI3w/4klGRgR4lO7Rpn9+gvMyWp+uxFh8+H+ARlgN1nJuJuQAYvNkEnwGFck18Er4q3egEc/oO+mhLdKgRyhdNFiacC0rlOCbhNVz4H9FnAYgDBvU3QIioZlJFLJtsoHYRDfiZoUyIxqCtRpVlANq0EU4dApjrtgezPFad5S19Wgjkc0hNVnuF4HjVA6C7QrSIbylB+oZe3aHgBsqlNqKYH48jXyJKMuAbiyVJ8KzaB3eRc0pg9VwQ4niFryI68qiOi3AbjwdsfnAtk0bCjTLJKr6mrD9g8iq/S/B81hguOMlQTnVyG40wAcjnmgsCNESDrjme7wfftP4P7SP4N3CJZdvzoNyGq2c/HWOXJGsvVg+RA/k2MC/wN6I2YA2Pt8GkAAAAASUVORK5CYII=") !important;
+}
+
+#toast-container > .toast-success {
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVEhLY2AYBfQMgf///3P8+/evAIgvA/FsIF+BavYDDWMBGroaSMMBiE8VC7AZDrIFaMFnii3AZTjUgsUUWUDA8OdAH6iQbQEhw4HyGsPEcKBXBIC4ARhex4G4BsjmweU1soIFaGg/WtoFZRIZdEvIMhxkCCjXIVsATV6gFGACs4Rsw0EGgIIH3QJYJgHSARQZDrWAB+jawzgs+Q2UO49D7jnRSRGoEFRILcdmEMWGI0cm0JJ2QpYA1RDvcmzJEWhABhD/pqrL0S0CWuABKgnRki9lLseS7g2AlqwHWQSKH4oKLrILpRGhEQCw2LiRUIa4lwAAAABJRU5ErkJggg==") !important;
+}
+
+#toast-container > .toast-warning {
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGYSURBVEhL5ZSvTsNQFMbXZGICMYGYmJhAQIJAICYQPAACiSDB8AiICQQJT4CqQEwgJvYASAQCiZiYmJhAIBATCARJy+9rTsldd8sKu1M0+dLb057v6/lbq/2rK0mS/TRNj9cWNAKPYIJII7gIxCcQ51cvqID+GIEX8ASG4B1bK5gIZFeQfoJdEXOfgX4QAQg7kH2A65yQ87lyxb27sggkAzAuFhbbg1K2kgCkB1bVwyIR9m2L7PRPIhDUIXgGtyKw575yz3lTNs6X4JXnjV+LKM/m3MydnTbtOKIjtz6VhCBq4vSm3ncdrD2lk0VgUXSVKjVDJXJzijW1RQdsU7F77He8u68koNZTz8Oz5yGa6J3H3lZ0xYgXBK2QymlWWA+RWnYhskLBv2vmE+hBMCtbA7KX5drWyRT/2JsqZ2IvfB9Y4bWDNMFbJRFmC9E74SoS0CqulwjkC0+5bpcV1CZ8NMej4pjy0U+doDQsGyo1hzVJttIjhQ7GnBtRFN1UarUlH8F3xict+HY07rEzoUGPlWcjRFRr4/gChZgc3ZL2d8oAAAAASUVORK5CYII=") !important;
 }

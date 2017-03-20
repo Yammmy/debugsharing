@@ -36,7 +36,6 @@ function msg_show(type, msg, title) {
   toastr.options = {
   closeButton: true,
   progressBar: true,
-  progressBar: true,
   // positionClass: "toast-top-center",
   showEasing: "swing",
   hideEasing: "linear",

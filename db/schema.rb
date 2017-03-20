@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170317172419) do
+ActiveRecord::Schema.define(version: 20170320103734) do
 
   create_table "cart_items", force: :cascade do |t|
     t.integer  "cart_id"
@@ -18,6 +18,9 @@ ActiveRecord::Schema.define(version: 20170317172419) do
     t.integer  "quantity",   default: 1
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
+    t.index ["cart_id"], name: "index_cart_items_on_cart_id"
+    t.index ["product_id"], name: "index_cart_items_on_product_id"
+    t.index ["quantity"], name: "index_cart_items_on_quantity"
   end
 
   create_table "carts", force: :cascade do |t|
@@ -57,6 +60,8 @@ ActiveRecord::Schema.define(version: 20170317172419) do
     t.string   "avatar"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["avatar"], name: "index_photos_on_avatar"
+    t.index ["product_id"], name: "index_photos_on_product_id"
   end
 
   create_table "product_lists", force: :cascade do |t|
@@ -66,6 +71,10 @@ ActiveRecord::Schema.define(version: 20170317172419) do
     t.integer  "quantity"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.index ["order_id"], name: "index_product_lists_on_order_id"
+    t.index ["product_name"], name: "index_product_lists_on_product_name"
+    t.index ["product_price"], name: "index_product_lists_on_product_price"
+    t.index ["quantity"], name: "index_product_lists_on_quantity"
   end
 
   create_table "product_relationships", force: :cascade do |t|
@@ -73,6 +82,8 @@ ActiveRecord::Schema.define(version: 20170317172419) do
     t.integer  "product_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["product_id"], name: "index_product_relationships_on_product_id"
+    t.index ["user_id"], name: "index_product_relationships_on_user_id"
   end
 
   create_table "products", force: :cascade do |t|
@@ -87,6 +98,7 @@ ActiveRecord::Schema.define(version: 20170317172419) do
     t.text     "body"
     t.integer  "user_id"
     t.boolean  "is_hidden",   default: false
+    t.index ["user_id"], name: "index_products_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

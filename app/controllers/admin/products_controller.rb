@@ -1,10 +1,8 @@
 class Admin::ProductsController < ApplicationController
-  before_action :authenticate_user!
-  before_action :admin_required
-  layout 'admin'
+  before_action :find_product, only: [:edit, :update, :destroy, :publish, :hide]
 
   def index
-    @products = Product.all
+    @products = Product.includes(:photos).all
   end
 
   def new
@@ -28,12 +26,9 @@ class Admin::ProductsController < ApplicationController
   end
 
   def edit
-    @product = Product.find(params[:id])
   end
 
   def update
-    @product = Product.find(params[:id])
-
     if params[:photos] != nil
       @product.photos.destroy_all
 
@@ -52,28 +47,25 @@ class Admin::ProductsController < ApplicationController
   end
 
   def destroy
-    @product = Product.find(params[:id])
-
     @product.destroy
     redirect_to products_path
   end
 
   def publish
-    @product = Product.find(params[:id])
     @product.publish!
-
     redirect_to :back
   end
 
   def hide
-    @product = Product.find(params[:id])
-
     @product.hide!
-
     redirect_to :back
   end
 
   private
+
+  def find_product
+    @product = Product.find(params[:id])
+  end
 
   def product_params
     params.require(:product).permit(:title, :description, :body, :category, :quantity, :price, :is_hidden, :image)

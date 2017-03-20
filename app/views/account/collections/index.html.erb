@@ -1,5 +1,47 @@
-<% @products.each do |product|%>
-  <p><%= link_to(product.title, product_path(product)) %></p>
-  <p><%= product.description %></p>
-  <p><%= product.price %></p>
+
+<div class="row" style="margin-top: 50px; margin-left: 60px; margin-bottom: 100px;">
+
+  <div id="main_content">
+    <div id="pins" class="transitions-enabled">
+      <% @products.each do |product| %>
+        <div class="col-sm-4 col-xs-6 box">
+          <%= link_to product_path(product) do %>
+            <% if product.photos.present? %>
+              <%= image_tag(product.photos[0].avatar.thumb.url, class: "thumbnail") %>
+            <% else %>
+              <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
+            <% end %>
+          <% end %>
+          <%= product.title %>  <hr> 类别: <%= product.category %> | ￥ <%= product.price %> |
+          <%= link_to like_product_path(product), method: :put do %>
+            <div class="pic-thumbs-up pull-right" style="margin-right: 10px;">
+              <i class="fa fa-thumbs-up", style="color: #3468A5;"></i>
+              <%= product.get_upvotes.size %>
+            </div>
+          <% end %>
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
+
+      <% end %>
+
+    </div>
+  </div>
+</div>
+
+<%= content_for :handwrite_javascript do%>
+  <script>
+    $(function(){
+        var $pins = $('#pins');
+        $pins.imagesLoaded(function(){
+          // $box.fadeIn();
+          $pins.masonry({
+            itemSelector : '.box',
+            isFitWidth: true,
+          });
+        });
+      });
+  </script>
 <% end %>

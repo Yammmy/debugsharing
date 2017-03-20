@@ -1,13 +1,13 @@
 class ProductsController < ApplicationController
 
   before_action :authenticate_user!, only: [:collect, :discollect]
+  before_action :find_product, only: [:show, :collect, :discollect, :upvote, :add_to_cart]
 
   def index
-    @products = Product.includes(:photos).where(:is_hidden => false).order("id DESC").paginate(page: params[:page], per_page: 16)
+    @products = Product.includes(:photos).where(:is_hidden => false).order("id DESC").paginate(page: params[:page], per_page: 8)
   end
 
   def show
-    @product = Product.find(params[:id])
     @photos = @product.photos.all
     if @product.is_hidden
       flash[:warning] = "This product has already been archieved"
@@ -16,8 +16,6 @@ class ProductsController < ApplicationController
   end
 
   def collect
-    @product = Product.find(params[:id])
-
     if !current_user.has_collected?(@product)
       current_user.collect!(@product)
       flash[:notice] = "You've successfully collected the skill!"
@@ -29,8 +27,6 @@ class ProductsController < ApplicationController
   end
 
   def discollect
-    @product = Product.find(params[:id])
-
     if current_user.has_collected?(@product)
       current_user.discollect!(@product)
       flash[:alert] = "You've successfully discollected the skill!"
@@ -42,13 +38,11 @@ class ProductsController < ApplicationController
   end
 
   def upvote
-    @product = Product.find(params[:id])
     @product.upvote_by current_user
     redirect_to :back
   end
 
   def add_to_cart
-    @product = Product.find(params[:id])
     if !current_cart.products.include?(@product)
       current_cart.add_product_to_cart(@product)
       flash[:notice] = "Successfully add #{@product.title} to cart!"
@@ -60,9 +54,9 @@ class ProductsController < ApplicationController
 
   def search
     if params[:search].present?
-      @products = Product.search(params[:search], fields:["title", "description"])
+      @products = Product.includes(:photos).search(params[:search], fields:["title", "description"])
     else
-      @products = Product.where(:is_hidden => false).order("created_at DESC").paginate(page: params[:page], per_page: 16)
+      @products = Product.includes(:photos).where(:is_hidden => false).order("id DESC").paginate(page: params[:page], per_page: 8)
     end
   end
 
@@ -71,25 +65,28 @@ class ProductsController < ApplicationController
   end
 
   def rails
-    @products = Product.where(:category => "rails").paginate(:page => params[:page], :per_page => 5)
+    @products = Product.includes(:photos).where(:is_hidden => false, :category => "rails").paginate(:page => params[:page], :per_page => 8)
   end
 
   def heroku
-    @products = Product.where(:category => "heroku").paginate(:page => params[:page], :per_page => 5)
+    @products = Product.includes(:photos).where(:is_hidden => false, :category => "heroku").paginate(:page => params[:page], :per_page => 8)
   end
 
   def frontend
-    @products = Product.where(:category => "frontend").paginate(:page => params[:page], :per_page => 5)
+    @products = Product.includes(:photos).where(:is_hidden => false, :category => "frontend").paginate(:page => params[:page], :per_page => 8)
   end
 
   def backend
-    @products = Product.where(:category => "backend").paginate(:page => params[:page], :per_page => 5)
+    @products = Product.includes(:photos).where(:is_hidden => false, :category => "backend").paginate(:page => params[:page], :per_page => 8)
   end
 
   def others
-    @products = Product.where(:category => "others").paginate(:page => params[:page], :per_page => 5)
+    @products = Product.includes(:photos).where(:is_hidden => false, :category => "others").paginate(:page => params[:page], :per_page => 8)
   end
 
+  private
 
-
+  def find_product
+    @product = Product.find(params[:id])
+  end
 end

@@ -1,13 +1,10 @@
 class CommentsController < ApplicationController
-
-  before_action :authenticate_user!, only: [:create, :destroy]
-
-
+  before_action :authenticate_user!
+  before_action :find_product_ids
 
   # POST /comments
   # POST /comments.json
   def create
-    @product = Product.find(params[:product_id])
     @comment = @product.comments.new(comment_params)
     @comment.user = current_user
 
@@ -18,11 +15,9 @@ class CommentsController < ApplicationController
     end
   end
 
-
   # DELETE /comments/1
   # DELETE /comments/1.json
   def destroy
-    @product = Product.find(params[:product_id])
     @comment = Comment.find(params[:id])
     @comment.destroy
     redirect_to product_path(@product), alert: "你已成功删除评论。"
@@ -30,9 +25,11 @@ class CommentsController < ApplicationController
 
   private
 
-
+  def find_product_ids
+    @product = Product.find(params[:product_id])
+  end
     # Never trust parameters from the scary internet, only allow the white list through.
-    def comment_params
-      params.require(:comment).permit(:product_id, :body, :user_id)
-    end
+  def comment_params
+    params.require(:comment).permit(:product_id, :body, :user_id)
+  end
 end

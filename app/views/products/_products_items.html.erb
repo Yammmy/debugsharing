@@ -1,4 +1,4 @@
-<% @products.each do |product| %>
+
   <div class="col-sm-4 col-xs-6 box">
     <%= link_to product_path(product) do %>
       <% if product.photos.present? %>
@@ -16,8 +16,4 @@
     <% end %>
     <br>
     <br>
-    <br>
-    <br>
   </div>
-
-<% end %>

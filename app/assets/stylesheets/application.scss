@@ -11,11 +11,9 @@
  * It is generally better to create a new file per style scope.
  *
  *= require 'masonry/transitions'
- *= require social-share-button
  *= require jquery-ui
  *= require_tree .
  *= require_self
- *= require toastr
  */
 
 
@@ -95,11 +93,12 @@
  .navbar-default {
    border-bottom-color: #d6dce0;
    margin-bottom: 0;
+   padding-left: 195px;
  }
 
  .navbar-default .navbar-brand {
    color: #3468A5;
-   padding: 20px 15px;
+   padding: 0 40px 20px 15px;
    line-height: 30px;
 }
 
@@ -229,7 +228,7 @@
 			font-weight: 700;
 			font-size: 0.7em;
 			text-transform: uppercase;
-			color: #3468A5;
+			color: black;
 		}
   }
 }
@@ -394,8 +393,9 @@
       border-radius: 25px;
       -moz-border-radius: 25px;
       -webkit-border-radius: 25px;
-      height: 50px;
-      width: 50px;
+      height: 40px;
+      width: 40px;
+      margin-top: 5px;
       overflow: hidden;
       text-align: center;
       img { width: 100% }

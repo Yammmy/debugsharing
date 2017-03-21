@@ -19,31 +19,6 @@
 //= require bootstrap/dropdown
 //= require masonry/jquery.masonry
 //= require_tree .
-//= require toastr
-
-//= require bootstrap/carousel
 
 //= require social-share-button
 //= require social-share-button/wechat
-
-
-$(document).ready(function() {
-  $('#myCarousel').carousel({interval: 2000});
-
-});
-
-function msg_show(type, msg, title) {
-  toastr.options = {
-  closeButton: true,
-  progressBar: true,
-  // positionClass: "toast-top-center",
-  showEasing: "swing",
-  hideEasing: "linear",
-  showMethod: 'fadeIn',
-  hideMethod: "fadeOut",
-  tapToDismiss: false,
-  timeOut: 8000
-  };
-  toastr[type](msg, title);
-
-}

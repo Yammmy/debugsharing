@@ -37,6 +37,9 @@
     <div id="pins" class="transitions-enabled">
       <%= render :partial => "products_items", :collection => @products, :as => :product %>
     </div>
+    <div class="text-center">
+      <%= will_paginate @products, renderer: BootstrapPagination::Rails %>
+    </div>
   </div>
 </div>
 

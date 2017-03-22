@@ -54,9 +54,10 @@ class ProductsController < ApplicationController
 
   def search
     if params[:search].present?
-      @products = Product.includes(:photos).search(params[:search], fields:["title", "description"])
+      @products = Product.includes(:photos).where(:is_hidden => false).search(params[:search], fields:["title", "description"])
     else
       @products = Product.includes(:photos).where(:is_hidden => false).order("id DESC").paginate(page: params[:page], per_page: 8)
+      flash[:alert] = "Opps! No skills matched yet, welcome see all the skills below."
     end
   end
 

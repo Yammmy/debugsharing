@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
   before_action :find_product, only: [:show, :collect, :discollect, :upvote, :add_to_cart]
 
   def index
-    @products = Product.includes(:photos).where(:is_hidden => false).order("id DESC").paginate(page: params[:page], per_page: 8)
+    desplay_products
   end
 
   def show
@@ -56,7 +56,7 @@ class ProductsController < ApplicationController
     if params[:search].present?
       @products = Product.includes(:photos).where(:is_hidden => false).search(params[:search], fields:["title", "description"])
     else
-      @products = Product.includes(:photos).where(:is_hidden => false).order("id DESC").paginate(page: params[:page], per_page: 8)
+      desplay_products
       flash[:alert] = "Opps! No skills matched yet, welcome see all the skills below."
     end
   end
@@ -66,28 +66,32 @@ class ProductsController < ApplicationController
   end
 
   def rails
-    @products = Product.includes(:photos).where(:is_hidden => false, :category => "rails").paginate(:page => params[:page], :per_page => 8)
+    desplay_products.where(:category => "rails")
   end
 
   def heroku
-    @products = Product.includes(:photos).where(:is_hidden => false, :category => "heroku").paginate(:page => params[:page], :per_page => 8)
+    desplay_products.where(:category => "heroku")
   end
 
   def frontend
-    @products = Product.includes(:photos).where(:is_hidden => false, :category => "frontend").paginate(:page => params[:page], :per_page => 8)
+    desplay_products.where(:category => "frontend")
   end
 
   def backend
-    @products = Product.includes(:photos).where(:is_hidden => false, :category => "backend").paginate(:page => params[:page], :per_page => 8)
+    desplay_products.where(:category => "backend")
   end
 
   def others
-    @products = Product.includes(:photos).where(:is_hidden => false, :category => "others").paginate(:page => params[:page], :per_page => 8)
+    desplay_products.where(:category => "others")
   end
 
   private
 
   def find_product
     @product = Product.find(params[:id])
+  end
+
+  def desplay_products
+    @products = Product.includes(:photos).where(:is_hidden => false).order("id DESC").paginate(page: params[:page], per_page: 8)
   end
 end

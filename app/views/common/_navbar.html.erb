@@ -38,6 +38,11 @@
                   购物车 <i class="fa fa-shopping-cart"></i> ( <%= current_cart.products.count%> )
                 <% end %>
               </li>
+              <li style="margin-right: 40px;">
+                <%= link_to conversations_path do %>
+                  站内信 <i class="fa fa-envelope" style="color:#3468A5;"></i>
+                <% end %>
+              </li>
               <% if !current_user %>
                  <button class="button">
                    <%= link_to('<span class="glyphicon glyphicon-log-in"></span> 登录'.html_safe, new_user_session_path) %>

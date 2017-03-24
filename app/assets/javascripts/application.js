@@ -22,3 +22,5 @@
 
 //= require social-share-button
 //= require social-share-button/wechat
+
+//= require chosen-jquery

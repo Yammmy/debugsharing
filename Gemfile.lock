@@ -79,6 +79,10 @@ GEM
       uniform_notifier (~> 1.10.0)
     byebug (9.0.6)
     choice (0.2.0)
+    chosen-rails (1.5.2)
+      coffee-rails (>= 3.2)
+      railties (>= 3.0)
+      sass-rails (>= 3.2)
     climate_control (0.1.0)
     cocaine (0.5.8)
       climate_control (>= 0.0.3, < 1.0)
@@ -293,6 +297,9 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
+    mailboxer (0.14.0)
+      carrierwave (>= 0.5.8)
+      rails (>= 4.2.0)
     masonry-rails (0.2.4)
       railties
     method_source (0.8.2)
@@ -485,6 +492,7 @@ DEPENDENCIES
   bullet
   byebug
   carrierwave!
+  chosen-rails
   coffee-rails (~> 4.2)
   dalli
   devise
@@ -496,6 +504,7 @@ DEPENDENCIES
   jquery-ui-rails
   letter_opener
   listen (~> 3.0.5)
+  mailboxer
   masonry-rails
   mini_magick
   newrelic_rpm

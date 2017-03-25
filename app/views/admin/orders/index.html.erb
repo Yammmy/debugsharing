@@ -1,23 +1,35 @@
-<h2> 订单列表 </h2>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("th").css("background-color", "#3468A5");
+});
+</script>
 
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>创建时间</th>
-      <th>订购人</th>
-      <th>订单状态</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @orders.each do |order| %>
-    <tr>
-      <td> <%= link_to(order.id, admin_order_path(order) ) %> </td>
-      <td> <%= render_order_created_time(order) %> </td>
-      <td> <%= order.user.name %></td>
-      <td> <%= order.aasm_state %> </td>
-    </tr>
-    <% end %>
+<div class="admin_order_indexpage">
+  <br>
+  <h2 class="text-center"> 订单列表 </h2>
+  <div class="short-line"></div>
 
-  </tbody>
-</table>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>创建时间</th>
+        <th>订购人</th>
+        <th>订单状态</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @orders.each do |order| %>
+      <tr>
+        <td> <%= link_to(order.id, admin_order_path(order) ) %> </td>
+        <td> <%= render_order_created_time(order) %> </td>
+        <td> <%= order.user.name %></td>
+        <td> <%= order.aasm_state %> </td>
+      </tr>
+      <% end %>
+
+    </tbody>
+  </table>
+
+</div>

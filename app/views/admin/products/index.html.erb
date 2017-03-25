@@ -1,53 +1,65 @@
-<h2 class="text-center"> 经验列表 </h2>
-<div class="pull-right" style="padding-bottom: 20px;">
-  <%= link_to("新增经验", new_admin_product_path, class: "btn btn-primary btn-sm") %>
-</div>
-<table class="table table-bordered" style="margin-bottom: 100px;">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th width="220">题图</th>
-      <th>标题</th>
-      <th>分类</th>
-      <th>单价</th>
-      <th width="100"> 操作选项</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @products.each do |product| %>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("th").css("background-color", "#3468A5");
+});
+</script>
+
+<div class="admin_products_indexpage">
+  <br>
+  <h2 class="text-center"> 经验列表 </h2>
+  <div class="short-line"></div>
+  <div class="pull-right" style="padding-bottom: 20px;">
+    <%= link_to("新增经验", new_admin_product_path, class: "btn btn-primary btn-sm") %>
+  </div>
+  <table class="table table-bordered" style="margin-bottom: 100px;">
+    <thead>
       <tr>
-        <td>
-          <%= product.id %>
-        </td>
-        <td>
-          <%= link_to product_path(product) do %>
-            <% if product.photos.present? %>
-              <%= image_tag(product.photos[0].avatar.thumb.url, class: "thumbnail") %>
-            <% else %>
-              <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
-            <% end %>
-          <% end %>
-        </td>
-        <td>
-          <%= render_product_status(product) %>
-          <%= link_to(product.title, product_path(product)) %>
-        </td>
-        <td>
-          <%= product.category %>
-        </td>
-        <td>
-          <%= product.price %>
-        </td>
-        <td>
-          <%= link_to edit_admin_product_path(product), class: "btn btn-xs btn-primary" do %> <i class="fa fa-pencil-square"></i> 修改<% end %> <hr>
-          <%= link_to admin_product_path(product), method: :delete, class: "btn btn-xs btn-primary" do %> <i class="fa fa-trash-o"></i> 删除<% end %> <hr>
-          <% if product.is_hidden %>
-            <%= link_to publish_admin_product_path(product), :method => :post, :class => "btn btn-xs btn-primary" do %> <i class="fa fa-eye"></i> 公开<% end %>
-          <% else %>
-            <%= link_to hide_admin_product_path(product),  :method => :post, :class => "btn btn-xs btn-primary" do %> <i class="fa fa-eye-slash"></i> 隐藏 <% end %>
-          <% end %>
-        </td>
+        <th>#</th>
+        <th width="220">题图</th>
+        <th>标题</th>
+        <th>分类</th>
+        <th>单价</th>
+        <th width="100"> 操作选项</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      <% @products.each do |product| %>
+        <tr>
+          <td>
+            <%= product.id %>
+          </td>
+          <td>
+            <%= link_to product_path(product) do %>
+              <% if product.photos.present? %>
+                <%= image_tag(product.photos[0].avatar.thumb.url, class: "thumbnail") %>
+              <% else %>
+                <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
+              <% end %>
+            <% end %>
+          </td>
+          <td>
+            <%= render_product_status(product) %>
+            <%= link_to(product.title, product_path(product)) %>
+          </td>
+          <td>
+            <%= product.category %>
+          </td>
+          <td>
+            <%= product.price %>
+          </td>
+          <td>
+            <%= link_to edit_admin_product_path(product), class: "btn btn-xs btn-primary" do %> <i class="fa fa-pencil-square"></i> 修改<% end %> <hr>
+            <%= link_to admin_product_path(product), method: :delete, class: "btn btn-xs btn-primary" do %> <i class="fa fa-trash-o"></i> 删除<% end %> <hr>
+            <% if product.is_hidden %>
+              <%= link_to publish_admin_product_path(product), :method => :post, :class => "btn btn-xs btn-primary" do %> <i class="fa fa-eye"></i> 公开<% end %>
+            <% else %>
+              <%= link_to hide_admin_product_path(product),  :method => :post, :class => "btn btn-xs btn-primary" do %> <i class="fa fa-eye-slash"></i> 隐藏 <% end %>
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+</div>

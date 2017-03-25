@@ -1,7 +1,15 @@
-<div class="row">
-  <div class="col-md-12">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("th").css("background-color", "#3468A5");
+});
+</script>
 
-    <h2 style="margin-left: 20px;"> 购物车 </h2>
+<div class="row cart-indexpage">
+  <div class="col-md-12">
+    <br>
+    <h2 class="text-center"> 购物车 </h2>
+    <div class="short-line"></div>
     <div class="pull-right btn btn-danger" style="margin-bottom: 20px;">
       <%= link_to("清空购物车", clear_cart_carts_path, method: :delete, data: { confirm: "你确定要清空整个购物车吗? "}) %>
     </div>

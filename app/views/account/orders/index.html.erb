@@ -1,21 +1,32 @@
-<h2> Order List </h2>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("th").css("background-color", "#3468A5");
+});
+</script>
 
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Post time</th>
+<br>
+<div class="account_orders_indexpage">
+  <h2 class="text-center"> Order List </h2>
 
-    </tr>
-  </thead>
-  <tbody>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Post time</th>
 
-    <% @orders.each do |order| %>
-    <tr>
-      <td> <%= link_to(order.id, order_path(order.token)) %> </td>
-      <td> <%= order.created_at.to_s(:long) %> </td>
-    </tr>
-    <% end %>
+      </tr>
+    </thead>
+    <tbody>
 
-  </tbody>
-</table>
+      <% @orders.each do |order| %>
+      <tr>
+        <td> <%= link_to(order.id, order_path(order.token)) %> </td>
+        <td> <%= order.created_at.to_s(:long) %> </td>
+      </tr>
+      <% end %>
+
+    </tbody>
+  </table>
+
+</div>

@@ -22,6 +22,7 @@
  @import "font-awesome";
  @import "social-share-button";
  @import "chosen";
+ @import "semantic-ui";
 
 //--------  social button   ---------
  $size: 24px;
@@ -400,4 +401,23 @@
       overflow: hidden;
       text-align: center;
       img { width: 100% }
+  }
+
+//--------  decorate page ---------
+  .cart-indexpage {
+    padding: 30px 180px 50px;
+  }
+
+
+  .admin_products_indexpage {
+    padding: 30px 180px 50px;
+  }
+
+
+  .admin_order_indexpage {
+    padding: 30px -80px 50px 180px;
+  }
+
+  .account_orders_indexpage {
+    padding: 30px -80px 50px 180px;
   }

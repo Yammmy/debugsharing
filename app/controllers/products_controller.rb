@@ -8,6 +8,9 @@ class ProductsController < ApplicationController
   end
 
   def show
+    set_page_title @product.title
+    set_page_description @product.description
+    set_page_image @product.image_url
     @photos = @product.photos.all
     if @product.is_hidden
       flash[:warning] = "This product has already been archieved"

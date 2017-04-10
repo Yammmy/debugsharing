@@ -24,6 +24,3 @@
 //= require social-share-button/wechat
 
 //= require chosen-jquery
-
-// Loads all Semantic javascripts
-//= require semantic-ui

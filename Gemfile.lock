@@ -7,13 +7,6 @@ GIT
       activesupport (>= 4.0.0)
       mime-types (>= 1.16)
 
-GIT
-  remote: https://github.com/doabit/semantic-ui-sass.git
-  revision: 308d74a16d9acad903cd20f829634aa92d68699c
-  specs:
-    semantic-ui-sass (2.2.9.3)
-      sass (>= 3.2)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -436,6 +429,7 @@ GEM
       activemodel (>= 4.1)
       elasticsearch (>= 1)
       hashie
+    seo_helper (1.0.3)
     sexp_processor (4.8.0)
     simple_form (3.4.0)
       actionpack (> 4, < 5.1)
@@ -528,7 +522,7 @@ DEPENDENCIES
   rucaptcha
   sass-rails (~> 5.0)
   searchkick
-  semantic-ui-sass!
+  seo_helper
   simple_form
   social-share-button
   sqlite3

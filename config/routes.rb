@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
   get '/about' => 'welcome#about'
+  get '/google13b157faa1635496' => 'welcome#google13b157faa1635496'
+
 
   resources :conversations, only: [:index, :show, :destroy] do
     member do

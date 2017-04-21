@@ -24,3 +24,4 @@
 //= require social-share-button/wechat
 
 //= require chosen-jquery
+//= require autosize.min

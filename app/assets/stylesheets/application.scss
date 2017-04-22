@@ -92,17 +92,17 @@
 
 
  //--------  navbar   ---------
- .navbar-default {
-   border-bottom-color: #d6dce0;
-   margin-bottom: 0;
-   padding-left: 195px;
- }
-
- .navbar-default .navbar-brand {
-   color: #3468A5;
-   padding: 0 40px 20px 15px;
-   line-height: 30px;
-}
+//  .navbar-default {
+//    border-bottom-color: #d6dce0;
+//    margin-bottom: 0;
+//    padding-left: 195px;
+//  }
+//
+//  .navbar-default .navbar-brand {
+//    color: #3468A5;
+//    padding: 0 40px 20px 15px;
+//    line-height: 30px;
+// }
 
 
  @media (min-width: 768px) {
@@ -186,8 +186,12 @@
  //--------  footer   ---------
 
  html, body{
+   font-family: Verdana,"Helvetica Neue",Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+   background-color: #ffffff;
+   color: #333;
+   font-size: 14px;
+   letter-spacing: 0.1em;
    height: 100%;
-  font-family: Brandon Text;
  }
 
  .footer{

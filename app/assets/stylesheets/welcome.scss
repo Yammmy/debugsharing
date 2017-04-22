@@ -1,113 +1,122 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+//-------bigwelcome---------
+#bigwelcome {
+  .jumbotron {
+      background-image: url(../images/programmer.jpg);
+      background-size: cover;
+      height: 500px;
+      color: #fff;
+      padding: 100px 50px;
+      font-family: Montserrat, sans-serif;
+      .content-big {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 1200px;
+          min-width: 320px;
+          height: 700px;
+          position: relative;
+          text-align: right;
+          // padding-top: 50px;
 
-//-----------logo-------
-#logo {
-    font-size: 26px;
-    font-weight: 700;
-    // 	text-transform: uppercase;
-    letter-spacing: -1px;
-    padding: 15px 0;
+          h2 {
+              font-size: 2em;
+              color: black;
+              margin-bottom: 15px;
+              letter-spacing: 0.1em;
+          }
 
-    a {
-        color: #2F363E;
-    }
-}
-//-----------landing big pic-------
-.container-fluid .lp-section-1 {
-    margin: 0 -15px 0;
-    min-height: 100%;
-}
-.container-fluid .lp-section-2  {
-    margin: 0 -15px 0;
-    min-height: 100%;
-}
-.container-fluid .lp-section-3  {
-    margin: 0 -15px 0;
-    min-height: 100%;
-}
-.container-fluid .lp-section-4  {
-    margin: 0 -15px 0;
-    min-height: 100%;
-}
-.container-fluid .lp-section-5  {
-    margin: 0 -15px 0;
-    min-height: 100%;
-}
-.container-fluid .lp-section-6  {
-    margin: 0 -15px 0;
-    min-height: 100%;
-}
-.container-fluid .lp-section-bottom {
-    margin: 0 -15px 0;
-    min-height: 100%;
-}
-.container-fluid  {
+          p {
+              font-size: 16px;
+              line-height: 1.6em;
+              color: black;
+              margin: 20px 0 100px;
+              letter-spacing: 0.15em;
+          }
 
-    min-height: 100%;
-}
+              a:active,
+              a:hover,
+              a:link,
+              a:visited {
+                  text-decoration: none;
+              }
 
+              .action-btn {
+                  -webkit-box-sizing: content-box;
+                  -moz-box-sizing: content-box;
+                  box-sizing: content-box;
+                  cursor: pointer;
+                  margin: 0 auto;
+                  -webkit-border-radius: 0.2em;
+                  border-radius: 0.2em;
+                  text-align: center;
+                  font-size: 1.428em;
+                  text-transform: uppercase;
+                  letter-spacing: 0.3em;
+                  padding: 0.57em 1.9em;
+                  margin-top: 2.85em;
+                  -o-text-overflow: clip;
+                  text-overflow: clip;
+                  color: white;
+                  background: #3468A5;
+                  border: 2px solid #3468A5;
+                  -webkit-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),color 0.3s cubic-bezier(0, 0, 0, 0),width 0.3s cubic-bezier(0, 0, 0, 0),border-width 0.3s cubic-bezier(0, 0, 0, 0),border-color 0.3s cubic-bezier(0, 0, 0, 0);
+                  -moz-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),color 0.3s cubic-bezier(0, 0, 0, 0),width 0.3s cubic-bezier(0, 0, 0, 0),border-width 0.3s cubic-bezier(0, 0, 0, 0),border-color 0.3s cubic-bezier(0, 0, 0, 0);
+                  -o-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),color 0.3s cubic-bezier(0, 0, 0, 0),width 0.3s cubic-bezier(0, 0, 0, 0),border-width 0.3s cubic-bezier(0, 0, 0, 0),border-color 0.3s cubic-bezier(0, 0, 0, 0);
+                  transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),color 0.3s cubic-bezier(0, 0, 0, 0),width 0.3s cubic-bezier(0, 0, 0, 0),border-width 0.3s cubic-bezier(0, 0, 0, 0),border-color 0.3s cubic-bezier(0, 0, 0, 0);
 
-
-
-body {
-    font-family: Verdana,"Helvetica Neue",Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
-    background-color: #ffffff;
-    color: #333;
-    font-size: 14px;
-    letter-spacing: 0.1em;
-    height: 100%;
-}
-//content
-#ds-wrapper {
-    background-color: #ffffff;
-    padding-bottom: 70px;
+              }
+      }
+  }
 }
 
-#ds-content {
-    background-color: #ffffff;
-    padding-bottom: 100px;
+
+//-------about---------
+#about {
+  min-height: 400px;
+
+  .content {
+      padding-top: 30px;
+      margin: 0 auto;
+      text-align: center;
+
+      h2 {
+          font-size: 2em;
+          letter-spacing: 3px;
+      }
+
+      p {
+          line-height: 34px;
+          color: #666;
+          padding: 0 100px;
+          text-align: center;
+      }
+  }
 }
-//lp-section-1
-.lp-section-1 {
-    background: linear-gradient(rgba(12,12,9,0.4), rgba(12,12,9,0.4)),url(../images/programmer.jpg);
-    background-size: cover;
-    position: relative;
+
+//---------explore----------
+#explore {
     display: block;
+    background: linear-gradient(rgba(12,12,9,0.4), rgba(12,12,9,0.4)),url(../images/boat.jpg);
     background-position: center 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    height: 700px;
+    background-size: cover;
+    margin: 50px auto 0;
+    height: 200px;
+    position: relative;
 
-    .content-1 {
+    .bottom-content {
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        max-width: 1200px;
-        min-width: 320px;
-        height: 700px;
+        height: 200px;
         position: relative;
-        text-align: right;
-        padding-top: 180px;
-
-        h2 {
-            font-size: 42px;
-            color: black;
-            margin-bottom: 15px;
-            letter-spacing: 0.1em;
-        }
-
-        p {
-            font-size: 16px;
-            line-height: 1.6em;
-            color: black;
-            margin: 20px 0 100px;
-            letter-spacing: 0.15em;
-        }
+        text-align: center;
+        padding-top: 40px;
+        margin-top: 40px;
     }
-  }
 
     a:active,
     a:hover,
@@ -126,12 +135,12 @@ body {
         border-radius: 0.2em;
         text-align: center;
         font-size: 1.428em;
-        text-transform: uppercase;
         letter-spacing: 0.3em;
         padding: 0.57em 1.9em;
         margin-top: 2.85em;
         -o-text-overflow: clip;
         text-overflow: clip;
+        letter-spacing: 2px;
         color: white;
         background: #3468A5;
         border: 2px solid #3468A5;
@@ -139,464 +148,266 @@ body {
         -moz-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),color 0.3s cubic-bezier(0, 0, 0, 0),width 0.3s cubic-bezier(0, 0, 0, 0),border-width 0.3s cubic-bezier(0, 0, 0, 0),border-color 0.3s cubic-bezier(0, 0, 0, 0);
         -o-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),color 0.3s cubic-bezier(0, 0, 0, 0),width 0.3s cubic-bezier(0, 0, 0, 0),border-width 0.3s cubic-bezier(0, 0, 0, 0),border-color 0.3s cubic-bezier(0, 0, 0, 0);
         transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),color 0.3s cubic-bezier(0, 0, 0, 0),width 0.3s cubic-bezier(0, 0, 0, 0),border-width 0.3s cubic-bezier(0, 0, 0, 0),border-color 0.3s cubic-bezier(0, 0, 0, 0);
-
     }
-    //lp-section-2
-    .lp-section-2 {
-        background-color: #f2f2f2;
-        min-height: 400px;
+}
 
-        .content-2 {
-            padding-top: 50px;
-            margin: 0 auto;
-            height: 400px;
-            width: 690px;
+//----------fqa---------
+#fqa {
+    height: 550px;
+    display: block;
+    background-color: #fff;
+    background-position: center top;
+    background-size: cover;
+    text-align: center;
+
+    .content-6 {
+        height: auto;
+        padding-top: 30px;
+        text-align: center;
+
+        .faq-title {
+            margin-bottom: 50px;
+            letter-spacing: 3px;
             text-align: center;
 
-            .short-line {
-                display: block;
-                background: #3468A5;
-                border-style: none;
-                border-radius: 0;
-                margin: 10px auto 50px;
-                z-index: 53;
-                width: 50px;
-                height: 3px;
-                position: relative;
+        }
+        .faq-block {
+          padding: auto 50px;
+          margin: 0 50px;
+          height: 400px;
+          text-align: left;
+            h5 {
+                text-decoration: underline;
+                font-weight: bold;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                color: #3468A5;
             }
-
-            h2 {
-                font-size: 2em;
-                padding-bottom: 20px;
-                letter-spacing: 3px;
-            }
-
             p {
-                line-height: 34px;
-                color: #666;
-                padding: 0 50px;
-                text-align: center;
+                font-size: 14px !important;
             }
         }
+
     }
-    //lp-section-3
-    .lp-section-3 {
-        min-width: 100%;
-        height: 550px;
-        display: block;
+}
+
+//-----------landing big pic-------
+.container-fluid .jumbotron {
+    margin: 0 -15px 0;
+    min-height: 100%;
+    border-radius: 0;
+}
+.container-fluid #about {
+    margin: 0 -15px 0;
+    min-height: 100%;
+}
+.container-fluid #services  {
+    margin: 0 -15px 0;
+    min-height: 100%;
+}
+.container-fluid #teachers   {
+    margin: 0 -15px 0;
+    min-height: 100%;
+}
+.container-fluid #customers  {
+    margin: 0 -15px 0;
+    min-height: 100%;
+}
+.container-fluid #explore   {
+    margin: 0 -15px 0;
+    min-height: 100%;
+}
+.container-fluid #fqa  {
+    margin: 0 -15px 0;
+    min-height: 100%;
+}
+.container-fluid  {
+
+    min-height: 100%;
+}
+
+//--------  navbar   ---------
+ .navbar-default {
+   border-bottom-color: #d6dce0;
+   margin-bottom: 0;
+  //  padding-left: 195px;
+ }
+
+ .navbar-default .navbar-brand {
+   color: #3468A5;
+   padding: 0 40px 20px 15px;
+   line-height: 30px;
+}
+
+body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 2em;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+  }
+  .logo {
+      color: #f4511e;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #3468A5;
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #3468A5 !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
         width: 100%;
-        background: #fff;
-        background-position: center top;
-        background-size: cover;
-        text-align: center;
-
-        .content-3 {
-          padding-top: 50px;
-          margin: 0 auto;
-          max-width: 100%;
-          text-align: center;
-
-                .short-line {
-                    display: block;
-                    background: #3468A5;
-                    border-style: none;
-                    border-radius: 0;
-                    margin: 10px auto 50px;
-                    z-index: 53;
-                    width: 50px;
-                    height: 3px;
-                    position: relative;
-                }
-
-                h2 {
-                    font-size: 2em;
-                    padding-bottom: 20px;
-                }
-
-
-            .feature-block {
-              display: block;
-              border-style: none;
-              border-radius: 0;
-              width: 300px;
-              position: relative;
-              margin: 20px 50px 20px;
-              float: left;
-              margin-left:25px;
-
-                h3 {
-                    font-size: 1.2em;
-                    line-height: 28px;
-                    margin-top: 20px;
-                    padding-bottom: 20px;
-                    color: #333;
-                }
-
-                p {
-                    line-height: 24px;
-                    width: 300px;
-                    margin-top: 30px;
-
-                    font-size: 1em;
-                    color: #666;
-                    text-align: center;
-                }
-            }
-        }
+        margin-bottom: 35px;
     }
-    //lp-section-4
-    .lp-section-4 {
-      background-color: #f2f2f2;
-
-        height: 550px;
-        min-width: 100%;
-
-        .content-4 {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 100%;
-            height: auto;
-            padding: 30px 0;
-            position: relative;
-            text-align: center;
-
-            .short-line {
-                display: block;
-                background: #3468A5;
-                border-style: none;
-                border-radius: 0;
-                // margin: 10px auto 50px;
-                z-index: 53;
-                width: 50px;
-                height: 3px;
-                position: relative;
-
-            }
-
-            h2 {
-                font-size: 2em;
-                text-align: center;
-                padding-bottom: 20px;
-                letter-spacing: 3px;
-            }
-
-            .teacher-block-left,
-            .teacher-block-right {
-                text-align: left;
-                padding-left: 0;
-                float: none;
-                width: 400px;
-                margin: 0 auto;
-
-                .top {
-                    margin: 0 auto;
-                    width: 100%;
-
-                    .img {
-                        float: left;
-                        width: 90px;
-                        text-align: center;
-                    }
-
-                    .name {
-                        float: left;
-                        width: auto;
-                        padding: 0 0 0 20px;
-
-                        span {
-                            font-size: 1.15em;
-                            line-height: 22px;
-                            font-weight: bold;
-                        }
-
-                        p {
-                            padding-top: 13px;
-                            font-size: 1em;
-                            line-height: 25px;
-                            color: #666;
-                        }
-                    }
-                }
-
-                .talk {
-                    padding-top: 5px;
-                    display: block;
-                    clear: both;
-                    width: 100%;
-                    line-height: 24px;
-                }
-            }
-        }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
     }
-    //lp-section-5
-    .lp-section-5 {
-        min-width: 100%;
-        height: 550px;
+  }
+
+  .words {
+      position: relative;
+      margin-top: 10px;
+      padding: 41px 20px 20px 25px;
+      border-radius: 3px;
+      color: #fff;
+      line-height: 25px;
+      text-align: left;
+      font-weight: bold;
+      overflow: hidden;
+      .bg {
+        position: absolute;
         display: block;
+        top: 0;
+        left: 0;
         width: 100%;
+        height: 100%;
         background: #fff;
-        background-position: center top;
-        background-size: cover;
-        text-align: center;
-
-        .content-5 {
-            width: 100%;
-            height: auto;
-            padding-top: 30px;
-            text-align: center;
-
-            .user-title {
-                margin-bottom: 50px;
-                letter-spacing: 3px;
-                text-align: center;
-
-                .short-line {
-                    display: block;
-                    background: #3468A5;
-                    border-style: none;
-                    border-radius: 0;
-                    margin: 10px auto 50px;
-                    z-index: 53;
-                    width: 50px;
-                    height: 3px;
-                    position: relative;
-                }
-
-                h2 {
-                    font-size: 2em;
-                    padding-bottom: 20px;
-                }
-                .user-say-left,
-                .user-say-right {
-                    text-align: left;
-                    padding-left: 0;
-                    float: none;
-                    width: 400px;
-                    margin: 0 auto;
-
-                    .top {
-                        margin: 0 auto;
-                        width: 100%;
-
-                        .img {
-                            float: left;
-                            width: 90px;
-                            text-align: center;
-                        }
-
-                        .name {
-                            float: left;
-                            width: auto;
-                            padding: 0 0 0 20px;
-
-                            span {
-                                font-size: 1.15em;
-                                line-height: 22px;
-                                font-weight: bold;
-                            }
-
-                            p {
-                                padding-top: 13px;
-                                font-size: 1em;
-                                line-height: 25px;
-                                color: #666;
-                            }
-                        }
-                    }
-
-                    .talk {
-                        padding-top: 5px;
-                        display: block;
-                        clear: both;
-                        width: 100%;
-                        line-height: 24px;
-                    }
-                }
-            }
-
-            .skill-block {
-              display: block;
-              border-style: none;
-              border-radius: 0;
-              width: 300px;
-              position: relative;
-
-              float: left;
-
-
-
-                h3 {
-                    font-size: 1.2em;
-                    line-height: 28px;
-                    margin-top: 20px;
-                    color: #333;
-                }
-
-                p {
-                    line-height: 24px;
-                    width: 260px;
-                    margin-top: 30px;
-                    margin-left: 20px;
-                    font-size: 1em;
-                    color: #666;
-                    text-align: center;
-                }
-            }
-        }
-    }
-    //.lp-section-bottom
-    .lp-section-bottom {
-        display: block;
-        background: linear-gradient(rgba(12,12,9,0.4), rgba(12,12,9,0.4)),url(../images/boat.jpg);
-        background-position: center 80%;
-        background-size: cover;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 0;
-        min-width: 960px;
-        height: 200px;
+        opacity: 0.7;
+        z-index: 0;
+      }
+      .quote {
+        position: absolute;
+        color: #aaa;
+        font-size: 16px;
+      }
+      .quote-l {
+        top: 10px;
+        left: 5px;
+      }
+      .quote-r {
+        bottom: 10px;
+        right: 5px;
+      }
+      .content {
         position: relative;
-
-        .bottom-content {
-            max-width: 100%;
-            padding-top: 40px;
-            padding-left: 30px;
-            padding-right: 30px;
-            text-align: center;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            height: 200px;
-            position: relative;
-            text-align: center;
-            padding-top: 40px;
-            margin-top: 40px;
-        }
-
-        a:active,
-        a:hover,
-        a:link,
-        a:visited {
-            text-decoration: none;
-        }
-
-        .action-btn {
-            -webkit-box-sizing: content-box;
-            -moz-box-sizing: content-box;
-            box-sizing: content-box;
-            cursor: pointer;
-            margin: 0 auto;
-            -webkit-border-radius: 0.2em;
-            border-radius: 0.2em;
-            text-align: center;
-            font-size: 1.428em;
-            letter-spacing: 0.3em;
-            padding: 0.57em 1.9em;
-            margin-top: 2.85em;
-            -o-text-overflow: clip;
-            text-overflow: clip;
-            letter-spacing: 2px;
-            color: white;
-            background: #3468A5;
-            border: 2px solid #3468A5;
-            -webkit-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),color 0.3s cubic-bezier(0, 0, 0, 0),width 0.3s cubic-bezier(0, 0, 0, 0),border-width 0.3s cubic-bezier(0, 0, 0, 0),border-color 0.3s cubic-bezier(0, 0, 0, 0);
-            -moz-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),color 0.3s cubic-bezier(0, 0, 0, 0),width 0.3s cubic-bezier(0, 0, 0, 0),border-width 0.3s cubic-bezier(0, 0, 0, 0),border-color 0.3s cubic-bezier(0, 0, 0, 0);
-            -o-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),color 0.3s cubic-bezier(0, 0, 0, 0),width 0.3s cubic-bezier(0, 0, 0, 0),border-width 0.3s cubic-bezier(0, 0, 0, 0),border-color 0.3s cubic-bezier(0, 0, 0, 0);
-            transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),color 0.3s cubic-bezier(0, 0, 0, 0),width 0.3s cubic-bezier(0, 0, 0, 0),border-width 0.3s cubic-bezier(0, 0, 0, 0),border-color 0.3s cubic-bezier(0, 0, 0, 0);
-        }
-    }
-
-    //lp-section-6
-    .lp-section-6 {
-        min-width: 100%;
-        height: 550px;
-        display: block;
-        width: 100%;
-        background-color: #fff;
-        background-position: center top;
-        background-size: cover;
-        text-align: center;
-
-        .content-6 {
-            width: 100%;
-            height: auto;
-            padding-top: 30px;
-            text-align: center;
-
-            .faq-title {
-                margin-bottom: 50px;
-                letter-spacing: 3px;
-                text-align: center;
-
-                .short-line {
-                    display: block;
-                    background: #3468A5;
-                    border-style: none;
-                    border-radius: 0;
-                    margin: 20px auto 50px;
-                    z-index: 53;
-                    width: 50px;
-                    height: 3px;
-                    position: relative;
-                }
-
-            }
-            .faq-block {
-              padding: auto 50px;
-              margin: 0 50px;
-              height: 400px;
-              width: 1200px;
-              text-align: left;
-                h5 {
-                    text-decoration: underline;
-                    font-weight: bold;
-                    padding-top: 10px;
-                    padding-bottom: 10px;
-                    color: #3468A5;
-                }
-                p {
-                    font-size: 14px !important;
-                }
-            }
-
-        }
-    }
-
-
-    //social icons
-    .social-icons ul {
-        text-align: center;
-        padding-left: 0;
-        display: inline-block;
-    }
-
-    .social-icons ul a li {
-        display: inline-block;
-        list-style-type: none;
-        border: 2px solid #ffffff;
-        margin-right: 10px;
-        background-color: #ffffff;
-        color: #51c2b9;
-        font-size: 18px;
-        line-height: 32px;
-        width: 36px;
-    }
-
-    .social-icons ul a li:last-child {
-        margin-right: 0;
-    }
-
-    .social-icons ul a:hover li {
-        color: #ffffff;
-        background-color: #51c2b9;
-    }
-
-
-    .contact .vira-card .vira-card-content h3:after {
-        top: 40px;
-    }
-
-    .contact .vira-card .vira-card-content p {
-        font-size: 18px;
+        height: 75px;
+        overflow: hidden;
+        font-size: 13px;
+        z-index: 0;
+        color: #333;
+      }
     }

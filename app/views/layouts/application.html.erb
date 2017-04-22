@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <%= render_page_title_tag %>
     <%= render_page_description_meta_tag %>
     <%= render_page_image_link_tag %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= csrf_meta_tags %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="//load.sumome.com/" data-sumo-site-id="c045c11ccc193eae3d2e9e330bd5b646b7c8a00d8c3f004120c4a90ce1b4825f" async="async"></script>
   </head>
 
-  <body>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
     <div class="row">
       <%= render "common/navbar" %>
     </div>
@@ -22,7 +27,7 @@
     </div>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <%= yield :handwrite_javascript %>
 
   </body>

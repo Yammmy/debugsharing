@@ -411,3 +411,18 @@ body {
         color: #333;
       }
     }
+
+    //-------gotop--------
+    #gotop {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+    right: 20px;
+    bottom: 20px;
+    background: #3468A5;
+    color: #fff;
+    cursor: pointer;
+    display: none; /*默认先隐藏掉*/
+  }

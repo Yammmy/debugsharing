@@ -38,11 +38,13 @@
 //--------  pagewrapper   ---------
  #page_wrapper {
  		padding-top: 2em;
-    margin-top :10em;
+    margin-top :5em;
+    margin-bottom :5em;
+    margin-left: 10em;
  		#profile_image {
  			width: 300px;
  			float: left;
-      margin-left: 10em;
+      margin-top: 30px;
  			margin-right: 10em;
  			img {
  				width: 100%;

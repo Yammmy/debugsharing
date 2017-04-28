@@ -23,7 +23,7 @@
 
 //= require chosen-jquery
 //= require autosize.min
-//= require ckeditor/init
+//= require md_simple_editor
 
 $(document).on('click', '#gotop', function () {
   $('body').animate({'scrollTop': 0}, 500) //在500ms的时间内，慢慢地回到顶部

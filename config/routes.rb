@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  mount RuCaptcha::Engine => "/rucaptcha"
 
   devise_for :users, controllers: {
     :omniauth_callbacks => "callbacks"

@@ -42,8 +42,6 @@ gem 'letter_opener', group: :development
 gem 'aasm'
 gem 'figaro'
 gem 'fog'
-gem 'rucaptcha'
-gem 'dalli'
 gem 'acts_as_votable'
 gem 'bullet', group: 'development'
 gem 'newrelic_rpm'

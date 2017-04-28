@@ -39,17 +39,6 @@
               <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
             </div>
 
-						<% if Rails.env.production? %>
-							<div class="form-group">
-								<div class="cols-sm-10">
-									<div class="input-group">
-	    							<%= rucaptcha_image_tag(alt: 'Captcha') %>
-										<%= rucaptcha_input_tag(class: 'form-control', placeholder: 'Please input Captcha') %>
-									</div>
-								</div>
-							</div>
-						<% end %>
-
 						<div class="form-actions" style="margin-top: 20px;">
 							<%= f.button :submit, "Log in" ,class: "btn btn-primary btn-block login-button" %>
 						</div>

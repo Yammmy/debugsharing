@@ -2,8 +2,6 @@ class CommentsController < ApplicationController
   before_action :authenticate_user!
   before_action :find_product_ids
 
-  # POST /comments
-  # POST /comments.json
   def create
     @comment = @product.comments.new(comment_params)
     @comment.user = current_user
@@ -15,8 +13,6 @@ class CommentsController < ApplicationController
     end
   end
 
-  # DELETE /comments/1
-  # DELETE /comments/1.json
   def destroy
     @comment = Comment.find(params[:id])
     @comment.destroy
@@ -28,7 +24,8 @@ class CommentsController < ApplicationController
   def find_product_ids
     @product = Product.find(params[:product_id])
   end
-    # Never trust parameters from the scary internet, only allow the white list through.
+
+  # Never trust parameters from the scary internet, only allow the white list through.
   def comment_params
     params.require(:comment).permit(:product_id, :body, :user_id)
   end

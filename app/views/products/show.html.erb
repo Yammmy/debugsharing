@@ -13,11 +13,12 @@
   </div>
   <div>
     <p class="text-left">
-      简述：<%= raw(@product.description) %> <br><br>
+      简述：<%= sanitize @product.description %> <br><br>
 
       <hr>
 
-      <%= raw(@product.body) %> <br><br>
+      <%= sanitize @product.body %> <br><br>
+
       <div class="text-left">
         <% if @photos.present? %>
           <% @photos.each_with_index do |p, index| %>
@@ -59,13 +60,11 @@
   <br>
   <hr>
 
-  <div class="comments_title">
+  <div class="text-center">
     <% if @product.comments.blank? %>
       <h3>这个经验还没有人评论，快来为它添加一个吧！</h3>
-      <p>注：此评论支持html语法。</p>
     <% else %>
-      <h3>这个经验已经有<%= @product.comments.count %> 个评论了，快来添加你的评论吧！</h3>
-      <p>注：此评论支持html语法。</p>
+      <h3>这个经验已经有<%= @product.comments_count %> 个评论了，快来添加你的评论吧！</h3>
     <% end %>
   </div>
   <div class="short-line"></div>

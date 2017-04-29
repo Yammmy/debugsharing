@@ -2,6 +2,7 @@
 #bigwelcome {
   .jumbotron {
       background-image: url(../images/programmer.jpg);
+      background-position: right 0%;
       border-radius: 0;
       background-size: cover;
       height: 500px;
@@ -13,8 +14,6 @@
           display: block;
           margin-left: auto;
           margin-right: auto;
-          max-width: 1200px;
-          min-width: 320px;
           height: 700px;
           position: relative;
           text-align: right;
@@ -51,8 +50,7 @@
                   -webkit-border-radius: 0.2em;
                   border-radius: 0.2em;
                   text-align: center;
-                  font-size: 1.428em;
-                  text-transform: uppercase;
+                  font-size: 1.2em;
                   letter-spacing: 0.3em;
                   padding: 0.57em 1.9em;
                   margin-top: 2.85em;
@@ -106,18 +104,13 @@
     position: relative;
 
     .bottom-content {
-        padding-top: 40px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 40px 20px auto;
         text-align: center;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
         height: 200px;
         position: relative;
         text-align: center;
-        padding-top: 40px;
-        margin-top: 40px;
+        margin-top: 60px;
     }
 
     a:active,
@@ -193,40 +186,7 @@
     }
 }
 
-//-----------landing big pic-------
-.container-fluid .jumbotron {
-    margin: 0 -15px 0;
-    min-height: 100%;
-    border-radius: 0;
-}
-.container-fluid #about {
-    margin: 0 -15px 0;
-    min-height: 100%;
-}
-.container-fluid #services  {
-    margin: 0 -15px 0;
-    min-height: 100%;
-}
-.container-fluid #teachers   {
-    margin: 0 -15px 0;
-    min-height: 100%;
-}
-.container-fluid #customers  {
-    margin: 0 -15px 0;
-    min-height: 100%;
-}
-.container-fluid #explore   {
-    margin: 0 -15px 0;
-    min-height: 100%;
-}
-.container-fluid #fqa  {
-    margin: 0 -15px 0;
-    min-height: 100%;
-}
-.container-fluid  {
 
-    min-height: 100%;
-}
 
 //--------  navbar   ---------
  .navbar-default {
@@ -422,7 +382,7 @@ body {
     position: fixed;
     text-align: center;
     right: 20px;
-    bottom: 20px;
+    bottom: 120px;
     background: #3468A5;
     color: #fff;
     cursor: pointer;

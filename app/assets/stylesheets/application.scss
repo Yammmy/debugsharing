@@ -93,21 +93,6 @@
   }
 
 
-
- //--------  navbar   ---------
-//  .navbar-default {
-//    border-bottom-color: #d6dce0;
-//    margin-bottom: 0;
-//    padding-left: 195px;
-//  }
-//
-//  .navbar-default .navbar-brand {
-//    color: #3468A5;
-//    padding: 0 40px 20px 15px;
-//    line-height: 30px;
-// }
-
-
  @media (min-width: 768px) {
      .navbar {
          border-radius: 0;
@@ -200,23 +185,25 @@
  .footer{
  	background-color: #f2f2f2;
  	text-align: center;
- 	height: 70px;
-  margin-top: -70px;
   padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 50px;
+  font-size: 21px;
+  p {
+    color: black;
+    span{
+    	color: #3468A5;
+    }
+    a{
+    	color: black;
+    }
+  }
  }
- .footer span{
- 	color: #3468A5;
 
- }
- .footer p{
-   color: black;
- 	font-size: 21px;
 
- 	margin-bottom: 0;
- }
- .footer a{
- 	color: black;
- }
+ /* 动态为footer添加类fixed-bottom */
+.fixed-bottom {position: fixed;bottom: 0;width:100%;}
+
 
 //--------  sidebar   ---------
  #sidebar {
@@ -224,7 +211,6 @@
 	position: absolute;
 	left: 50px;
 	top: 110px;
-  bottom: 100px;
 	background: #f5f7f9;
 	padding: 5em 0 0 0;
 	border-right: 1px solid #d6dce0;

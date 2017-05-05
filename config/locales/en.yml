@@ -20,4 +20,21 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  hello: "Hi, %{name}"
+  skill_list: Skill List
+  about: About Us
+  search: Search
+  cart: Cart
+  messages: Messages
+  language_switch: Language Switch
+  login: Login
+  signup: Sign Up
+  logout: Logout
+  admin_panal: Admin Panel
+  all_orders: All Orders
+  profile: Modify Profile
+  my_order: My Orders
+  my_collection: My Collctions
+  hot_category: Hot Category
+  admin:
+    skill_list: Admin Skill List

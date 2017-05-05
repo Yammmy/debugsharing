@@ -15,20 +15,20 @@
       </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav" style="margin-left: -20px;">
 
         <li>
-          <%= link_to("全部经验", products_path) %>
+          <%= link_to(t("skill_list"), products_path) %>
         </li>
         <li>
-          <%= link_to("关于我们", href="/about.html") %>
+          <%= link_to(t("about"), href="/about.html") %>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li style="margin-right: -10px;">
           <%= form_tag search_products_path, method: :get do %>
             <div class="input-group" id="search-id" >
-              <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "搜索你想学习的技巧", id: "search", autocomplete: "off" %>
+              <%= text_field_tag :search, params[:search], class: "form-control", placeholder: t("search"), id: "search", autocomplete: "off" %>
               <span class="input-group-btn">
                 <button type="submit" class="btn btn-default btn-primary" name="nil">
                   <span class="glyphicon glyphicon-search"></span>
@@ -37,22 +37,32 @@
             </div>
           <% end %>
         </li>
-        <li style="margin-right: 40px;">
+        <li style="margin-left: -50px;">
           <%= link_to carts_path do %>
-            购物车 <i class="fa fa-shopping-cart"></i> ( <%= current_cart.products.count%> )
+            <%= t("cart")%> <i class="fa fa-shopping-cart"></i> ( <%= current_cart.products.count%> )
           <% end %>
         </li>
-        <li style="margin-right: 40px;">
+        <li>
           <%= link_to conversations_path do %>
-            站内信 <i class="fa fa-envelope" style="color:#3468A5;"></i>
+            <%= t("messages")%> <i class="fa fa-envelope" style="color:#3468A5;"></i>
           <% end %>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <%= t('language_switch') %>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><%= link_to "中文版", :controller => controller_name, :action => action_name, :locale => "zh-CN" %></li>
+            <li><%= link_to "English", :controller => controller_name, :action => action_name, :locale => "en" %></li>
+          </ul>
         </li>
         <% if !current_user %>
            <button class="button">
-             <%= link_to('<span class="glyphicon glyphicon-log-in"></span> 登录'.html_safe, new_user_session_path) %>
+             <span class="glyphicon glyphicon-log-in"></span> <%= link_to(t("login"), new_user_session_path, style: "color: black;") %>
            </button>
            <button class="button" style="margin-right: 20px;">
-             <%= link_to('<span class="glyphicon glyphicon-user"></span> 注册'.html_safe, new_user_registration_path) %>
+             <span class="glyphicon glyphicon-user" style="color: #3468A5;"></span> <%= link_to(t("signup"), new_user_registration_path) %>
            </button>
          <% else %>
            <li class="round-image-50"><%= image_tag(current_user.avatar.url(:thumb)) %></li>
@@ -61,28 +71,28 @@
                  <b class="caret"></b>
              </a>
              <ul class="dropdown-menu">
-                 <li style="margin-left: 20px;"><i class="fa fa-user"></i> <%= current_user.name %></li>
+                 <li style="margin-left: 20px;"><i class="fa fa-user"></i> <%= t('hello', :name => current_user.name ) %></li>
                  <li role="separator" class="divider"></li>
                  <% if current_user.admin? %>
                     <li>
-                      <%= link_to(content_tag(:i, "管理员后台", class: "fa fa-user-circle-o"), admin_products_path ) %>
+                      <%= link_to(content_tag(:i, t('admin_panal'), class: "fa fa-user-circle-o"), admin_products_path ) %>
                     </li>
                     <li>
-                      <%= link_to(content_tag(:i, "所有订单", class: "fa fa-user-circle-o"), admin_orders_path ) %>
+                      <%= link_to(content_tag(:i, t('all_orders'), class: "fa fa-user-circle-o"), admin_orders_path ) %>
                     </li>
                   <% end %>
                   <li>
-                    <%= link_to(content_tag(:i, "修改资料", class: "fa fa-edit"), edit_user_registration_path ) %>
+                    <%= link_to(content_tag(:i, t('profile'), class: "fa fa-edit"), edit_user_registration_path ) %>
                   </li>
                   <li>
-                     <%= link_to(content_tag(:i, "我的订单", class: "fa fa-chevron-circle-down"), account_orders_path )%>
+                     <%= link_to(content_tag(:i, t('my_order'), class: "fa fa-chevron-circle-down"), account_orders_path )%>
                   </li>
                   <li>
-                     <%= link_to(content_tag(:i, "我的收藏", class: "fa fa-star"), account_collections_path )%>
+                     <%= link_to(content_tag(:i, t('my_collection'), class: "fa fa-star"), account_collections_path )%>
                   </li>
                   <li role="separator" class="divider"></li>
                  <li>
-                    <%= link_to(content_tag(:i, "登出", class: "fa fa-sign-out"), destroy_user_session_path, method: :delete)%>
+                    <%= link_to(content_tag(:i, t('logout'), class: "fa fa-sign-out"), destroy_user_session_path, method: :delete)%>
                  </li>
              </ul>
 

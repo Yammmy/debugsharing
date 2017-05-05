@@ -1,0 +1,11 @@
+  activerecord:
+    attributes:
+      product:
+        title: "标题"
+        description: "描述"
+        body: "正文"
+        quantity: "数量"
+        price: "价格"
+        image: "题图"
+        category: "分类"
+        is_hidden: "是否隐藏"

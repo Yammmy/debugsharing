@@ -15,7 +15,9 @@
     <div class="container-fluid">
       <div class="row">
         <%= render "common/navbar" %>
-        <%= render "common/flashes" %>
+        <div class="flash-gap">
+          <%= render "common/flashes" %>
+        </div>
         <%= yield %>
       </div>
       <div class="row">

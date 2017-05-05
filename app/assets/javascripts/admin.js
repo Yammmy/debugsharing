@@ -8,8 +8,7 @@
 //= require social-share-button
 //= require social-share-button/wechat
 //= require chosen-jquery
-//= require autosize.min
-//= require md_simple_editor
+//= require validator.min
 //= require_tree .
 
 

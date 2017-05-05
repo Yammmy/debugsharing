@@ -20,21 +20,7 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
- @import "social-share-button";
  @import "chosen";
- @import "md_simple_editor";
-
-
-//--------  social button   ---------
- $size: 24px;
-
-.social-share-button {
-  .ssb-icon {
-    background-size: $size $size;
-    height: $size;
-    width: $size;
-  }
-}
 
 //--------  pagewrapper   ---------
  #page_wrapper {
@@ -68,36 +54,6 @@
  		}
  	}
 
- //--------  comment   ---------
- #comments {
-  		.comment {
-  			padding: 1em 0;
-  			border-top: 1px solid #E9E9E9;
-  			.lead {
-  				margin-bottom: 0;
-  			}
-  		}
-  	}
-
- //--------  search   ---------
- #search-id {
-   width: 350px;
-   padding-top: 7px;
-   padding-right:100px;
- }
-
-
-  .btn-danger:hover {
-      background-color: #009688;
-      border-color: #009688;
-  }
-
-
- @media (min-width: 768px) {
-     .navbar {
-         border-radius: 0;
-     }
- }
 
   //--------  button   ---------
   .button {
@@ -110,66 +66,6 @@
 
   }
 
-
-  //--------  login/signup   ---------
-
-
-
- .main{
-
-   input:focus {
-     border-color: red;
-   }
- }
-
- h1.title {
- 	font-size: 50px;
- 	font-family: Brandon Text;
- 	font-weight: 100;
- }
-
-
- .form-group{
- 	margin-bottom: 0;
-  margin-top: 5px;
- }
-
-
- input,
- input::-webkit-input-placeholder {
-     font-size: 11px;
-     padding-top: 3px;
- }
-
- .main-login{
-   background-color: #282c34;
-   /* shadows and rounded borders */
-   -moz-border-radius: 2px;
-   -webkit-border-radius: 2px;
-   border-radius: 2px;
-   -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-   -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-
- }
-
- .main-center{
-   color: #fff;
-  	margin-top: 30px;
-  	margin: 0 auto;
-  	max-width: 300px;
-   padding: 40px 40px;
-
- }
-
- .login-button{
- 	margin-top: 5px;
- }
-
- .login-register{
- 	font-size: 11px;
- 	text-align: center;
- }
 
  //--------  footer   ---------
 
@@ -205,33 +101,6 @@
 .fixed-bottom {position: fixed;bottom: 0;width:100%;}
 
 
-//--------  sidebar   ---------
- #sidebar {
-	width: 250px;
-	position: absolute;
-	left: 50px;
-	top: 110px;
-	background: #f5f7f9;
-	padding: 5em 0 0 0;
-	border-right: 1px solid #d6dce0;
-
-	ul {
-		list-style: none;
-		text-align: right;
-		padding-right: 3em;
-		.category {
-			font-weight: 700;
-			font-size: 0.7em;
-			text-transform: uppercase;
-			color: black;
-		}
-  }
-}
-
-#main_content {
-	margin-left: 250px;
-
-}
 
 //--------  gem smasonry-rails ask pin  ---------
 #pins {
@@ -292,6 +161,19 @@
 //--------  decorate page ---------
   .cart-indexpage {
     padding: 30px 180px 50px;
+  }
+
+
+  .admin_products_indexpage {
+    padding: 30px 180px 50px;
+  }
+
+  .admin_products_revisepage {
+    padding: 30px 180px 50px;
+  }
+
+  .admin_order_indexpage {
+    padding: 30px -80px 50px 180px;
   }
 
   .account_orders_indexpage {

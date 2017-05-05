@@ -1,7 +1,7 @@
 class Product < ApplicationRecord
   searchkick text_start: [:title]
 
-  validates :title, presence: true
+  validates_presence_of :title, :description, :body, :quantity, :price
 
   mount_uploader :image, ImageUploader
   has_many :comments, dependent: :destroy

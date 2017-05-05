@@ -1,49 +1,61 @@
-<h2> 修改经验 </h2>
+<div class="admin_products_revisepage">
+  <h2 class="text-center"> 修改经验 </h2>
+  <div class="short-line"></div>
 
-<%= simple_form_for [:admin, @product] do |f| %>
+  <%= simple_form_for [:admin, @product] do |f| %>
 
-  <div class="group">
-    <%= f.input :title %>
-  </div>
+    <div class="group">
+      <%= f.input :title, :class => "form-control", :required => true, :autofocus => true %>
+      <div class="help-block with-errors"></div>
+    </div>
 
-  <div class="group">
-    <%= f.input :description %>
-  </div>
+    <div class="group">
+      <%= f.input :description, :class => "form-control", :required => true  %>
+      <div class="help-block with-errors"></div>
+    </div>
 
-  <div class="group">
-    <%= f.input :body %>
-  </div>
+    <div class="group">
+      <%= f.input :body, :class => "form-control", :required => true  %>
+      <div class="help-block with-errors"></div>
+    </div>
 
-  <div class="group">
-    <%= f.input :category, :collection => ["rails","heroku", "frontend", "backend","others"], :selected => "rails" %>
-  </div>
+    <div class="group">
+      <%= f.input :category, :collection => ["rails","heroku", "frontend", "backend","others"], :selected => "rails" %>
+    </div>
 
-  <div class="group">
-    <%= f.input :quantity %>
-  </div>
+    <div class="group">
+      <%= f.input :quantity, :class => "form-control", :required => true  %>
+      <div class="help-block with-errors"></div>
+    </div>
 
-  <div class="group">
-    <%= f.input :price %>
-  </div>
+    <div class="group">
+      <%= f.input :price, :class => "form-control", :required => true  %>
+      <div class="help-block with-errors"></div>
+    </div>
 
-  <div class="group">
-    <%= f.input :is_hidden %>
-  </div>
+    <div class="group">
+      <%= f.input :is_hidden  %>
+    </div>
 
-  <% if @product.photos.present? %>
-    <span>目前商品圖</span> <br>
-    <% @product.photos.each do |p| %>
-      <%= image_tag p.avatar.thumb.url %><br>
+    <% if @product.photos.present? %>
+      <span>目前商品圖</span> <br>
+      <% @product.photos.each do |p| %>
+        <%= image_tag p.avatar.thumb.url %><br>
+      <% end %>
     <% end %>
+
+    <div class="group">
+      <%= f.label :avatar %> <br>
+      <%= f.file_field :avatar, :multiple => true, name: "photos[avatar][]" %>
+    </div>
+
+    <br>
+
+    <%= f.submit "Submit", class: "btn btn-primary" %>
+
   <% end %>
+</div>
 
-  <div class="group">
-    <%= f.label :avatar %> <br>
-    <%= f.file_field :avatar, :multiple => true, name: "photos[avatar][]" %>
-  </div>
-
-  <br>
-
-  <%= f.submit "Submit", data: { disable_with: "Submitting..." }, class: "btn btn-primary" %>
-
-<% end %>
+<script>
+  $("form").validator();
+</script>

@@ -10,6 +10,20 @@ $(document).ready(function(){
   <h2 class="text-center"> 订单列表 </h2>
   <div class="short-line"></div>
 
+  <%= search_form_for @q, :url => admin_orders_path do |f| %>
+    <p><%= f.search_field :total_cont, :placeholder => "订购金额", :class => "form-control" %></p>
+    <p><%= f.search_field :aasm_state_cont, :placeholder => "订单状态", :class => "form-control" %></p>
+
+    <%= label_tag "Order ID" %>
+    <%= text_field_tag :ids %>
+
+
+    <%= label_tag "Date" %>
+    <%= date_field_tag :date %>
+
+    <%= submit_tag :Submit, class: "btn btn-primary" %>
+  <% end %>
+  <br>
   <table class="table table-bordered">
     <thead>
       <tr>
@@ -32,4 +46,8 @@ $(document).ready(function(){
     </tbody>
   </table>
 
+</div>
+
+<div class="text-center">
+  <%= will_paginate @orders, renderer: BootstrapPagination::Rails %>
 </div>

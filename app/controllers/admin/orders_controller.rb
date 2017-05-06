@@ -2,7 +2,21 @@ class Admin::OrdersController < AdminController
   before_action :find_order, except: [:index]
 
   def index
-    @orders = Order.includes(:user).order("id DESC")
+    @q = Order.ransack(params[:q])
+    @orders = @q.result.includes(:user).order("id DESC")
+
+
+    if params[:ids].present?
+      @orders = @orders.where( :id => params[:ids].split(",") )
+    end
+
+    if params[:date].present?
+      date = Date.parse(params[:date])
+      #@orders = @orders.where("created_at >= ? and created_at <= ?", date.beginning_of_day, date.end_of_day)
+      @orders = @orders.where( :created_at => date.beginning_of_day..date.end_of_day)
+    end
+
+    @orders = @orders.paginate(page: params[:page])
   end
 
   def show

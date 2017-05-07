@@ -24,6 +24,9 @@ Rails.application.routes.draw do
 
   namespace :admin do
     root 'products#index'
+    resources :versions do
+      post :undo
+    end
     resources :products do
       member do
         post :publish

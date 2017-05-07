@@ -14,19 +14,19 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# puts "这个seeds文件可以自动建立一个真实的admin账号和test账号"
-#
-# create_account = User.create([name:'yammy', email: 'yammy7chris@gmail.com', password:'111111', password_confirmation: '111111', is_admin: 'true'])
-# puts "Admin account created."
-#
-# create_account = User.create([name:'test', email: 'gdouxym@163.com', password:'111111', password_confirmation: '111111', is_admin: 'false'])
-# puts "Test account created."
-#
-# Category.create!( name: "rails")
-# Category.create!( name: "heroku")
-# Category.create!( name: "frontend")
-# Category.create!( name: "backend")
-# Category.create!( name: "others")
+puts "这个seeds文件可以自动建立一个真实的admin账号和test账号"
+
+create_account = User.create([name:'yammy', email: 'yammy7chris@gmail.com', password:'111111', password_confirmation: '111111', is_admin: 'true'])
+puts "Admin account created."
+
+create_account = User.create([name:'test', email: 'gdouxym@163.com', password:'111111', password_confirmation: '111111', is_admin: 'false'])
+puts "Test account created."
+
+Category.create!( name: "rails")
+Category.create!( name: "heroku")
+Category.create!( name: "frontend")
+Category.create!( name: "backend")
+Category.create!( name: "others")
 
 products =[
 
@@ -90,19 +90,19 @@ photos = [
 				]
 
 
-Photo.create!(product_id:6,avatar: open(photos[0]))
-Photo.create!(product_id:6,avatar: open("#{Rails.root}/app/assets/images/pay.pic"))
+Photo.create!(product_id:1,avatar: open(photos[0]))
+Photo.create!(product_id:1,avatar: open("#{Rails.root}/app/assets/images/pay.pic"))
 
-Photo.create!(product_id:7,avatar: open(photos[1]))
-Photo.create!(product_id:7,avatar: open("#{Rails.root}/app/assets/images/pay.pic"))
+Photo.create!(product_id:2,avatar: open(photos[1]))
+Photo.create!(product_id:2,avatar: open("#{Rails.root}/app/assets/images/pay.pic"))
 
-Photo.create!(product_id:8,avatar: open(photos[2]))
-Photo.create!(product_id:8,avatar: open("#{Rails.root}/app/assets/images/pay.pic"))
+Photo.create!(product_id:3,avatar: open(photos[2]))
+Photo.create!(product_id:3,avatar: open("#{Rails.root}/app/assets/images/pay.pic"))
 
-Photo.create!(product_id:9,avatar: open(photos[3]))
-Photo.create!(product_id:9,avatar: open("#{Rails.root}/app/assets/images/pay.pic"))
+Photo.create!(product_id:4,avatar: open(photos[3]))
+Photo.create!(product_id:4,avatar: open("#{Rails.root}/app/assets/images/pay.pic"))
 
-Photo.create!(product_id:10,avatar: open(photos[4]))
-Photo.create!(product_id:10,avatar: open("#{Rails.root}/app/assets/images/pay.pic"))
+Photo.create!(product_id:5,avatar: open(photos[4]))
+Photo.create!(product_id:5,avatar: open("#{Rails.root}/app/assets/images/pay.pic"))
 
 puts "5 photos created."

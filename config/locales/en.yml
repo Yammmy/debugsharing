@@ -23,7 +23,7 @@ en:
   hello: "Hi, %{name}"
   skill_list: Skill List
   about: About Us
-  search: Search
+  search: Try searching
   cart: Cart
   messages: Messages
   language_switch: Language Switch
@@ -46,4 +46,3 @@ en:
 
   admin:
     skill_list:  Skill List
-    

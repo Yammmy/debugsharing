@@ -26,7 +26,7 @@
     </div>
 
     <div class="group">
-      <%= f.input :category, :collection => ["rails","heroku", "frontend", "backend","others"], :selected => "rails" %>
+      <%= f.association :category, :class => "form-control" %>
     </div>
 
     <div class="group">

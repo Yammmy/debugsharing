@@ -2,7 +2,7 @@
   hello: "亲~ %{name}"
   skill_list: 全部经验
   about: 关于我们
-  search: 搜索
+  search: 搜索经验吧
   cart: 购物车
   messages: 站内信
   language_switch: 切换语系

@@ -69,23 +69,23 @@ class ProductsController < ApplicationController
   end
 
   def rails
-    desplay_products.where(:category => "rails")
+    @products = Product.includes(:category, :photos).where(:is_hidden => false, :category_id => 1).order("id DESC").paginate(page: params[:page], per_page: 8)
   end
 
   def heroku
-    desplay_products.where(:category => "heroku")
+    @products = Product.includes(:category, :photos).where(:is_hidden => false, :category_id => 2).order("id DESC").paginate(page: params[:page], per_page: 8)
   end
 
   def frontend
-    desplay_products.where(:category => "frontend")
+    @products = Product.includes(:category, :photos).where(:is_hidden => false, :category_id => 3).order("id DESC").paginate(page: params[:page], per_page: 8)
   end
 
   def backend
-    desplay_products.where(:category => "backend")
+    @products = Product.includes(:category, :photos).where(:is_hidden => false, :category_id => 4).order("id DESC").paginate(page: params[:page], per_page: 8)
   end
 
   def others
-    desplay_products.where(:category => "others")
+    @products = Product.includes(:category, :photos).where(:is_hidden => false, :category_id => 5).order("id DESC").paginate(page: params[:page], per_page: 8)
   end
 
   private

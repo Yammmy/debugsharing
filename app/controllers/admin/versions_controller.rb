@@ -1,6 +1,6 @@
 class Admin::VersionsController < AdminController
   def index
-    @versions = PaperTrail::Version.order("id DESC").paginate(page: params[:page])
+    @versions = PaperTrail::Version.includes(:item).order("id DESC").paginate(page: params[:page])
   end
 
   def undo

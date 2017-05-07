@@ -41,5 +41,9 @@ en:
   add_to_cart: Add to cart
   delete_comment: Delete
   submit_comment: Submit
+  bulk_update: Bulk Update
+  bulk_delete: Bulk Delete
+
   admin:
-    skill_list: Admin Skill List
+    skill_list:  Skill List
+    

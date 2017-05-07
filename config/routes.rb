@@ -23,10 +23,14 @@ Rails.application.routes.draw do
   resources :messages, only: [:new, :create]
 
   namespace :admin do
+    root 'products#index'
     resources :products do
       member do
         post :publish
         post :hide
+      end
+      collection do
+        post :bulk_update
       end
     end
     resources :orders do

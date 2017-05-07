@@ -8,6 +8,7 @@
 //= require social-share-button/wechat
 //= require chosen-jquery
 //= require validator.min
+//= require select2
 //= require_tree .
 
 

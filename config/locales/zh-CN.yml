@@ -20,5 +20,8 @@
   add_to_cart: 我要收入囊中
   delete_comment: 删除评论
   submit_comment: 提交评论
+  bulk_update: 批次编辑
+  bulk_delete: 批次删除
+
   admin:
     skill_list: 经验列表

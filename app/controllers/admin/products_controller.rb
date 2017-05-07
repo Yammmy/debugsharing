@@ -2,7 +2,7 @@ class Admin::ProductsController < ApplicationController
   before_action :find_product, only: [:edit, :update, :destroy, :publish, :hide]
 
   def index
-    @products = Product.includes(:photos).all
+    @products = Product.includes(:category, :photos).all
   end
 
   def new
@@ -59,6 +59,24 @@ class Admin::ProductsController < ApplicationController
   def hide
     @product.hide!
     redirect_to :back
+  end
+
+  def bulk_update
+    total = 0
+    Array(params[:ids]).each do |product_id|
+      product = Product.find(product_id)
+      if params[:commit] == I18n.t(:bulk_update)
+        if product.save
+          total += 1
+          flash[:alert] = "Successfully update #{total} products."
+        end
+      elsif params[:commit] == I18n.t(:bulk_delete)
+        product.destroy
+        total += 1
+        flash[:alert] = "Successfully delete #{total} products."
+      end
+    end
+    redirect_to admin_products_path
   end
 
   private

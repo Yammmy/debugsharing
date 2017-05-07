@@ -64,10 +64,10 @@ class Admin::ProductsController < ApplicationController
   private
 
   def find_product
-    @product = Product.find(params[:id])
+    @product = Product.find_by_friendly_id!(params[:id])
   end
 
   def product_params
-    params.require(:product).permit(:title, :description, :body, :category, :quantity, :price, :is_hidden, :image)
+    params.require(:product).permit(:title, :description, :body, :friendly_id, :category, :quantity, :price, :is_hidden, :image)
   end
 end

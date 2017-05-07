@@ -36,5 +36,10 @@ en:
   my_order: My Orders
   my_collection: My Collctions
   hot_category: Hot Category
+  collect: Collect
+  discollect: Disollect
+  add_to_cart: Add to cart
+  delete_comment: Delete
+  submit_comment: Submit
   admin:
     skill_list: Admin Skill List

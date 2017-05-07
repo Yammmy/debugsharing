@@ -1,19 +1,23 @@
 <div class="container product_showpage">
-  <div class="pull-right" style="margin-top:20px;">
-    <% if current_user && current_user.has_collected?(@product) %>
-      <%= link_to("取消收藏", discollect_product_path(@product), method: :post, class: "btn btn-primary")  %>
-    <% else %>
-      <%= link_to("收藏", collect_product_path(@product), method: :post, class: "btn btn-primary")  %>
-    <% end %>
-  </div>
 
   <div class="text-center" >
     <h2 id="title"> <%= @product.title %> </h2>
+  </div>
+  <div class="pull-right" style="margin-top:20px;">
+    <% if current_user && current_user.has_collected?(@product) %>
+      <%= link_to(t("discollect"), discollect_product_path(@product), method: :post, class: "btn btn-primary")  %>
+    <% else %>
+      <%= link_to(t("collect"), collect_product_path(@product), method: :post, class: "btn btn-primary")  %>
+    <% end %>
+  </div>
+  <br>
+  <div class="text-center" >
     <div class="short-line"></div>
   </div>
+
   <div>
     <p class="text-left">
-      简述：<%= sanitize @product.description %> <br><br>
+      sketch：<%= sanitize @product.description %> <br><br>
 
       <hr>
 
@@ -39,14 +43,14 @@
 
   <hr>
 
-  <div class="product-price text-left"> 价格: ￥ <%= @product.price %> </div>
+  <div class="product-price text-left"> price: ￥ <%= @product.price %> </div>
   <div class="pull-right">
-      <%= link_to("我要收入囊中", add_to_cart_product_path(@product),method: :post, :class => "btn btn-danger") %>
+      <%= link_to(t("add_to_cart"), add_to_cart_product_path(@product),method: :post, :class => "btn btn-danger") %>
   </div>
   <br>
   <hr>
   <div class="pull-left ">
-      <p><i class="fa fa-share-alt" aria-hidden="true"></i> 分享 </p>
+      <p><i class="fa fa-share-alt" aria-hidden="true"></i> Share to: </p>
   </div>
   <div class="col-md-4" style="margin-left: 50px;">
     <%= social_share_button_tag(@product.title) %>
@@ -62,9 +66,9 @@
 
   <div class="text-center">
     <% if @product.comments.blank? %>
-      <h3>这个经验还没有人评论，快来为它添加一个吧！</h3>
+      <h3>There is no comment yet, go and add one!</h3>
     <% else %>
-      <h3>这个经验已经有<%= @product.comments_count %> 个评论了，快来添加你的评论吧！</h3>
+      <h3>There are already <%= @product.comments_count %> comments, why not add yours?</h3>
     <% end %>
   </div>
   <div class="short-line"></div>

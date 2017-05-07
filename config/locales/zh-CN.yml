@@ -15,5 +15,10 @@
   my_order: 我的订单
   my_collection: 我的收藏
   hot_category: 热门分类
+  collect: 收藏
+  discollect: 取消收藏
+  add_to_cart: 我要收入囊中
+  delete_comment: 删除评论
+  submit_comment: 提交评论
   admin:
     skill_list: 经验列表

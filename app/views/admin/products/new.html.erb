@@ -10,6 +10,12 @@
     </div>
 
     <div class="group">
+      <%= f.input :friendly_id, :class => "form-control", :required => true %>
+      <p class="help-block">限小写英数字及横线，将作为网址的一部分</p>
+      <div class="help-block with-errors"></div>
+    </div>
+
+    <div class="group">
       <%= f.input :description, :class => "form-control", :required => true %>
       <div class="help-block with-errors"></div>
     </div>

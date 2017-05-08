@@ -75,13 +75,16 @@ $(document).ready(function(){
 
 </div>
 
-<script>
-  // 这个 javascript 会绑事件在 #toggle_all 核选方块上，来做全选效果
-  $("#toggle_all").click(function(){
-    if ( $(this).prop("checked") ) {
-      $("input[name='ids[]']").prop("checked", true);
-    } else {
-      $("input[name='ids[]']").prop("checked", false);
-    }
-  })
-</script>
+
+<%= content_for :handwrite_javascript do%>
+  <script>
+    // 这个 javascript 会绑事件在 #toggle_all 核选方块上，来做全选效果
+    $("#toggle_all").click(function(){
+      if ( $(this).prop("checked") ) {
+        $("input[name='ids[]']").prop("checked", true);
+      } else {
+        $("input[name='ids[]']").prop("checked", false);
+      }
+    })
+  </script>
+<% end %>

@@ -56,10 +56,13 @@
 
 </div>
 
-<script>
-  $("form").validator();
-  $("#product_category_id").select2(
-    { theme: "bootstrap"}
-  );
 
-</script>
+<%= content_for :handwrite_javascript do%>
+  <script>
+    $("form").validator();
+    $("#product_category_id").select2(
+      { theme: "bootstrap"}
+    );
+
+  </script>
+<% end %>

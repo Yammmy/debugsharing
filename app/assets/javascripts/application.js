@@ -2,7 +2,6 @@
 //= require bootstrap-sprockets
 //= require jquery_ujs
 //= require jquery-ui
-//= require turbolinks
 //= require masonry/jquery.masonry
 //= require social-share-button
 //= require social-share-button/wechat

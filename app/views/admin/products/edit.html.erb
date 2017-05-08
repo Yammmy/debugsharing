@@ -62,6 +62,9 @@
   <% end %>
 </div>
 
-<script>
-  $("form").validator();
-</script>
+
+<%= content_for :handwrite_javascript do%>
+  <script>
+    $("form").validator();
+  </script>
+<% end %>

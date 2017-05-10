@@ -54,7 +54,6 @@ gem 'paperclip', '~> 4.1'
 gem 'searchkick'
 gem 'jquery-ui-rails'
 gem "rails-erd"
-gem 'roadie-rails', '~> 1.0'
 gem 'mailboxer'
 gem 'chosen-rails'
 # gem 'semantic-ui-sass', git: 'https://github.com/doabit/semantic-ui-sass.git'

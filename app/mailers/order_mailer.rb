@@ -1,5 +1,4 @@
 class OrderMailer < ApplicationMailer
-  include Roadie::Rails::Automatic
 
   def notify_order_placed(order)
     @order = order

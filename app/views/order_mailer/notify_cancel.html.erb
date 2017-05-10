@@ -66,3 +66,7 @@
     </table>
   </div>
 </div>
+
+<% content_for :action do %>
+  <%= link_to "浏览你的订单",  order_url(@order.token), :class => "btn-primary", :itemprop => "url" %>
+<% end %>

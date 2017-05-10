@@ -6,7 +6,12 @@ class CartsController < ApplicationController
   end
 
   def checkout
-    @order = Order.new
+    if !current_cart.cart_item_ids.empty?
+      @order = Order.new
+    else
+      flash[:alert] = "There is no products in your cart yet."
+      redirect_to :back
+    end
   end
 
 end

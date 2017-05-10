@@ -25,3 +25,7 @@
 
   admin:
     skill_list: 经验列表
+
+  order:
+    subject:
+      confirmed_registration: "购买成功: %{name}"

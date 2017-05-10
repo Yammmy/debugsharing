@@ -4,11 +4,32 @@ $(document).ready(function(){
     $("th").css("background-color", "#3468A5");
 });
 </script>
+<script src="//cdn.bootcss.com/Chart.js/2.5.0/Chart.bundle.min.js"></script>
+
 
 <div class="admin_order_indexpage">
   <br>
   <h2 class="text-center"> 订单列表 </h2>
   <div class="short-line"></div>
+
+  <canvas id="myChart1" width="400" height="200"></canvas>
+
+  <script>
+  var ctx1 = document.getElementById("myChart1");
+  var myChart = new Chart(ctx1, {
+      type: 'bar',
+      data: <%= raw @data2.to_json %>,
+      options: {
+          scales: {
+              yAxes: [{
+                  ticks: {
+                      beginAtZero:true
+                  }
+              }]
+          }
+      }
+  });
+  </script>
 
   <%= search_form_for @q, :url => admin_orders_path do |f| %>
     <p><%= f.search_field :total_cont, :placeholder => "订购金额", :class => "form-control" %></p>

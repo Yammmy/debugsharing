@@ -1,4 +1,6 @@
 class Order < ApplicationRecord
+  STATUS = ["order_placed", "paid", "shipping", "shipped", "order_cancelled", "good_returned"]
+
   belongs_to :user
   has_many :product_lists
 

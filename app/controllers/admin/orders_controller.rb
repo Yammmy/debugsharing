@@ -17,6 +17,42 @@ class Admin::OrdersController < AdminController
     end
 
     @orders = @orders.paginate(page: params[:page])
+
+    @label = (Date.today-10.day..Date.today).to_a
+    @data = @label.map{ |date|
+      Order.where( "created_at >= ? AND created_at < ?", date.beginning_of_day, date.end_of_day ).count
+    }
+
+    status_colors = { "order_placed" => "#FF6384",
+                      "paid" => "#36A2EB",
+                      "shipping" => "#ffe128",
+                      "shipped" => "#4ce341",
+                      "order_cancelled" => "#252525",
+                      "good_returned" => "#002935"}
+
+    colors = ['rgba(255, 99, 132, 0.2)',
+               'rgba(54, 162, 235, 0.2)',
+               'rgba(255, 206, 86, 0.2)',
+               'rgba(75, 192, 192, 0.2)',
+               'rgba(153, 102, 255, 0.2)',
+               'rgba(255, 159, 64, 0.2)'
+               ]
+
+    dates = (Date.today-10.day..Date.today).to_a
+
+    @data2 = {
+      labels: dates,
+      datasets: [
+        {
+          :label => "order count in recently 10 days",
+          :data => dates.map { |date|
+            @orders.where( "created_at >= ? AND created_at < ?", date.beginning_of_day, date.end_of_day ).count
+          },
+          backgroundColor: colors,
+          borderWidth: 1
+        }
+      ]
+    }
   end
 
   def show

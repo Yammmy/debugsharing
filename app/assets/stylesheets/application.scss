@@ -124,7 +124,6 @@
 
  h1.title {
  	font-size: 50px;
- 	font-family: Brandon Text;
  	font-weight: 100;
  }
 
@@ -171,10 +170,15 @@
  	text-align: center;
  }
 
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/earlyaccess/notosanssc.css');
+
+
  //--------  footer   ---------
 
  html, body{
-   font-family: Verdana,"Helvetica Neue",Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+   font-family: 'Indie Flower', cursive, "Noto Sans SC", sans-serif;
    background-color: #ffffff;
    color: #333;
    font-size: 14px;
@@ -329,7 +333,6 @@
         color: #fff;
         padding: 100px 50px;
         margin: -10px 0 0 0px;
-        font-family: Montserrat, sans-serif;
         .content-big {
             display: block;
             margin-left: auto;

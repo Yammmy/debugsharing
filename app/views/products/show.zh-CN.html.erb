@@ -3,12 +3,8 @@
   <div class="text-center" >
     <h2 id="title"> <%= @product.title %> </h2>
   </div>
-  <div class="pull-right" style="margin-top:20px;">
-    <% if current_user && current_user.has_collected?(@product) %>
-      <%= link_to(t("discollect"), discollect_product_path(@product), method: :post, class: "btn btn-primary")  %>
-    <% else %>
-      <%= link_to(t("collect"), collect_product_path(@product), method: :post, class: "btn btn-primary")  %>
-    <% end %>
+  <div class="pull-right" style="margin-top:20px;" id="product-collect-<%= @product.id %>">
+    <%= render "collect" %>
   </div>
   <br>
   <div class="text-center" >
@@ -45,7 +41,7 @@
 
   <div class="product-price text-left"> 价格: ￥ <%= @product.price %> </div>
   <div class="pull-right">
-      <%= link_to(t("add_to_cart"), add_to_cart_product_path(@product),method: :post, :class => "btn btn-danger") %>
+      <%= link_to(t("add_to_cart"), add_to_cart_product_path(@product), :remote => true, method: :post, :class => "btn btn-danger") %>
   </div>
   <br>
   <hr>

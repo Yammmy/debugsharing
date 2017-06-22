@@ -26,7 +26,7 @@ class ProductsController < ApplicationController
       flash[:warning] = "You've already collected the skill!"
     end
 
-    redirect_to product_path(@product)
+    # redirect_to product_path(@product)
   end
 
   def discollect
@@ -37,7 +37,8 @@ class ProductsController < ApplicationController
       flash[:warning] = "You haven't collected the skill yet!"
     end
 
-    redirect_to product_path(@product)
+    # redirect_to product_path(@product)
+    render "collect"
   end
 
   def upvote
@@ -52,7 +53,7 @@ class ProductsController < ApplicationController
     else
       flash[:warning] = "You've already add it to cart!"
     end
-    redirect_to :back
+    # redirect_to :back
   end
 
   def search

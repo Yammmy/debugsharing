@@ -37,10 +37,8 @@
             </div>
           <% end %>
         </li>
-        <li style="margin-left: -50px;">
-          <%= link_to carts_path do %>
-            <%= t("cart")%> <i class="fa fa-shopping-cart"></i> ( <%= current_cart.products.count%> )
-          <% end %>
+        <li style="margin-left: -50px;" id="shopping-cart-<%= current_cart.id %>">
+          <%= render "common/cart" %>
         </li>
         <li>
           <%= link_to conversations_path do %>

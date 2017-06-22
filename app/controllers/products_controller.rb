@@ -43,7 +43,7 @@ class ProductsController < ApplicationController
 
   def upvote
     @product.upvote_by current_user
-    redirect_to :back
+    # redirect_to :back
   end
 
   def add_to_cart

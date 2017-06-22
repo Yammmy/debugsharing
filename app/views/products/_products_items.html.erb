@@ -7,10 +7,12 @@
       <% end %>
     <% end %>
     <%= product.title %>  <hr> 类别: <%= product.category.try(:name) %> | ￥ <%= product.price %> |
-    <%= link_to like_product_path(product), method: :put do %>
+    <%= link_to like_product_path(product), :remote => true, method: :put do %>
       <div class="pic-thumbs-up pull-right" style="margin-right: 10px;">
         <i class="fa fa-thumbs-up", style="color: #3468A5;"></i>
-        <%= product.get_upvotes.size %>
+        <span id="product-upvote-<%= product.id %>">
+          <%= product.get_upvotes.size %>
+        </span>
       </div>
     <% end %>
     <br>

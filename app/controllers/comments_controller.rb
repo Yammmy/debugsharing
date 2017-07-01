@@ -22,7 +22,7 @@ class CommentsController < ApplicationController
   private
 
   def find_product_ids
-    @product = Product.find(params[:product_id])
+    @product = Product.find_by_friendly_id!(params[:product_id])
   end
 
   # Never trust parameters from the scary internet, only allow the white list through.

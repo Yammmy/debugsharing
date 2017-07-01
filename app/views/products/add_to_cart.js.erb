@@ -1,1 +1,6 @@
 $("#shopping-cart-<%= current_cart.id %>").html("<%=j render "common/cart" %>");
+<% if @notice %>
+  alert(`<%= @notice %>`)
+<% elsif @warning %>
+  alert(`<%= @warning %>`)
+<% end %>

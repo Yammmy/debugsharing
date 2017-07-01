@@ -1,1 +1,6 @@
 $("#product-collect-<%= @product.id %>").html("<%=j render "collect" %>");
+<% if @notice %>
+  alert(`<%= @notice %>`);
+<% elsif @warning %>
+  alert(`<%= @warning %>`);
+<% end %>

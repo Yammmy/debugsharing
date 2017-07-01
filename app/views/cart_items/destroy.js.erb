@@ -1,0 +1,4 @@
+$("#cart_item-<%= @cart_item.id %>").remove();
+$("#shopping-cart-<%= current_cart.id %>").html("<%=j render "common/cart" %>");
+
+alert("You've deleted the #{@product.title} from the cart!");

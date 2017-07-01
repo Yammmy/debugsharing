@@ -21,9 +21,9 @@ class ProductsController < ApplicationController
   def collect
     if !current_user.has_collected?(@product)
       current_user.collect!(@product)
-      flash[:notice] = "You've successfully collected the skill!"
+      @notice = "You have successfully collected the skill!"
     else
-      flash[:warning] = "You've already collected the skill!"
+      @warning = "You have already collected the skill!"
     end
 
     # redirect_to product_path(@product)
@@ -32,9 +32,9 @@ class ProductsController < ApplicationController
   def discollect
     if current_user.has_collected?(@product)
       current_user.discollect!(@product)
-      flash[:alert] = "You've successfully discollected the skill!"
+      @notice = "You have successfully discollected the skill!"
     else
-      flash[:warning] = "You haven't collected the skill yet!"
+      @warning = "You have not collected the skill yet!"
     end
 
     # redirect_to product_path(@product)
@@ -49,9 +49,9 @@ class ProductsController < ApplicationController
   def add_to_cart
     if !current_cart.products.include?(@product)
       current_cart.add_product_to_cart(@product)
-      flash[:notice] = "Successfully add #{@product.title} to cart!"
+      @notice = "Successfully add #{@product.title} to cart!"
     else
-      flash[:warning] = "You've already add it to cart!"
+      @warning = "You have already add #{@product.title} to cart!"
     end
     # redirect_to :back
   end

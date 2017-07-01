@@ -28,3 +28,6 @@ public/uploads
 
 # Ignore database configuration
 /config/database.yml
+
+# Ignore heroku database
+/latest.dump

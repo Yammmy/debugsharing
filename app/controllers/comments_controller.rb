@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
     @comment = @product.comments.new(comment_params)
     @comment.user = current_user
 
-    if @comment.save
+    if @comment.save!
       redirect_to product_path(@product), notice: '你已评论成功！'
     else
       redirect_to product_path(@product), alert: "评论不能为空！"

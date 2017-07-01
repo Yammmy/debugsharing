@@ -15,8 +15,7 @@ class CartItemsController < ApplicationController
   def destroy
     @cart_item.destroy
     @product = @cart_item.product
-    redirect_to :back
-    flash[:alert] = "You've deleted the #{@product.title} from the cart!"
+    # redirect_to :back
   end
 
   private
